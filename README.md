@@ -52,6 +52,11 @@ int main(int argc, char *argv[])
 
 
 # Exercise 2: Make Is Your Python Now
-<details><summary>Notes to myself:</summary>Hmm... reading `man cc` didn't help me to understand the -"Wall" or "WLC4" ("-04"?), but this did "In this example I did CFLAGS="-Wall" make ex1 so that it would add the command line option -Wall to the cc command that make normally runs"(ZAS)
+<details><summary>Notes to myself:</summary>  
 
-I also found this useful: CFLAGS='-Wall' "is a way to pass "modifiers" to the make command. If you're not familiar with how the Unix shell works, you can create these "environment variables" which will get picked up by programs you run. Sometimes you do this with a command like export CFLAGS="-Wall" depending on the shell you use. <b>You can however also just put them before the command you want to run, and that environment variable will be set only while that command runs.</b>"(ZAS)</details><br>  
+Hmm... reading `man make` didn't help me to understand the `-"Wall"` or `"-WLC4"`, but this helped some:  
+"In this example I did `CFLAGS="-Wall" make ex1` so that it would <b>add the command line option `-Wall` to the `cc` command that `make` normally runs</b>"(ZAS)  
+So I read `man cc` but am still not sure about what is going on here: is `-Wall` like `-W` and `-all`? is `-WLC4` like `-W` `-C` `-L` and `-4` ("`-04`"?)?
+
+I also found this useful: `CFLAGS='-Wall'` "is a way to pass "modifiers" to the make command. If you're not familiar with how the Unix shell works, you can create these "environment variables" which will get picked up by programs you run. Sometimes you do this with a command like export `CFLAGS="-Wall"` depending on the shell you use. <b>You can however also just put them before the command you want to run, and that environment variable will be set only while that command runs.</b></i>"(ZAS)</details><br>  
+
