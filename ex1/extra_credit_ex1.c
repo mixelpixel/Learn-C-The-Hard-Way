@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(int argc, char *argv[])
+int main(void)
 {
     puts("\nHello, world!");
     puts("1. \tNeat - tabs!");
