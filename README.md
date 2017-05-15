@@ -19,14 +19,14 @@ ex1.c:3:5: warning: implicit declaration of function 'puts' is invalid in C99 [-
 1 warning generated.
 ```
 ```
-$  CFLAGS="-WALL" make ex1
-cc -WALL    ex1.c   -o ex1
-warning: unknown warning option '-WALL'; did you mean '-WCL4'? [-Wunknown-warning-option]
+$  CFLAGS="-Wall" make ex1
+cc -Wall    ex1.c   -o ex1
 ex1.c:3:5: warning: implicit declaration of function 'puts' is invalid in C99 [-Wimplicit-function-declaration]
     puts("Hello world.");
     ^
-2 warnings generated.
+1 warning generated.
 ```
+NOTE:  
 ```
 $  CFLAGS='-WCL4' make ex1
 cc -WCL4    ex1.c   -o ex1
@@ -41,6 +41,13 @@ int main(int argc, char *argv[])
                          ^
 3 warnings generated.
 ```
-[See ex1.2.c for a warning free example](ex1/ex1.2.c)
+
+[See ex1.1.c for a warning free example](ex1/ex1.1.c)
+
+<details><summary> Notes to myself:</summary>I accidentally wrote CFLAGS="WALL" and got the message "did you mean '-WCL4'?" and tried it. this flag option warns about the unused parameters. Not sure if "man make" is where I should be looking to ascertain what these flags are doing, but I think I am invoking the -W -C -L flags with make, but not sure what the 4 is for.  
+</details><br>  
+
+[See ex1.2.c for a warning free example using "void"](ex1/ex1.2.c)
+
 
 # Exercise 2: Make Is Your Python Now
