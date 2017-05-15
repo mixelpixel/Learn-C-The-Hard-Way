@@ -14,7 +14,7 @@ Some things have changed since this was written, e.g.
 $  make ex1
 cc     ex1.c   -o ex1
 ex1.c:3:5: warning: implicit declaration of function 'puts' is invalid in C99 [-Wimplicit-function-declaration]
-    puts("Hello, world!");
+    puts("Hello world.");
     ^
 1 warning generated.
 ```
@@ -23,9 +23,24 @@ $  CFLAGS="-WALL" make ex1
 cc -WALL    ex1.c   -o ex1
 warning: unknown warning option '-WALL'; did you mean '-WCL4'? [-Wunknown-warning-option]
 ex1.c:3:5: warning: implicit declaration of function 'puts' is invalid in C99 [-Wimplicit-function-declaration]
-    puts("Hello, world!");
+    puts("Hello world.");
     ^
 2 warnings generated.
 ```
+```
+$  CFLAGS='-WCL4' make ex1
+cc -WCL4    ex1.c   -o ex1
+ex1.c:3:5: warning: implicit declaration of function 'puts' is invalid in C99 [-Wimplicit-function-declaration]
+    puts("Hello world.");
+    ^
+ex1.c:1:14: warning: unused parameter 'argc' [-Wunused-parameter]
+int main(int argc, char *argv[])
+             ^
+ex1.c:1:26: warning: unused parameter 'argv' [-Wunused-parameter]
+int main(int argc, char *argv[])
+                         ^
+3 warnings generated.
+```
+[See ex1.2.c for a warning free example](ex1/ex1.2.c)
 
 # Exercise 2: Make Is Your Python Now
