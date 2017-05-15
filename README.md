@@ -5,8 +5,9 @@ I am working with Terminal.app version 2.7.2 (388.1) on macOS Sierra version 10.
 
 # Exercise 1: Dust Off That Compiler
 
-Difference between `puts` and `printf`: [puts prints appends newline, printf allows http://stackoverflow.com/a/2454491/5225057)  
+<details><summary> Notes to myself:</summary>Difference between `puts` and `printf`: [puts prints appends newline, printf allows http://stackoverflow.com/a/2454491/5225057)  
 Odd, in the command line I can use `$ printf $ "ab\bcd"` to displat "acd" but `puts` returns "command not found." Not sure why since `man puts` displays the manual. There's also fputs. ...why the 3 in `man 3 puts`?  
+</details><br>  
 
 Some things have changed since this was written, e.g.  
 ```
