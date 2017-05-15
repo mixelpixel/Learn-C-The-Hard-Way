@@ -42,12 +42,12 @@ int main(int argc, char *argv[])
 3 warnings generated.
 ```
 
-[See ex1.1.c for a warning free example](ex1/ex1.1.c)
+[See ex1.1.c for a warning free example compiling with CFLAGS='-Wall'](ex1/ex1.1.c)
 
 <details><summary> Notes to myself:</summary>I accidentally wrote CFLAGS="WALL" and got the message "did you mean '-WCL4'?" and tried it. this flag option warns about the unused parameters. Not sure if "man make" is where I should be looking to ascertain what these flags are doing, but I think I am invoking the -W -C -L flags with make, but not sure what the 4 is for.  
 </details><br>  
 
-[See ex1.2.c for a warning free example using "void"](ex1/ex1.2.c)
+[See ex1.2.c for a warning free example using "void" and compiling with CFLAGS='-WCL4'](ex1/ex1.2.c)
 
 
 # Exercise 2: Make Is Your Python Now
