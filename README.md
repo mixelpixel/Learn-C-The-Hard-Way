@@ -74,3 +74,4 @@ So I read `$ man cc` but am still not sure about what is going on here: is `-Wal
 
 I also found this useful: `CFLAGS='-Wall'` "is a way to pass "modifiers" to the make command. If you're not familiar with how the Unix shell works, you can create these "environment variables" which will get picked up by programs you run. Sometimes you do this with a command like export `CFLAGS="-Wall"` depending on the shell you use. <b>You can however also just put them before the command you want to run, and that environment variable will be set only while that command runs.</b>"(ZAS)</details><br>  
 
+`make` is very particular about tabs not being spaces and end of line. In my ~/.vimrc settings file I had "set expandtab" as an option to turn tabs into spaces. I commented this out & now I the "Makefile" works :).  
