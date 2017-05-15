@@ -10,7 +10,7 @@ Zed A. Shaw's C Programming Tutorial, an old version of "(Learn C The Hard Way)[
 Odd, in the command line I can use `$ printf $ "ab\bcd"` to displat "acd" but `puts` returns "command not found." Not sure why since `man puts` displays the manual. There's also fputs. ...why the 3 in `man 3 puts`?  
 </details><br>  
 
-Some things have changed since this was written, e.g.  
+Some things have changed since this was written, e.g. `make` reports the same warning without the CFLAGS environment variable:  
 ```
 $  make ex1
 cc     ex1.c   -o ex1
@@ -28,11 +28,11 @@ ex1.c:3:5: warning: implicit declaration of function 'puts' is invalid in C99 [-
 1 warning generated.
 ```
 
-[See ex1.1.c for a warning free example compiling with CFLAGS='-Wall'](ex1/ex1.1.c)
+[See ex1.1.c for a warning free example compiling with or without CFLAGS='-Wall'](ex1/ex1.1.c)
 
 <details><summary>Notes to myself:</summary>  
 
-Of note, the `CFLAGS='-WLC4'` compile warned about the unused parameters:  
+Of note, the `CFLAGS='-WLC4'` compile warns about the unused parameters:  
 
 ```
 $  CFLAGS='-WCL4' make ex1
@@ -49,7 +49,16 @@ int main(int argc, char *argv[])
 3 warnings generated.
 ```
 
-I "discovered this flag option because I accidentally wrote `CFLAGS="-WALL"` (all caps) and got the message "`did you mean '-WCL4'?`" and tried it. This flag option also warns about the unused parameters. Not sure what other conditions it covers. Also not sure if `$ man make` is where I should be looking to ascertain what these flags are doing, but I think I am invoking the `-W` `-C` `-L` flags with `make`, but not sure what the `4` is for.  
+I "discovered" this flag option because I accidentally wrote `CFLAGS="-WALL"` (all caps) and got the message "`did you mean '-WCL4'?`" and tried it. This flag option also warns about the unused parameters. Not sure what other conditions it covers. Also not sure if `$ man make` is where I should be looking to ascertain what these flags are doing, but I think I am invoking the `-W` `-C` `-L` flags with `make`, but not sure what the `4` is for.  
+
+Explicitly stating there are no parameters in main with "void" avoids this warning, e.g.
+```
+int main(void)
+{
+    puts("Look, no warning msg!");
+    return 0;
+}
+```
 
 </details><br>  
 
