@@ -28,7 +28,7 @@ ex1.c:3:5: warning: implicit declaration of function 'puts' is invalid in C99 [-
 1 warning generated.
 ```
 
-[See ex1.1.c for a warning free example compiling with or without CFLAGS='-Wall'](ex1/ex1.1.c)
+[See ex1.1.c for a warning free example compiling with or without CFLAGS='-Wall'](ex01/ex1.1.c)
 
 <details><summary>Notes to myself:</summary>  
 
@@ -62,7 +62,7 @@ int main(void)
 
 </details><br>  
 
-[See ex1.2.c for a warning free example using "void" and compiling with CFLAGS='-WCL4'](ex1/ex1.2.c)
+[See ex1.2.c for a warning free example using "void" and compiling with CFLAGS='-WCL4'](ex01/ex1.2.c)
 
 
 # Exercise 2: Make Is Your Python Now
@@ -88,11 +88,11 @@ ex1.c:3:5: warning: implicit declaration of function 'puts' is invalid in C99 [-
 ```  
 NOTE for vim: `:set list` will display end of line as `$` and TABs as `I^`  
 
-[Exercise 2 Makefile and extra credit](ex2/)  
+[Exercise 2 Makefile and extra credit](ex02/)  
 Additional resources: https://www.gnu.org/software/make/  
-What is a .dSYM directory for? When I run the command make using Makefile, I end up with the directory [ex1.dSYM](ex2/ex1.dSYM/) containing [the ex1 binary within /Contents/Resources/DWARF/](ex2/ex1.dSYM/Contents/Resources/DWARF/ex1) including [an info.plist](ex2/ex1.dSYM/Contents/Info.plist) in the [/Contents/](ex2/ex1.dSYM/Contents/) directory.  
+What is a .dSYM directory for? When I run the command make using Makefile, I end up with the directory [ex1.dSYM](ex02/ex1.dSYM/) containing [the ex1 binary within /Contents/Resources/DWARF/](ex02/ex1.dSYM/Contents/Resources/DWARF/ex1) including [an info.plist](ex02/ex1.dSYM/Contents/Info.plist) in the [/Contents/](ex02/ex1.dSYM/Contents/) directory.  
 
 # Exercise 3: Formatted Printing
-[c file, Makefile and Extra Credit](ex3)
+[c file, Makefile and Extra Credit](ex03)
 
-# 
+#
