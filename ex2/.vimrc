@@ -31,8 +31,8 @@ set shiftwidth=2    " Indents will have a width of 4
 
 set softtabstop=2   " Sets the number of columns for a TAB
 
-" TURNED OFF TO USE WITH MAKEFILE
-" set expandtab       " Expand TABs to spaces
+" TURNED OFF TO USE WITH MAKEFILE               < --------------- THIS
+" set expandtab       " Expand TABs to spaces   < --------------- HERE
 
 " uncomment for 4 spaces
 "
