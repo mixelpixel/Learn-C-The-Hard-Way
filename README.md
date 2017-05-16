@@ -90,4 +90,4 @@ NOTE for vim: `:set list` will display end of line as `$` and TABs as `I^`
 
 [Exercise 2 Makefile and extra credit](ex2/)  
 Additional resources: https://www.gnu.org/software/make/  
-What is a .dSYM directory for? When I run the command make using Makefile, I end up with [ex1.dSYM](/Users/mixelpix/c/Learn-C-The-Hard-Way/ex2/ex1.dSYM)  
+What is a .dSYM directory for? When I run the command make using Makefile, I end up with [ex1.dSYM directory](ex2/ex1.dSYM/Contents/Resources/DWARF/ex1) including [an info.plist](ex2/ex1.dSYM/Contents/Info.plist).  
