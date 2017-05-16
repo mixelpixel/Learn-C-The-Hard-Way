@@ -74,4 +74,17 @@ So I read `$ man cc` but am still not sure about what is going on here: is `-Wal
 
 I also found this useful: `CFLAGS='-Wall'` "is a way to pass "modifiers" to the make command. If you're not familiar with how the Unix shell works, you can create these "environment variables" which will get picked up by programs you run. Sometimes you do this with a command like export `CFLAGS="-Wall"` depending on the shell you use. <b>You can however also just put them before the command you want to run, and that environment variable will be set only while that command runs.</b>"(ZAS)</details><br>  
 
-`make` is very particular about tabs not being spaces and end of line. In my ~/.vimrc settings file I had "set expandtab" as an option to turn tabs into spaces. I commented this out & now the "Makefile" exercise works :).  
+`make` is very particular about tabs not being spaces and end of line. In my ~/.vimrc settings file I had "set expandtab" as an option to turn tabs into spaces. I commented this out & now the "Makefile" exercise works :). Basically the same as to be expected:  
+
+```
+$  make clean
+rm -f ex1
+$  make ex1
+cc -Wall -g    ex1.c   -o ex1
+ex1.c:3:5: warning: implicit declaration of function 'puts' is invalid in C99 [-Wimplicit-function-declaration]
+    puts("Hello world.");
+    ^
+1 warning generated.
+```  
+
+[Exercise 2 Makefile and extra credit](ex2/)
