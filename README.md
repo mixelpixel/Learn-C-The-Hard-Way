@@ -70,7 +70,7 @@ int main(void)
 
 Hmm... reading `$ man make` didn't help me to understand the `-"Wall"` or `"-WLC4"`, but this helped some:  
 "In this example I did `CFLAGS="-Wall" make ex1` so that it would <b>add the command line option `-Wall` to the `cc` command that `make` normally runs</b>"(ZAS)  
-So I read `$ man cc` but am still not sure about what is going on here: is `-Wall` like `-W` and `-all`? is `-WLC4` like `-W` `-C` `-L` and `-4` ("`-04`"?)?
+So I read `$ man cc` but am still not sure about what is going on here: is `-Wall` like `-W` and `-all`? is `-WLC4` like `-W` `-C` `-L` and `-4` ("`-04`"?)? Per the extra credit, I'll do a little more research...  
 
 I also found this useful: `CFLAGS='-Wall'` "is a way to pass "modifiers" to the make command. If you're not familiar with how the Unix shell works, you can create these "environment variables" which will get picked up by programs you run. Sometimes you do this with a command like export `CFLAGS="-Wall"` depending on the shell you use. <b>You can however also just put them before the command you want to run, and that environment variable will be set only while that command runs.</b>"(ZAS)</details><br>  
 
@@ -88,5 +88,6 @@ ex1.c:3:5: warning: implicit declaration of function 'puts' is invalid in C99 [-
 ```  
 NOTE for vim: `:set list` will display end of line as `$` and TABs as `I^`  
 
-[Exercise 2 Makefile and extra credit](ex2/)
+[Exercise 2 Makefile and extra credit](ex2/)  
 Additional resources: https://www.gnu.org/software/make/  
+What is a .dSYM directory for? When I run the command make using Makefile, I end up with [ex1.dSYM](/Users/mixelpix/c/Learn-C-The-Hard-Way/ex2/ex1.dSYM)  
