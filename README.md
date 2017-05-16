@@ -89,3 +89,4 @@ ex1.c:3:5: warning: implicit declaration of function 'puts' is invalid in C99 [-
 NOTE for vim: `:set list` will display end of line as `$` and TABs as `I^`  
 
 [Exercise 2 Makefile and extra credit](ex2/)
+Additional resources: https://www.gnu.org/software/make/  
