@@ -86,7 +86,8 @@ ex1.c:3:5: warning: implicit declaration of function 'puts' is invalid in C99 [-
     ^
 1 warning generated.
 ```  
-NOTE for vim: `:set list` will display end of line as `$` and TABs as `I^`  
+NOTE for vim: ESC, `:set list` will display end of line as `$` and TABs as `I^`  
+NOTE: for vim: ESC, `set nolist` will turn off the "list display"  
 
 [Exercise 2 Makefile and extra credit](ex02/)  
 Additional resources: https://www.gnu.org/software/make/  
