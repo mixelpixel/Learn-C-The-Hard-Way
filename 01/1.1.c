@@ -1,5 +1,5 @@
-#include <stdio.h> // <------------- no warnings with `make 1.1.c`
-                   // -------------- or `CFLAGS="-Wall" make 1.1`
+#include <stdio.h> // <------------- no warnings with $ make 1.1
+                   // -------------- or $ CFLAGS="-Wall" make 1.1
 int main(int argc, char *argv[])
 {
     puts("Hello world.");
@@ -14,8 +14,8 @@ int main(int argc, char *argv[])
 
 // #include <stdio.h>
 //
-// int main(void)     // <------------- also no warnings with `make 1.1.c`
-// {                  // -------------- because no parameters.
+// int main(void)     // <------------- also no warnings with $ make 1.1
+// {
 //     puts("Hello world.");
 //
 //     return 0;
