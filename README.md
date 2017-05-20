@@ -89,11 +89,11 @@ ex1.c:3:5: warning: implicit declaration of function 'puts' is invalid in C99 [-
 NOTE for vim: ESC, `:set list`, REUTRN will enable display for end of line as `$` and TABs as `I^`  
 NOTE for vim: ESC, `:set nolist`, RETURN will disbale the "list display"  
 
-[Exercise 2 Makefile and extra credit](ex02/)  
+[Exercise 2 Makefile and extra credit](02/)  
 Additional resources: https://www.gnu.org/software/make/  
-What is a .dSYM directory for? When I run the command make using Makefile, I end up with the directory [ex1.dSYM](02/2.1.dSYM/) containing [the ex1 binary within /Contents/Resources/DWARF/](02/2.1.dSYM/Contents/Resources/DWARF/1) including [an info.plist](02/2.1.dSYM/Contents/Info.plist) in the [/Contents/](02/2.1.dSYM/Contents/) directory.  
+What is a .dSYM directory for? When I run the command make using Makefile, I end up, for example, with the directory ex1.dSYM containing the ex1 binary within /Contents/Resources/DWARF/ including an info.plist in the /Contents/ directory.  
 
 # Exercise 3: Formatted Printing
-[c file, Makefile and Extra Credit](03)
+[c file, Makefile and Extra Credit](03/)
 
 #
