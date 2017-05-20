@@ -1,7 +1,7 @@
 # Learn-C-The-Hard-Way
 Zed A. Shaw's C Programming Tutorial, an old version of "(Learn C The Hard Way)[https://web.archive.org/web/20140722163343/http://c.learncodethehardway.org:80/book/]"  
 
-1. I am working with Terminal.app version 2.7.2 (388.1) on macOS Sierra version 10.12.4 (16E195).  
+1. I am working with Terminal.app version 2.7.2 (388.1) on macOS Sierra version 10.12.5 (16F73), Kernel Version: Darwin 16.6.0.  
 2. When including quotes from the tutorial I will try and append "(ZAS)"  
 
 # Exercise 1: Dust Off That Compiler
