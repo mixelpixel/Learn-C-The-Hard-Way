@@ -19,11 +19,11 @@ NOTE that I padded lines with whitespaces */
 /* Same program written with spaces instead of TABS:
 
 int main (int argc, char *argv[])
-{            
+                                 {            
     puts (    "Hello world."    );
 
     return 0                     ;
-}         
+                                 }         
 
 */
 
