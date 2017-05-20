@@ -7,7 +7,7 @@ Zed A. Shaw's C Programming Tutorial, an old version of "(Learn C The Hard Way)[
 # Exercise 1: Dust Off That Compiler
 
 <details><summary> Notes to myself:</summary>Difference between `puts` and `printf`: [puts prints appends newline, printf allows http://stackoverflow.com/a/2454491/5225057)  
-Odd, in the command line I can use `$ printf $ "ab\bcd"` to displat "acd" but `puts` returns "command not found." Not sure why since `man puts` displays the manual. There's also fputs. ...why the 3 in `man 3 puts`?  
+Odd, in the command line I can use `$ printf $ "ab\bcd"` to displat "acd" but `puts` returns "command not found." Not sure why since `man puts` displays the manual. There's also fputs. ...why the 3 in `man 3 puts`? Answer: https://en.wikipedia.org/wiki/Man_page#Manual_sections  
 </details><br>  
 
 Some things have changed since this was written, e.g. `make` reports the same warning without CFLAGS declaration:  
@@ -104,4 +104,5 @@ What is a .dSYM directory for? When I run the command make using Makefile, I end
 # Exercise 3: Formatted Printing
 [c file, Makefile and Extra Credit](03/)
 
-#
+# Exercise 4: Introducing Valgrind
+[c file, Makefile and Extra Credit](04/)
