@@ -26,3 +26,12 @@
 
 # Ignore compilations
 *.out
+
+# ignore files from Zed
+# https://github.com/zedshaw/liblcthw/blob/master/.gitignore
+.*.sw*
+*.o
+*.dSYM
+tests/*_tests
+tests/*.log
+build
