@@ -28,7 +28,7 @@ ex1.c:3:5: warning: implicit declaration of function 'puts' is invalid in C99 [-
 1 warning generated.
 ```
 
-[See ex1.1.c for a warning free example compiling with or without CFLAGS='-Wall'](ex01/ex1.1.c)
+[See 1.1.c for a warning free example compiling with or without CFLAGS='-Wall'](01/1.1.c)
 
 <details><summary>Notes to myself:</summary>  
 
@@ -62,7 +62,7 @@ int main(void)
 
 </details><br>  
 
-[See ex1.2.c for a warning free example using "void" and compiling with CFLAGS='-WCL4'](ex01/ex1.2.c)
+[See 1.2.c for a warning free example using "void" and compiling with CFLAGS='-WCL4'](01/1.2.c)
 
 
 # Exercise 2: Make Is Your Python Now
@@ -91,9 +91,9 @@ NOTE for vim: ESC, `:set nolist`, RETURN will disbale the "list display"
 
 [Exercise 2 Makefile and extra credit](ex02/)  
 Additional resources: https://www.gnu.org/software/make/  
-What is a .dSYM directory for? When I run the command make using Makefile, I end up with the directory [ex1.dSYM](ex02/ex1.dSYM/) containing [the ex1 binary within /Contents/Resources/DWARF/](ex02/ex1.dSYM/Contents/Resources/DWARF/ex1) including [an info.plist](ex02/ex1.dSYM/Contents/Info.plist) in the [/Contents/](ex02/ex1.dSYM/Contents/) directory.  
+What is a .dSYM directory for? When I run the command make using Makefile, I end up with the directory [ex1.dSYM](02/1.dSYM/) containing [the ex1 binary within /Contents/Resources/DWARF/](02/1.dSYM/Contents/Resources/DWARF/1) including [an info.plist](02/1.dSYM/Contents/Info.plist) in the [/Contents/](02/1.dSYM/Contents/) directory.  
 
 # Exercise 3: Formatted Printing
-[c file, Makefile and Extra Credit](ex03)
+[c file, Makefile and Extra Credit](03)
 
 #
