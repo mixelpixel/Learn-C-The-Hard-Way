@@ -10,18 +10,18 @@ Zed A. Shaw's C Programming Tutorial, an old version of "(Learn C The Hard Way)[
 Odd, in the command line I can use `$ printf $ "ab\bcd"` to displat "acd" but `puts` returns "command not found." Not sure why since `man puts` displays the manual. There's also fputs. ...why the 3 in `man 3 puts`?  
 </details><br>  
 
-Some things have changed since this was written, e.g. `make` reports the same warning without the CFLAGS environment variable:  
+Some things have changed since this was written, e.g. `make` reports the same warning without CFLAGS declaration:  
 ```
-$  make ex1
-cc     ex1.c   -o ex1
+$  make 1.0
+cc     1.0.c   -o 1.0
 ex1.c:3:5: warning: implicit declaration of function 'puts' is invalid in C99 [-Wimplicit-function-declaration]
     puts("Hello world.");
     ^
 1 warning generated.
 ```
 ```
-$  CFLAGS="-Wall" make ex1
-cc -Wall    ex1.c   -o ex1
+$  CFLAGS="-Wall" make 1.0
+cc -Wall    1.0.c   -o ex1.0
 ex1.c:3:5: warning: implicit declaration of function 'puts' is invalid in C99 [-Wimplicit-function-declaration]
     puts("Hello world.");
     ^
@@ -32,11 +32,11 @@ ex1.c:3:5: warning: implicit declaration of function 'puts' is invalid in C99 [-
 
 <details><summary>Notes to myself:</summary>  
 
-Of note, the `CFLAGS='-WLC4'` compile warns about the unused parameters:  
+Of note, the `CFLAGS='-WCL4'` compile warns about the unused parameters:  
 
 ```
-$  CFLAGS='-WCL4' make ex1
-cc -WCL4    ex1.c   -o ex1
+$  CFLAGS='-WCL4' make 1.0
+cc -WCL4    1.0.c   -o 1.0
 ex1.c:3:5: warning: implicit declaration of function 'puts' is invalid in C99 [-Wimplicit-function-declaration]
     puts("Hello world.");
     ^
@@ -54,6 +54,14 @@ I "discovered" this flag option because I accidentally wrote `CFLAGS="-WALL"` (a
 Explicitly stating there are no parameters in main with "void" avoids this warning, e.g.
 ```
 int main(void)
+{
+    puts("Look, no warning msg!");
+    return 0;
+}
+```
+...and apparently so does leaving the parameters list void, e.g.
+```
+int main()
 {
     puts("Look, no warning msg!");
     return 0;
