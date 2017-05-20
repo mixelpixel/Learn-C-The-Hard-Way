@@ -91,7 +91,7 @@ NOTE for vim: ESC, `:set nolist`, RETURN will disbale the "list display"
 
 [Exercise 2 Makefile and extra credit](ex02/)  
 Additional resources: https://www.gnu.org/software/make/  
-What is a .dSYM directory for? When I run the command make using Makefile, I end up with the directory [ex1.dSYM](02/1.dSYM/) containing [the ex1 binary within /Contents/Resources/DWARF/](02/1.dSYM/Contents/Resources/DWARF/1) including [an info.plist](02/1.dSYM/Contents/Info.plist) in the [/Contents/](02/1.dSYM/Contents/) directory.  
+What is a .dSYM directory for? When I run the command make using Makefile, I end up with the directory [ex1.dSYM](02/2.1.dSYM/) containing [the ex1 binary within /Contents/Resources/DWARF/](02/2.1.dSYM/Contents/Resources/DWARF/1) including [an info.plist](02/2.1.dSYM/Contents/Info.plist) in the [/Contents/](02/2.1.dSYM/Contents/) directory.  
 
 # Exercise 3: Formatted Printing
 [c file, Makefile and Extra Credit](03)
