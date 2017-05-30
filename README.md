@@ -120,6 +120,50 @@ What is a .dSYM directory for? When I run the command make using Makefile, I end
     $  md5 valgrind-3.12.0.tar.bz2
     MD5 (valgrind-3.12.0.tar.bz2) = 6eb03c0c10ea917013a7622e483d61bb
     $  tar -xjvf valgrind-3.12.0.tar.bz2
+    $  cd valgrind-3.12.0
+    $  open FAQ.txt
+    $  ./configure
+
+         Maximum build arch: amd64
+         Primary build arch: amd64
+       Secondary build arch: x86
+                   Build OS: darwin
+       Primary build target: AMD64_DARWIN
+     Secondary build target: X86_DARWIN
+           Platform variant: vanilla
+      Primary -DVGPV string: -DVGPV_amd64_darwin_vanilla=1
+         Default supp files: exp-sgcheck.supp xfree-3.supp xfree-4.supp darwin10-drd.supp darwin16.supp
+
+    $  make
+    ...
+    ld: symbol(s) not found for architecture x86_64
+    make[3]: *** [memcheck-amd64-darwin] Error 1
+    make[2]: *** [all-recursive] Error 1
+    make[1]: *** [all-recursive] Error 1
+    make: *** [all] Error 2
+    $  sudo make install
+    Password:
+    ...
+    Undefined symbols for architecture x86_64:
+      "___bzero", referenced from:
+          _hijack_thread_state in libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-amd64-darwin.o)
+          _RRegUniverse__init in libvex-amd64-darwin.a(libvex_amd64_darwin_a-host_generic_regs.o)
+    ld: symbol(s) not found for architecture x86_64
+    make[3]: *** [memcheck-amd64-darwin] Error 1
+    make[2]: *** [install-recursive] Error 1
+    make[1]: *** [install-recursive] Error 1
+    make: *** [install] Error 2
+    $  valgrind ls -l
+    valgrind: tool 'memcheck' not installed (/usr/local/lib/valgrind/memcheck-amd64-darwin) (No such file or directory)
+    ```
+    - [possible fix?](http://valgrind.10908.n7.nabble.com/Unable-to-compile-on-Mac-OS-X-10-11-td57237.html) Change: "coregrind/m_main.c" from: `#if defined(VGO_darwin) && DARWIN_VERS == DARWIN_10_10` to `#if defined(VGO_darwin)`
+    ```console
+    $  brew install valgrind
+    valgrind: This formula either does not compile or function as expected on macOS
+    versions newer than El Capitan due to an upstream incompatibility.
+    Error: An unsatisfied requirement failed this build.
+
+
     ```
 
 <details><summary>Click here for some fun info on Valgrynd</summary><p>
