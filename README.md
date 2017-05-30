@@ -1,6 +1,6 @@
 # Learn-C-The-Hard-Way
 Zed A. Shaw's C Programming Tutorial, an old version of "(Learn C The Hard Way)[https://web.archive.org/web/20140722163343/http://c.learncodethehardway.org:80/book/]"  
-
+- https://github.com/zedshaw/learn-c-the-hard-way-lectures
 1. I am working with Terminal.app version 2.7.2 (388.1) on macOS Sierra version 10.12.5 (16F73), Kernel Version: Darwin 16.6.0.  
 2. When including quotes from the tutorial I will try and append "(ZAS)"  
 
@@ -72,7 +72,6 @@ int main()
 
 [See 1.2.c for a warning free example using "void" and compiling with CFLAGS='-WCL4'](01/1.2.c)
 
-
 # Exercise 2: Make Is Your Python Now
 <details><summary>Notes to myself:</summary>  
 
@@ -105,4 +104,21 @@ What is a .dSYM directory for? When I run the command make using Makefile, I end
 [c file, Makefile and Extra Credit](03/)
 
 # Exercise 4: Introducing Valgrind
-[c file, Makefile and Extra Credit](04/)
+[Introducing Valgrind](04/)
+- http://valgrind.org/
+### Installing Valgrind
+  - [Valgrind on macOS Sierra?](https://stackoverflow.com/questions/40650338/valgrind-on-macos-sierra)
+  - https://bugs.kde.org/show_bug.cgi?id=365327
+  - https://stackoverflow.com/a/43431715/5225057
+  - http://valgrind.org/downloads/current.html#current
+    - md5: 6eb03c0c10ea917013a7622e483d61bb
+    ```green
+    $  curl -O http://valgrind.org/downloads/valgrind-3.12.0.tar.bz2
+      % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                     Dload  Upload   Total   Spent    Left  Speed
+    100 12.1M  100 12.1M    0     0  1213k      0  0:00:10  0:00:10 --:--:-- 1372k
+    $  md5 valgrind-3.12.0.tar.bz2
+    MD5 (valgrind-3.12.0.tar.bz2) = 6eb03c0c10ea917013a7622e483d61bb
+
+
+    ```
