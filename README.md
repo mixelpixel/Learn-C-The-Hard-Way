@@ -112,7 +112,7 @@ What is a .dSYM directory for? When I run the command make using Makefile, I end
   - https://stackoverflow.com/a/43431715/5225057
   - http://valgrind.org/downloads/current.html#current
     - md5: 6eb03c0c10ea917013a7622e483d61bb
-    ```green
+    ```console
     $  curl -O http://valgrind.org/downloads/valgrind-3.12.0.tar.bz2
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
