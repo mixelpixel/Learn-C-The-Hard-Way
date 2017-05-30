@@ -128,7 +128,7 @@ What is a .dSYM directory for? When I run the command make using Makefile, I end
 > The "Val" as in the word "value". The "grind" is pronounced with a short 'i' -- ie. "grinned" (rhymes with "tinned") rather than "grined" (rhymes with "find").
 >  
 > Don't feel bad: almost everyone gets it wrong at first.
-> ------------------------------------------------------------------------
+> ***
 >  
 > 1.2. Where does the name "Valgrind" come from?
 > From Nordic mythology. Originally (before release) the project was named Heimdall, after the watchman of the Nordic gods. He could "see a hundred miles by day or night, hear the grass growing, see the wool growing on a sheep's back", etc. This would have been a great name, but it was already taken by a security package "Heimdal".
