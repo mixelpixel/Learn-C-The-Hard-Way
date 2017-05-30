@@ -162,8 +162,7 @@ What is a .dSYM directory for? When I run the command make using Makefile, I end
     valgrind: This formula either does not compile or function as expected on macOS
     versions newer than El Capitan due to an upstream incompatibility.
     Error: An unsatisfied requirement failed this build.
-
-
+    $
     ```
 
 <details><summary>Click here for some fun info on Valgrynd</summary><p>
