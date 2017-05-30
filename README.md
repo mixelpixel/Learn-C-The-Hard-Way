@@ -119,6 +119,21 @@ What is a .dSYM directory for? When I run the command make using Makefile, I end
     100 12.1M  100 12.1M    0     0  1213k      0  0:00:10  0:00:10 --:--:-- 1372k
     $  md5 valgrind-3.12.0.tar.bz2
     MD5 (valgrind-3.12.0.tar.bz2) = 6eb03c0c10ea917013a7622e483d61bb
-
-
+    $  tar -xjvf valgrind-3.12.0.tar.bz2
     ```
+
+<details><summary>Click here for some fun info on Valgrynd</summary><p>
+    > 1.1. How do you pronounce "Valgrind"?  
+    > The "Val" as in the word "value". The "grind" is pronounced with a short 'i' -- ie. "grinned" (rhymes with "tinned") rather than "grined" (rhymes with "find").
+    >  
+    > Don't feel bad: almost everyone gets it wrong at first.
+    > ------------------------------------------------------------------------
+    >  
+    > 1.2. Where does the name "Valgrind" come from?
+    > From Nordic mythology. Originally (before release) the project was named Heimdall, after the watchman of the Nordic gods. He could "see a hundred miles by day or night, hear the grass growing, see the wool growing on a sheep's back", etc. This would have been a great name, but it was already taken by a security package "Heimdal".
+    >  
+    > Keeping with the Nordic theme, Valgrind was chosen. Valgrind is the name  of the main entrance to Valhalla (the Hall of the Chosen Slain in Asgard). Over this entrance there resides a wolf and over it there is the head of a boar and on it perches a huge eagle, whose eyes can see to the far regions of the nine worlds. Only those judged worthy by the guardians are allowed to pass through Valgrind. All others are refused entrance.
+    >
+    > It's not short for "value grinder", although that's not a bad guess.
+
+</p></details>
