@@ -8922,7 +8922,12 @@ make[2]: Nothing to be done for `all'.
 Making all in docs
 make[2]: Nothing to be done for `all'.
 ```
+
 # sudo make install
+```console
+Password:
+
+```
 
 
 </p></details>
