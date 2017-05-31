@@ -125,7 +125,7 @@ What is a .dSYM directory for? When I run the command make using Makefile, I end
     $  cd valgrind-3.12.0
     $  open FAQ.txt
     $  ./configure
-
+    ...
          Maximum build arch: amd64
          Primary build arch: amd64
        Secondary build arch: x86
