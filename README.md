@@ -158,7 +158,10 @@ What is a .dSYM directory for? When I run the command make using Makefile, I end
     $  valgrind ls -l
     valgrind: tool 'memcheck' not installed (/usr/local/lib/valgrind/memcheck-amd64-darwin) (No such file or directory)
     ```
-    - [possible fix?](http://valgrind.10908.n7.nabble.com/Unable-to-compile-on-Mac-OS-X-10-11-td57237.html) Change: "coregrind/m_main.c" from: `#if defined(VGO_darwin) && DARWIN_VERS == DARWIN_10_10` to `#if defined(VGO_darwin)`
+    - [possible fix?](http://valgrind.10908.n7.nabble.com/Unable-to-compile-on-Mac-OS-X-10-11-td57237.html)
+    - Change: "coregrind/m_main.c" from:
+      - `#if defined(VGO_darwin) && DARWIN_VERS == DARWIN_10_10` to:
+      - `#if defined(VGO_darwin)`
     ```console
     $  brew install valgrind
     valgrind: This formula either does not compile or function as expected on macOS
