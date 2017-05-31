@@ -174,8 +174,8 @@ See: [pt1](Valgrind_pt1.md) & [pt2](Valgrind_pt2.md)
 
 <details><summary>Click here for some fun info on Valgrynd</summary><p>
 
-https://dot.kde.org/2006/02/21/interview-valgrind-author-julian-seward
-http://valgrind.org/docs/download_docs.html
+https://dot.kde.org/2006/02/21/interview-valgrind-author-julian-seward  
+http://valgrind.org/docs/download_docs.html  
 
 > 1.1. How do you pronounce "Valgrind"?  
 > The "Val" as in the word "value". The "grind" is pronounced with a short 'i' -- ie. "grinned" (rhymes with "tinned") rather than "grined" (rhymes with "find").  
