@@ -164,17 +164,20 @@ What is a .dSYM directory for? When I run the command make using Makefile, I end
     valgrind: This formula either does not compile or function as expected on macOS
     versions newer than El Capitan due to an upstream incompatibility.
     Error: An unsatisfied requirement failed this build.
-    $
     ```
 
 <details><summary> Installing Valgrind Notes & Reports</summary><p>
 
+# curl
 ```console
 $  curl -O http://valgrind.org/downloads/valgrind-3.12.0.tar.bz2
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100 12.1M  100 12.1M    0     0   310k      0  0:00:40  0:00:40 --:--:--  302k
+```
 
+# md5
+```console
 $  md5 valgrind-3.12.0.tar.bz2
 MD5 (valgrind-3.12.0.tar.bz2) = 6eb03c0c10ea917013a7622e483d61bb
 ```
@@ -8924,6 +8927,7 @@ make[2]: Nothing to be done for `all'.
 
 </p></details>
 
+# OOF-AH!
 
 <details><summary>Click here for some fun info on Valgrynd</summary><p>
 
