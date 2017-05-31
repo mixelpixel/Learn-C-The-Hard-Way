@@ -167,7 +167,7 @@ What is a .dSYM directory for? When I run the command make using Makefile, I end
     ```
 
 # OOF-AH!
-See: [pt1](Valgrind_pt1.md) & [pt2](Valgrind_pt2)
+See: [pt1](Valgrind_pt1.md) & [pt2](Valgrind_pt2.md)
 
 <details><summary>Click here for some fun info on Valgrynd</summary><p>
 
