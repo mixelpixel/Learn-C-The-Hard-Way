@@ -7,11 +7,11 @@
 // REMOVED the && conditional
 #if defined(VGO_darwin)
 // WAS: #if defined(VGO_darwin) && DARWIN_VERS == DARWIN_10_10, maybe instead `#if defined(VGO_darwin) && DARWIN_VERS >= DARWIN_10_10` (?) per the note below:
-/\* This might also be needed for > DARWIN_10_10, but I have no way
+/* This might also be needed for > DARWIN_10_10, but I have no way
    to test for that.  Hence '==' rather than '>=' in the version
-   test above. \*/
-void \__bzero ( void* s, UWord n );
-void \__bzero ( void* s, UWord n )
+   test above. */
+void __bzero ( void* s, UWord n );
+void __bzero ( void* s, UWord n )
 {
    (void) VG_(memset)( s, 0, n );
 }
