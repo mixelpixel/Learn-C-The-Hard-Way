@@ -8926,10 +8926,1514 @@ make[2]: Nothing to be done for `all'.
 # sudo make install
 ```console
 Password:
-
+$  sudo make install
+Password:
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  install-recursive
+Making install in include
+make[3]: Nothing to be done for `install-exec-am'.
+ .././install-sh -c -d '/usr/local/include/valgrind'
+ /usr/bin/install -c -m 644  pub_tool_basics.h pub_tool_basics_asm.h pub_tool_addrinfo.h pub_tool_aspacehl.h pub_tool_aspacemgr.h pub_tool_clientstate.h pub_tool_clreq.h pub_tool_deduppoolalloc.h pub_tool_debuginfo.h pub_tool_errormgr.h pub_tool_execontext.h pub_tool_gdbserver.h pub_tool_guest.h pub_tool_poolalloc.h pub_tool_hashtable.h pub_tool_libcbase.h pub_tool_libcassert.h pub_tool_libcfile.h pub_tool_libcprint.h pub_tool_libcproc.h pub_tool_libcsetjmp.h pub_tool_libcsignal.h pub_tool_machine.h pub_tool_mallocfree.h pub_tool_options.h pub_tool_oset.h pub_tool_rangemap.h pub_tool_redir.h pub_tool_replacemalloc.h pub_tool_seqmatch.h pub_tool_signals.h pub_tool_sparsewa.h pub_tool_stacktrace.h pub_tool_threadstate.h pub_tool_tooliface.h pub_tool_transtab.h pub_tool_vki.h pub_tool_vkiscnums.h pub_tool_vkiscnums_asm.h pub_tool_wordfm.h '/usr/local/include/valgrind/.'
+ .././install-sh -c -d '/usr/local/include/valgrind/vki'
+ /usr/bin/install -c -m 644  vki/vki-linux.h vki/vki-darwin.h vki/vki-solaris.h vki/vki-solaris-repcache.h vki/vki-posixtypes-amd64-linux.h vki/vki-posixtypes-arm64-linux.h vki/vki-posixtypes-ppc32-linux.h vki/vki-posixtypes-ppc64-linux.h vki/vki-posixtypes-x86-linux.h vki/vki-posixtypes-arm-linux.h vki/vki-posixtypes-s390x-linux.h vki/vki-posixtypes-mips32-linux.h vki/vki-posixtypes-mips64-linux.h vki/vki-amd64-linux.h vki/vki-arm64-linux.h vki/vki-ppc32-linux.h vki/vki-ppc64-linux.h vki/vki-x86-linux.h vki/vki-arm-linux.h vki/vki-s390x-linux.h vki/vki-mips32-linux.h vki/vki-mips64-linux.h vki/vki-scnums-amd64-linux.h vki/vki-scnums-arm64-linux.h vki/vki-scnums-ppc32-linux.h vki/vki-scnums-ppc64-linux.h vki/vki-scnums-x86-linux.h vki/vki-scnums-arm-linux.h vki/vki-scnums-s390x-linux.h vki/vki-scnums-mips32-linux.h vki/vki-scnums-mips64-linux.h vki/vki-scnums-darwin.h vki/vki-scnums-solaris.h vki/vki-xen.h vki/vki-xen-domctl.h vki/vki-xen-evtchn.h vki/vki-xen-gnttab.h vki/vki-xen-hvm.h vki/vki-xen-memory.h vki/vki-xen-mmuext.h '/usr/local/include/valgrind/vki'
+ .././install-sh -c -d '/usr/local/include/valgrind/vki'
+ /usr/bin/install -c -m 644  vki/vki-xen-physdev.h vki/vki-xen-schedop.h vki/vki-xen-sysctl.h vki/vki-xen-tmem.h vki/vki-xen-version.h vki/vki-xen-xsm.h vki/vki-xen-x86.h vki/vki-linux-drm.h '/usr/local/include/valgrind/vki'
+ /usr/bin/install -c -m 644  pub_tool_xarray.h valgrind.h '/usr/local/include/valgrind/.'
+Making install in VEX
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  install-am
+ .././install-sh -c -d '/usr/local/lib/valgrind'
+ /usr/bin/install -c -m 644  libvex-amd64-darwin.a libvexmultiarch-amd64-darwin.a libvex-x86-darwin.a libvexmultiarch-x86-darwin.a '/usr/local/lib/valgrind'
+ ( cd '/usr/local/lib/valgrind' && ranlib libvex-amd64-darwin.a )
+ ( cd '/usr/local/lib/valgrind' && ranlib libvexmultiarch-amd64-darwin.a )
+ ( cd '/usr/local/lib/valgrind' && ranlib libvex-x86-darwin.a )
+ ( cd '/usr/local/lib/valgrind' && ranlib libvexmultiarch-x86-darwin.a )
+ .././install-sh -c -d '/usr/local/include/valgrind'
+ /usr/bin/install -c -m 644 pub/libvex.h pub/libvex_basictypes.h pub/libvex_emnote.h pub/libvex_guest_offsets.h pub/libvex_guest_x86.h pub/libvex_guest_amd64.h pub/libvex_guest_ppc32.h pub/libvex_guest_ppc64.h pub/libvex_guest_arm.h pub/libvex_guest_arm64.h pub/libvex_guest_s390x.h pub/libvex_guest_mips32.h pub/libvex_guest_mips64.h pub/libvex_guest_tilegx.h pub/libvex_s390x_common.h pub/libvex_ir.h pub/libvex_trc_values.h '/usr/local/include/valgrind'
+Making install in coregrind
+(cd m_mach && mig /usr/include/mach/mach_vm.defs /usr/include/mach/task.defs /usr/include/mach/thread_act.defs /usr/include/mach/vm_map.defs)
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  install-am
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../VEX/pub -I../VEX/pub -DVGA_amd64=1 -DVGO_darwin=1 -DVGP_amd64_darwin=1 -DVGPV_amd64_darwin_vanilla=1 -I../coregrind -DVG_LIBDIR="\"/usr/local/lib/valgrind"\" -DVG_PLATFORM="\"amd64-darwin\""   -arch x86_64 -O2 -g -std=gnu99 -Wall -Wmissing-prototypes -Wshadow -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wcast-align -Wcast-qual -Wwrite-strings -Wempty-body -Wformat -Wformat-security -Wignored-qualifiers -fno-stack-protector -fno-strict-aliasing -fno-builtin -Wno-cast-align -Wno-self-assign -Wno-tautological-compare -mmacosx-version-min=10.6 -fno-stack-protector   -MT m_mach/libcoregrind_amd64_darwin_a-mach_vmUser.o -MD -MP -MF m_mach/.deps/libcoregrind_amd64_darwin_a-mach_vmUser.Tpo -c -o m_mach/libcoregrind_amd64_darwin_a-mach_vmUser.o `test -f 'm_mach/mach_vmUser.c' || echo './'`m_mach/mach_vmUser.c
+mv -f m_mach/.deps/libcoregrind_amd64_darwin_a-mach_vmUser.Tpo m_mach/.deps/libcoregrind_amd64_darwin_a-mach_vmUser.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../VEX/pub -I../VEX/pub -DVGA_amd64=1 -DVGO_darwin=1 -DVGP_amd64_darwin=1 -DVGPV_amd64_darwin_vanilla=1 -I../coregrind -DVG_LIBDIR="\"/usr/local/lib/valgrind"\" -DVG_PLATFORM="\"amd64-darwin\""   -arch x86_64 -O2 -g -std=gnu99 -Wall -Wmissing-prototypes -Wshadow -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wcast-align -Wcast-qual -Wwrite-strings -Wempty-body -Wformat -Wformat-security -Wignored-qualifiers -fno-stack-protector -fno-strict-aliasing -fno-builtin -Wno-cast-align -Wno-self-assign -Wno-tautological-compare -mmacosx-version-min=10.6 -fno-stack-protector   -MT m_mach/libcoregrind_amd64_darwin_a-taskUser.o -MD -MP -MF m_mach/.deps/libcoregrind_amd64_darwin_a-taskUser.Tpo -c -o m_mach/libcoregrind_amd64_darwin_a-taskUser.o `test -f 'm_mach/taskUser.c' || echo './'`m_mach/taskUser.c
+mv -f m_mach/.deps/libcoregrind_amd64_darwin_a-taskUser.Tpo m_mach/.deps/libcoregrind_amd64_darwin_a-taskUser.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../VEX/pub -I../VEX/pub -DVGA_amd64=1 -DVGO_darwin=1 -DVGP_amd64_darwin=1 -DVGPV_amd64_darwin_vanilla=1 -I../coregrind -DVG_LIBDIR="\"/usr/local/lib/valgrind"\" -DVG_PLATFORM="\"amd64-darwin\""   -arch x86_64 -O2 -g -std=gnu99 -Wall -Wmissing-prototypes -Wshadow -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wcast-align -Wcast-qual -Wwrite-strings -Wempty-body -Wformat -Wformat-security -Wignored-qualifiers -fno-stack-protector -fno-strict-aliasing -fno-builtin -Wno-cast-align -Wno-self-assign -Wno-tautological-compare -mmacosx-version-min=10.6 -fno-stack-protector   -MT m_mach/libcoregrind_amd64_darwin_a-thread_actUser.o -MD -MP -MF m_mach/.deps/libcoregrind_amd64_darwin_a-thread_actUser.Tpo -c -o m_mach/libcoregrind_amd64_darwin_a-thread_actUser.o `test -f 'm_mach/thread_actUser.c' || echo './'`m_mach/thread_actUser.c
+mv -f m_mach/.deps/libcoregrind_amd64_darwin_a-thread_actUser.Tpo m_mach/.deps/libcoregrind_amd64_darwin_a-thread_actUser.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../VEX/pub -I../VEX/pub -DVGA_amd64=1 -DVGO_darwin=1 -DVGP_amd64_darwin=1 -DVGPV_amd64_darwin_vanilla=1 -I../coregrind -DVG_LIBDIR="\"/usr/local/lib/valgrind"\" -DVG_PLATFORM="\"amd64-darwin\""   -arch x86_64 -O2 -g -std=gnu99 -Wall -Wmissing-prototypes -Wshadow -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wcast-align -Wcast-qual -Wwrite-strings -Wempty-body -Wformat -Wformat-security -Wignored-qualifiers -fno-stack-protector -fno-strict-aliasing -fno-builtin -Wno-cast-align -Wno-self-assign -Wno-tautological-compare -mmacosx-version-min=10.6 -fno-stack-protector   -MT m_mach/libcoregrind_amd64_darwin_a-vm_mapUser.o -MD -MP -MF m_mach/.deps/libcoregrind_amd64_darwin_a-vm_mapUser.Tpo -c -o m_mach/libcoregrind_amd64_darwin_a-vm_mapUser.o `test -f 'm_mach/vm_mapUser.c' || echo './'`m_mach/vm_mapUser.c
+mv -f m_mach/.deps/libcoregrind_amd64_darwin_a-vm_mapUser.Tpo m_mach/.deps/libcoregrind_amd64_darwin_a-vm_mapUser.Po
+rm -f libcoregrind-amd64-darwin.a
+/usr/bin/ar cru libcoregrind-amd64-darwin.a libcoregrind_amd64_darwin_a-m_addrinfo.o libcoregrind_amd64_darwin_a-m_cache.o libcoregrind_amd64_darwin_a-m_commandline.o libcoregrind_amd64_darwin_a-m_compiler.o libcoregrind_amd64_darwin_a-m_clientstate.o libcoregrind_amd64_darwin_a-m_cpuid.o libcoregrind_amd64_darwin_a-m_deduppoolalloc.o libcoregrind_amd64_darwin_a-m_debuglog.o libcoregrind_amd64_darwin_a-m_errormgr.o libcoregrind_amd64_darwin_a-m_execontext.o libcoregrind_amd64_darwin_a-m_hashtable.o libcoregrind_amd64_darwin_a-m_libcbase.o libcoregrind_amd64_darwin_a-m_libcassert.o libcoregrind_amd64_darwin_a-m_libcfile.o libcoregrind_amd64_darwin_a-m_libcprint.o libcoregrind_amd64_darwin_a-m_libcproc.o libcoregrind_amd64_darwin_a-m_libcsetjmp.o libcoregrind_amd64_darwin_a-m_libcsignal.o libcoregrind_amd64_darwin_a-m_machine.o libcoregrind_amd64_darwin_a-m_main.o libcoregrind_amd64_darwin_a-m_mallocfree.o libcoregrind_amd64_darwin_a-m_options.o libcoregrind_amd64_darwin_a-m_oset.o libcoregrind_amd64_darwin_a-m_poolalloc.o libcoregrind_amd64_darwin_a-m_rangemap.o libcoregrind_amd64_darwin_a-m_redir.o libcoregrind_amd64_darwin_a-m_sbprofile.o libcoregrind_amd64_darwin_a-m_seqmatch.o libcoregrind_amd64_darwin_a-m_signals.o libcoregrind_amd64_darwin_a-m_sparsewa.o libcoregrind_amd64_darwin_a-m_stacks.o libcoregrind_amd64_darwin_a-m_stacktrace.o libcoregrind_amd64_darwin_a-m_syscall.o libcoregrind_amd64_darwin_a-m_threadstate.o libcoregrind_amd64_darwin_a-m_tooliface.o libcoregrind_amd64_darwin_a-m_trampoline.o libcoregrind_amd64_darwin_a-m_translate.o libcoregrind_amd64_darwin_a-m_transtab.o libcoregrind_amd64_darwin_a-m_vki.o libcoregrind_amd64_darwin_a-m_vkiscnums.o libcoregrind_amd64_darwin_a-m_wordfm.o libcoregrind_amd64_darwin_a-m_xarray.o libcoregrind_amd64_darwin_a-m_aspacehl.o m_aspacemgr/libcoregrind_amd64_darwin_a-aspacemgr-common.o m_aspacemgr/libcoregrind_amd64_darwin_a-aspacemgr-linux.o m_aspacemgr/libcoregrind_amd64_darwin_a-aspacemgr-segnames.o m_coredump/libcoregrind_amd64_darwin_a-coredump-elf.o m_coredump/libcoregrind_amd64_darwin_a-coredump-macho.o m_coredump/libcoregrind_amd64_darwin_a-coredump-solaris.o m_debuginfo/libcoregrind_amd64_darwin_a-misc.o m_debuginfo/libcoregrind_amd64_darwin_a-d3basics.o m_debuginfo/libcoregrind_amd64_darwin_a-debuginfo.o m_debuginfo/libcoregrind_amd64_darwin_a-image.o m_debuginfo/libcoregrind_amd64_darwin_a-minilzo-inl.o m_debuginfo/libcoregrind_amd64_darwin_a-readdwarf.o m_debuginfo/libcoregrind_amd64_darwin_a-readdwarf3.o m_debuginfo/libcoregrind_amd64_darwin_a-readelf.o m_debuginfo/libcoregrind_amd64_darwin_a-readexidx.o m_debuginfo/libcoregrind_amd64_darwin_a-readmacho.o m_debuginfo/libcoregrind_amd64_darwin_a-readpdb.o m_debuginfo/libcoregrind_amd64_darwin_a-storage.o m_debuginfo/libcoregrind_amd64_darwin_a-tinfl.o m_debuginfo/libcoregrind_amd64_darwin_a-tytypes.o m_demangle/libcoregrind_amd64_darwin_a-cp-demangle.o m_demangle/libcoregrind_amd64_darwin_a-cplus-dem.o m_demangle/libcoregrind_amd64_darwin_a-demangle.o m_demangle/libcoregrind_amd64_darwin_a-dyn-string.o m_demangle/libcoregrind_amd64_darwin_a-d-demangle.o m_demangle/libcoregrind_amd64_darwin_a-safe-ctype.o m_dispatch/libcoregrind_amd64_darwin_a-dispatch-x86-linux.o m_dispatch/libcoregrind_amd64_darwin_a-dispatch-amd64-linux.o m_dispatch/libcoregrind_amd64_darwin_a-dispatch-ppc32-linux.o m_dispatch/libcoregrind_amd64_darwin_a-dispatch-ppc64be-linux.o m_dispatch/libcoregrind_amd64_darwin_a-dispatch-ppc64le-linux.o m_dispatch/libcoregrind_amd64_darwin_a-dispatch-arm-linux.o m_dispatch/libcoregrind_amd64_darwin_a-dispatch-arm64-linux.o m_dispatch/libcoregrind_amd64_darwin_a-dispatch-s390x-linux.o m_dispatch/libcoregrind_amd64_darwin_a-dispatch-mips32-linux.o m_dispatch/libcoregrind_amd64_darwin_a-dispatch-mips64-linux.o m_dispatch/libcoregrind_amd64_darwin_a-dispatch-tilegx-linux.o m_dispatch/libcoregrind_amd64_darwin_a-dispatch-x86-darwin.o m_dispatch/libcoregrind_amd64_darwin_a-dispatch-amd64-darwin.o m_dispatch/libcoregrind_amd64_darwin_a-dispatch-x86-solaris.o m_dispatch/libcoregrind_amd64_darwin_a-dispatch-amd64-solaris.o m_gdbserver/libcoregrind_amd64_darwin_a-inferiors.o m_gdbserver/libcoregrind_amd64_darwin_a-m_gdbserver.o m_gdbserver/libcoregrind_amd64_darwin_a-regcache.o m_gdbserver/libcoregrind_amd64_darwin_a-remote-utils.o m_gdbserver/libcoregrind_amd64_darwin_a-server.o m_gdbserver/libcoregrind_amd64_darwin_a-signals.o m_gdbserver/libcoregrind_amd64_darwin_a-target.o m_gdbserver/libcoregrind_amd64_darwin_a-utils.o m_gdbserver/libcoregrind_amd64_darwin_a-valgrind-low-x86.o m_gdbserver/libcoregrind_amd64_darwin_a-valgrind-low-amd64.o m_gdbserver/libcoregrind_amd64_darwin_a-valgrind-low-arm.o m_gdbserver/libcoregrind_amd64_darwin_a-valgrind-low-arm64.o m_gdbserver/libcoregrind_amd64_darwin_a-valgrind-low-ppc32.o m_gdbserver/libcoregrind_amd64_darwin_a-valgrind-low-ppc64.o m_gdbserver/libcoregrind_amd64_darwin_a-valgrind-low-s390x.o m_gdbserver/libcoregrind_amd64_darwin_a-valgrind-low-mips32.o m_gdbserver/libcoregrind_amd64_darwin_a-valgrind-low-mips64.o m_gdbserver/libcoregrind_amd64_darwin_a-valgrind-low-tilegx.o m_gdbserver/libcoregrind_amd64_darwin_a-version.o m_initimg/libcoregrind_amd64_darwin_a-initimg-linux.o m_initimg/libcoregrind_amd64_darwin_a-initimg-darwin.o m_initimg/libcoregrind_amd64_darwin_a-initimg-solaris.o m_initimg/libcoregrind_amd64_darwin_a-initimg-pathscan.o m_mach/libcoregrind_amd64_darwin_a-mach_basics.o m_mach/libcoregrind_amd64_darwin_a-mach_msg.o m_mach/libcoregrind_amd64_darwin_a-mach_traps-x86-darwin.o m_mach/libcoregrind_amd64_darwin_a-mach_traps-amd64-darwin.o m_replacemalloc/libcoregrind_amd64_darwin_a-replacemalloc_core.o m_scheduler/libcoregrind_amd64_darwin_a-sched-lock.o m_scheduler/libcoregrind_amd64_darwin_a-sched-lock-generic.o m_scheduler/libcoregrind_amd64_darwin_a-scheduler.o m_scheduler/libcoregrind_amd64_darwin_a-sema.o m_sigframe/libcoregrind_amd64_darwin_a-sigframe-common.o m_sigframe/libcoregrind_amd64_darwin_a-sigframe-x86-linux.o m_sigframe/libcoregrind_amd64_darwin_a-sigframe-amd64-linux.o m_sigframe/libcoregrind_amd64_darwin_a-sigframe-ppc32-linux.o m_sigframe/libcoregrind_amd64_darwin_a-sigframe-ppc64-linux.o m_sigframe/libcoregrind_amd64_darwin_a-sigframe-arm-linux.o m_sigframe/libcoregrind_amd64_darwin_a-sigframe-arm64-linux.o m_sigframe/libcoregrind_amd64_darwin_a-sigframe-s390x-linux.o m_sigframe/libcoregrind_amd64_darwin_a-sigframe-mips32-linux.o m_sigframe/libcoregrind_amd64_darwin_a-sigframe-mips64-linux.o m_sigframe/libcoregrind_amd64_darwin_a-sigframe-tilegx-linux.o m_sigframe/libcoregrind_amd64_darwin_a-sigframe-x86-darwin.o m_sigframe/libcoregrind_amd64_darwin_a-sigframe-amd64-darwin.o m_sigframe/libcoregrind_amd64_darwin_a-sigframe-solaris.o m_syswrap/libcoregrind_amd64_darwin_a-syscall-x86-linux.o m_syswrap/libcoregrind_amd64_darwin_a-syscall-amd64-linux.o m_syswrap/libcoregrind_amd64_darwin_a-syscall-ppc32-linux.o m_syswrap/libcoregrind_amd64_darwin_a-syscall-ppc64be-linux.o m_syswrap/libcoregrind_amd64_darwin_a-syscall-ppc64le-linux.o m_syswrap/libcoregrind_amd64_darwin_a-syscall-arm-linux.o m_syswrap/libcoregrind_amd64_darwin_a-syscall-arm64-linux.o m_syswrap/libcoregrind_amd64_darwin_a-syscall-s390x-linux.o m_syswrap/libcoregrind_amd64_darwin_a-syscall-mips32-linux.o m_syswrap/libcoregrind_amd64_darwin_a-syscall-mips64-linux.o m_syswrap/libcoregrind_amd64_darwin_a-syscall-tilegx-linux.o m_syswrap/libcoregrind_amd64_darwin_a-syscall-x86-darwin.o m_syswrap/libcoregrind_amd64_darwin_a-syscall-amd64-darwin.o m_syswrap/libcoregrind_amd64_darwin_a-syscall-x86-solaris.o m_syswrap/libcoregrind_amd64_darwin_a-syscall-amd64-solaris.o m_syswrap/libcoregrind_amd64_darwin_a-syswrap-main.o m_syswrap/libcoregrind_amd64_darwin_a-syswrap-generic.o m_syswrap/libcoregrind_amd64_darwin_a-syswrap-linux.o m_syswrap/libcoregrind_amd64_darwin_a-syswrap-linux-variants.o m_syswrap/libcoregrind_amd64_darwin_a-syswrap-darwin.o m_syswrap/libcoregrind_amd64_darwin_a-syswrap-solaris.o m_syswrap/libcoregrind_amd64_darwin_a-syswrap-x86-linux.o m_syswrap/libcoregrind_amd64_darwin_a-syswrap-amd64-linux.o m_syswrap/libcoregrind_amd64_darwin_a-syswrap-ppc32-linux.o m_syswrap/libcoregrind_amd64_darwin_a-syswrap-ppc64-linux.o m_syswrap/libcoregrind_amd64_darwin_a-syswrap-arm-linux.o m_syswrap/libcoregrind_amd64_darwin_a-syswrap-arm64-linux.o m_syswrap/libcoregrind_amd64_darwin_a-syswrap-s390x-linux.o m_syswrap/libcoregrind_amd64_darwin_a-syswrap-mips32-linux.o m_syswrap/libcoregrind_amd64_darwin_a-syswrap-mips64-linux.o m_syswrap/libcoregrind_amd64_darwin_a-syswrap-tilegx-linux.o m_syswrap/libcoregrind_amd64_darwin_a-syswrap-x86-darwin.o m_syswrap/libcoregrind_amd64_darwin_a-syswrap-amd64-darwin.o m_syswrap/libcoregrind_amd64_darwin_a-syswrap-xen.o m_syswrap/libcoregrind_amd64_darwin_a-syswrap-x86-solaris.o m_syswrap/libcoregrind_amd64_darwin_a-syswrap-amd64-solaris.o m_ume/libcoregrind_amd64_darwin_a-elf.o m_ume/libcoregrind_amd64_darwin_a-macho.o m_ume/libcoregrind_amd64_darwin_a-main.o m_ume/libcoregrind_amd64_darwin_a-script.o  m_mach/libcoregrind_amd64_darwin_a-mach_vmUser.o m_mach/libcoregrind_amd64_darwin_a-taskUser.o m_mach/libcoregrind_amd64_darwin_a-thread_actUser.o m_mach/libcoregrind_amd64_darwin_a-vm_mapUser.o  
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-coredump-elf.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-coredump-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-readelf.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-readexidx.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-x86-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-amd64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-ppc32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-ppc64be-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-ppc64le-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-arm-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-arm64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-s390x-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-mips32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-mips64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-tilegx-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-x86-darwin.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-x86-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-amd64-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-initimg-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-initimg-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-mach_traps-x86-darwin.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-x86-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-amd64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-ppc32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-ppc64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-arm-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-arm64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-s390x-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-mips32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-mips64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-tilegx-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-x86-darwin.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-x86-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-amd64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-ppc32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-ppc64be-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-ppc64le-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-arm-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-arm64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-s390x-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-mips32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-mips64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-tilegx-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-x86-darwin.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-x86-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-amd64-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-linux-variants.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-x86-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-amd64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-ppc32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-ppc64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-arm-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-arm64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-s390x-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-mips32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-mips64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-tilegx-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-x86-darwin.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-xen.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-x86-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-amd64-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-elf.o) has no symbols
+ranlib libcoregrind-amd64-darwin.a
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-coredump-elf.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-coredump-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-readelf.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-readexidx.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-x86-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-amd64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-ppc32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-ppc64be-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-ppc64le-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-arm-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-arm64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-s390x-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-mips32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-mips64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-tilegx-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-x86-darwin.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-x86-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-amd64-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-initimg-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-initimg-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-mach_traps-x86-darwin.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-x86-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-amd64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-ppc32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-ppc64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-arm-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-arm64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-s390x-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-mips32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-mips64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-tilegx-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-x86-darwin.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-x86-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-amd64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-ppc32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-ppc64be-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-ppc64le-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-arm-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-arm64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-s390x-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-mips32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-mips64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-tilegx-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-x86-darwin.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-x86-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-amd64-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-linux-variants.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-x86-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-amd64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-ppc32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-ppc64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-arm-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-arm64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-s390x-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-mips32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-mips64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-tilegx-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-x86-darwin.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-xen.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-x86-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-amd64-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-elf.o) has no symbols
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../VEX/pub -I../VEX/pub -DVGA_x86=1 -DVGO_darwin=1 -DVGP_x86_darwin=1 -DVGPV_x86_darwin_vanilla=1 -I../coregrind -DVG_LIBDIR="\"/usr/local/lib/valgrind"\" -DVG_PLATFORM="\"x86-darwin\""   -arch i386 -O2 -g -std=gnu99 -Wall -Wmissing-prototypes -Wshadow -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wcast-align -Wcast-qual -Wwrite-strings -Wempty-body -Wformat -Wformat-security -Wignored-qualifiers -fno-stack-protector -fno-strict-aliasing -fno-builtin -Wno-cast-align -Wno-self-assign -Wno-tautological-compare -mmacosx-version-min=10.6 -fno-stack-protector -fno-pic -fno-PIC   -MT m_mach/libcoregrind_x86_darwin_a-mach_vmUser.o -MD -MP -MF m_mach/.deps/libcoregrind_x86_darwin_a-mach_vmUser.Tpo -c -o m_mach/libcoregrind_x86_darwin_a-mach_vmUser.o `test -f 'm_mach/mach_vmUser.c' || echo './'`m_mach/mach_vmUser.c
+mv -f m_mach/.deps/libcoregrind_x86_darwin_a-mach_vmUser.Tpo m_mach/.deps/libcoregrind_x86_darwin_a-mach_vmUser.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../VEX/pub -I../VEX/pub -DVGA_x86=1 -DVGO_darwin=1 -DVGP_x86_darwin=1 -DVGPV_x86_darwin_vanilla=1 -I../coregrind -DVG_LIBDIR="\"/usr/local/lib/valgrind"\" -DVG_PLATFORM="\"x86-darwin\""   -arch i386 -O2 -g -std=gnu99 -Wall -Wmissing-prototypes -Wshadow -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wcast-align -Wcast-qual -Wwrite-strings -Wempty-body -Wformat -Wformat-security -Wignored-qualifiers -fno-stack-protector -fno-strict-aliasing -fno-builtin -Wno-cast-align -Wno-self-assign -Wno-tautological-compare -mmacosx-version-min=10.6 -fno-stack-protector -fno-pic -fno-PIC   -MT m_mach/libcoregrind_x86_darwin_a-taskUser.o -MD -MP -MF m_mach/.deps/libcoregrind_x86_darwin_a-taskUser.Tpo -c -o m_mach/libcoregrind_x86_darwin_a-taskUser.o `test -f 'm_mach/taskUser.c' || echo './'`m_mach/taskUser.c
+mv -f m_mach/.deps/libcoregrind_x86_darwin_a-taskUser.Tpo m_mach/.deps/libcoregrind_x86_darwin_a-taskUser.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../VEX/pub -I../VEX/pub -DVGA_x86=1 -DVGO_darwin=1 -DVGP_x86_darwin=1 -DVGPV_x86_darwin_vanilla=1 -I../coregrind -DVG_LIBDIR="\"/usr/local/lib/valgrind"\" -DVG_PLATFORM="\"x86-darwin\""   -arch i386 -O2 -g -std=gnu99 -Wall -Wmissing-prototypes -Wshadow -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wcast-align -Wcast-qual -Wwrite-strings -Wempty-body -Wformat -Wformat-security -Wignored-qualifiers -fno-stack-protector -fno-strict-aliasing -fno-builtin -Wno-cast-align -Wno-self-assign -Wno-tautological-compare -mmacosx-version-min=10.6 -fno-stack-protector -fno-pic -fno-PIC   -MT m_mach/libcoregrind_x86_darwin_a-thread_actUser.o -MD -MP -MF m_mach/.deps/libcoregrind_x86_darwin_a-thread_actUser.Tpo -c -o m_mach/libcoregrind_x86_darwin_a-thread_actUser.o `test -f 'm_mach/thread_actUser.c' || echo './'`m_mach/thread_actUser.c
+mv -f m_mach/.deps/libcoregrind_x86_darwin_a-thread_actUser.Tpo m_mach/.deps/libcoregrind_x86_darwin_a-thread_actUser.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../VEX/pub -I../VEX/pub -DVGA_x86=1 -DVGO_darwin=1 -DVGP_x86_darwin=1 -DVGPV_x86_darwin_vanilla=1 -I../coregrind -DVG_LIBDIR="\"/usr/local/lib/valgrind"\" -DVG_PLATFORM="\"x86-darwin\""   -arch i386 -O2 -g -std=gnu99 -Wall -Wmissing-prototypes -Wshadow -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wcast-align -Wcast-qual -Wwrite-strings -Wempty-body -Wformat -Wformat-security -Wignored-qualifiers -fno-stack-protector -fno-strict-aliasing -fno-builtin -Wno-cast-align -Wno-self-assign -Wno-tautological-compare -mmacosx-version-min=10.6 -fno-stack-protector -fno-pic -fno-PIC   -MT m_mach/libcoregrind_x86_darwin_a-vm_mapUser.o -MD -MP -MF m_mach/.deps/libcoregrind_x86_darwin_a-vm_mapUser.Tpo -c -o m_mach/libcoregrind_x86_darwin_a-vm_mapUser.o `test -f 'm_mach/vm_mapUser.c' || echo './'`m_mach/vm_mapUser.c
+mv -f m_mach/.deps/libcoregrind_x86_darwin_a-vm_mapUser.Tpo m_mach/.deps/libcoregrind_x86_darwin_a-vm_mapUser.Po
+rm -f libcoregrind-x86-darwin.a
+/usr/bin/ar cru libcoregrind-x86-darwin.a libcoregrind_x86_darwin_a-m_addrinfo.o libcoregrind_x86_darwin_a-m_cache.o libcoregrind_x86_darwin_a-m_commandline.o libcoregrind_x86_darwin_a-m_compiler.o libcoregrind_x86_darwin_a-m_clientstate.o libcoregrind_x86_darwin_a-m_cpuid.o libcoregrind_x86_darwin_a-m_deduppoolalloc.o libcoregrind_x86_darwin_a-m_debuglog.o libcoregrind_x86_darwin_a-m_errormgr.o libcoregrind_x86_darwin_a-m_execontext.o libcoregrind_x86_darwin_a-m_hashtable.o libcoregrind_x86_darwin_a-m_libcbase.o libcoregrind_x86_darwin_a-m_libcassert.o libcoregrind_x86_darwin_a-m_libcfile.o libcoregrind_x86_darwin_a-m_libcprint.o libcoregrind_x86_darwin_a-m_libcproc.o libcoregrind_x86_darwin_a-m_libcsetjmp.o libcoregrind_x86_darwin_a-m_libcsignal.o libcoregrind_x86_darwin_a-m_machine.o libcoregrind_x86_darwin_a-m_main.o libcoregrind_x86_darwin_a-m_mallocfree.o libcoregrind_x86_darwin_a-m_options.o libcoregrind_x86_darwin_a-m_oset.o libcoregrind_x86_darwin_a-m_poolalloc.o libcoregrind_x86_darwin_a-m_rangemap.o libcoregrind_x86_darwin_a-m_redir.o libcoregrind_x86_darwin_a-m_sbprofile.o libcoregrind_x86_darwin_a-m_seqmatch.o libcoregrind_x86_darwin_a-m_signals.o libcoregrind_x86_darwin_a-m_sparsewa.o libcoregrind_x86_darwin_a-m_stacks.o libcoregrind_x86_darwin_a-m_stacktrace.o libcoregrind_x86_darwin_a-m_syscall.o libcoregrind_x86_darwin_a-m_threadstate.o libcoregrind_x86_darwin_a-m_tooliface.o libcoregrind_x86_darwin_a-m_trampoline.o libcoregrind_x86_darwin_a-m_translate.o libcoregrind_x86_darwin_a-m_transtab.o libcoregrind_x86_darwin_a-m_vki.o libcoregrind_x86_darwin_a-m_vkiscnums.o libcoregrind_x86_darwin_a-m_wordfm.o libcoregrind_x86_darwin_a-m_xarray.o libcoregrind_x86_darwin_a-m_aspacehl.o m_aspacemgr/libcoregrind_x86_darwin_a-aspacemgr-common.o m_aspacemgr/libcoregrind_x86_darwin_a-aspacemgr-linux.o m_aspacemgr/libcoregrind_x86_darwin_a-aspacemgr-segnames.o m_coredump/libcoregrind_x86_darwin_a-coredump-elf.o m_coredump/libcoregrind_x86_darwin_a-coredump-macho.o m_coredump/libcoregrind_x86_darwin_a-coredump-solaris.o m_debuginfo/libcoregrind_x86_darwin_a-misc.o m_debuginfo/libcoregrind_x86_darwin_a-d3basics.o m_debuginfo/libcoregrind_x86_darwin_a-debuginfo.o m_debuginfo/libcoregrind_x86_darwin_a-image.o m_debuginfo/libcoregrind_x86_darwin_a-minilzo-inl.o m_debuginfo/libcoregrind_x86_darwin_a-readdwarf.o m_debuginfo/libcoregrind_x86_darwin_a-readdwarf3.o m_debuginfo/libcoregrind_x86_darwin_a-readelf.o m_debuginfo/libcoregrind_x86_darwin_a-readexidx.o m_debuginfo/libcoregrind_x86_darwin_a-readmacho.o m_debuginfo/libcoregrind_x86_darwin_a-readpdb.o m_debuginfo/libcoregrind_x86_darwin_a-storage.o m_debuginfo/libcoregrind_x86_darwin_a-tinfl.o m_debuginfo/libcoregrind_x86_darwin_a-tytypes.o m_demangle/libcoregrind_x86_darwin_a-cp-demangle.o m_demangle/libcoregrind_x86_darwin_a-cplus-dem.o m_demangle/libcoregrind_x86_darwin_a-demangle.o m_demangle/libcoregrind_x86_darwin_a-dyn-string.o m_demangle/libcoregrind_x86_darwin_a-d-demangle.o m_demangle/libcoregrind_x86_darwin_a-safe-ctype.o m_dispatch/libcoregrind_x86_darwin_a-dispatch-x86-linux.o m_dispatch/libcoregrind_x86_darwin_a-dispatch-amd64-linux.o m_dispatch/libcoregrind_x86_darwin_a-dispatch-ppc32-linux.o m_dispatch/libcoregrind_x86_darwin_a-dispatch-ppc64be-linux.o m_dispatch/libcoregrind_x86_darwin_a-dispatch-ppc64le-linux.o m_dispatch/libcoregrind_x86_darwin_a-dispatch-arm-linux.o m_dispatch/libcoregrind_x86_darwin_a-dispatch-arm64-linux.o m_dispatch/libcoregrind_x86_darwin_a-dispatch-s390x-linux.o m_dispatch/libcoregrind_x86_darwin_a-dispatch-mips32-linux.o m_dispatch/libcoregrind_x86_darwin_a-dispatch-mips64-linux.o m_dispatch/libcoregrind_x86_darwin_a-dispatch-tilegx-linux.o m_dispatch/libcoregrind_x86_darwin_a-dispatch-x86-darwin.o m_dispatch/libcoregrind_x86_darwin_a-dispatch-amd64-darwin.o m_dispatch/libcoregrind_x86_darwin_a-dispatch-x86-solaris.o m_dispatch/libcoregrind_x86_darwin_a-dispatch-amd64-solaris.o m_gdbserver/libcoregrind_x86_darwin_a-inferiors.o m_gdbserver/libcoregrind_x86_darwin_a-m_gdbserver.o m_gdbserver/libcoregrind_x86_darwin_a-regcache.o m_gdbserver/libcoregrind_x86_darwin_a-remote-utils.o m_gdbserver/libcoregrind_x86_darwin_a-server.o m_gdbserver/libcoregrind_x86_darwin_a-signals.o m_gdbserver/libcoregrind_x86_darwin_a-target.o m_gdbserver/libcoregrind_x86_darwin_a-utils.o m_gdbserver/libcoregrind_x86_darwin_a-valgrind-low-x86.o m_gdbserver/libcoregrind_x86_darwin_a-valgrind-low-amd64.o m_gdbserver/libcoregrind_x86_darwin_a-valgrind-low-arm.o m_gdbserver/libcoregrind_x86_darwin_a-valgrind-low-arm64.o m_gdbserver/libcoregrind_x86_darwin_a-valgrind-low-ppc32.o m_gdbserver/libcoregrind_x86_darwin_a-valgrind-low-ppc64.o m_gdbserver/libcoregrind_x86_darwin_a-valgrind-low-s390x.o m_gdbserver/libcoregrind_x86_darwin_a-valgrind-low-mips32.o m_gdbserver/libcoregrind_x86_darwin_a-valgrind-low-mips64.o m_gdbserver/libcoregrind_x86_darwin_a-valgrind-low-tilegx.o m_gdbserver/libcoregrind_x86_darwin_a-version.o m_initimg/libcoregrind_x86_darwin_a-initimg-linux.o m_initimg/libcoregrind_x86_darwin_a-initimg-darwin.o m_initimg/libcoregrind_x86_darwin_a-initimg-solaris.o m_initimg/libcoregrind_x86_darwin_a-initimg-pathscan.o m_mach/libcoregrind_x86_darwin_a-mach_basics.o m_mach/libcoregrind_x86_darwin_a-mach_msg.o m_mach/libcoregrind_x86_darwin_a-mach_traps-x86-darwin.o m_mach/libcoregrind_x86_darwin_a-mach_traps-amd64-darwin.o m_replacemalloc/libcoregrind_x86_darwin_a-replacemalloc_core.o m_scheduler/libcoregrind_x86_darwin_a-sched-lock.o m_scheduler/libcoregrind_x86_darwin_a-sched-lock-generic.o m_scheduler/libcoregrind_x86_darwin_a-scheduler.o m_scheduler/libcoregrind_x86_darwin_a-sema.o m_sigframe/libcoregrind_x86_darwin_a-sigframe-common.o m_sigframe/libcoregrind_x86_darwin_a-sigframe-x86-linux.o m_sigframe/libcoregrind_x86_darwin_a-sigframe-amd64-linux.o m_sigframe/libcoregrind_x86_darwin_a-sigframe-ppc32-linux.o m_sigframe/libcoregrind_x86_darwin_a-sigframe-ppc64-linux.o m_sigframe/libcoregrind_x86_darwin_a-sigframe-arm-linux.o m_sigframe/libcoregrind_x86_darwin_a-sigframe-arm64-linux.o m_sigframe/libcoregrind_x86_darwin_a-sigframe-s390x-linux.o m_sigframe/libcoregrind_x86_darwin_a-sigframe-mips32-linux.o m_sigframe/libcoregrind_x86_darwin_a-sigframe-mips64-linux.o m_sigframe/libcoregrind_x86_darwin_a-sigframe-tilegx-linux.o m_sigframe/libcoregrind_x86_darwin_a-sigframe-x86-darwin.o m_sigframe/libcoregrind_x86_darwin_a-sigframe-amd64-darwin.o m_sigframe/libcoregrind_x86_darwin_a-sigframe-solaris.o m_syswrap/libcoregrind_x86_darwin_a-syscall-x86-linux.o m_syswrap/libcoregrind_x86_darwin_a-syscall-amd64-linux.o m_syswrap/libcoregrind_x86_darwin_a-syscall-ppc32-linux.o m_syswrap/libcoregrind_x86_darwin_a-syscall-ppc64be-linux.o m_syswrap/libcoregrind_x86_darwin_a-syscall-ppc64le-linux.o m_syswrap/libcoregrind_x86_darwin_a-syscall-arm-linux.o m_syswrap/libcoregrind_x86_darwin_a-syscall-arm64-linux.o m_syswrap/libcoregrind_x86_darwin_a-syscall-s390x-linux.o m_syswrap/libcoregrind_x86_darwin_a-syscall-mips32-linux.o m_syswrap/libcoregrind_x86_darwin_a-syscall-mips64-linux.o m_syswrap/libcoregrind_x86_darwin_a-syscall-tilegx-linux.o m_syswrap/libcoregrind_x86_darwin_a-syscall-x86-darwin.o m_syswrap/libcoregrind_x86_darwin_a-syscall-amd64-darwin.o m_syswrap/libcoregrind_x86_darwin_a-syscall-x86-solaris.o m_syswrap/libcoregrind_x86_darwin_a-syscall-amd64-solaris.o m_syswrap/libcoregrind_x86_darwin_a-syswrap-main.o m_syswrap/libcoregrind_x86_darwin_a-syswrap-generic.o m_syswrap/libcoregrind_x86_darwin_a-syswrap-linux.o m_syswrap/libcoregrind_x86_darwin_a-syswrap-linux-variants.o m_syswrap/libcoregrind_x86_darwin_a-syswrap-darwin.o m_syswrap/libcoregrind_x86_darwin_a-syswrap-solaris.o m_syswrap/libcoregrind_x86_darwin_a-syswrap-x86-linux.o m_syswrap/libcoregrind_x86_darwin_a-syswrap-amd64-linux.o m_syswrap/libcoregrind_x86_darwin_a-syswrap-ppc32-linux.o m_syswrap/libcoregrind_x86_darwin_a-syswrap-ppc64-linux.o m_syswrap/libcoregrind_x86_darwin_a-syswrap-arm-linux.o m_syswrap/libcoregrind_x86_darwin_a-syswrap-arm64-linux.o m_syswrap/libcoregrind_x86_darwin_a-syswrap-s390x-linux.o m_syswrap/libcoregrind_x86_darwin_a-syswrap-mips32-linux.o m_syswrap/libcoregrind_x86_darwin_a-syswrap-mips64-linux.o m_syswrap/libcoregrind_x86_darwin_a-syswrap-tilegx-linux.o m_syswrap/libcoregrind_x86_darwin_a-syswrap-x86-darwin.o m_syswrap/libcoregrind_x86_darwin_a-syswrap-amd64-darwin.o m_syswrap/libcoregrind_x86_darwin_a-syswrap-xen.o m_syswrap/libcoregrind_x86_darwin_a-syswrap-x86-solaris.o m_syswrap/libcoregrind_x86_darwin_a-syswrap-amd64-solaris.o m_ume/libcoregrind_x86_darwin_a-elf.o m_ume/libcoregrind_x86_darwin_a-macho.o m_ume/libcoregrind_x86_darwin_a-main.o m_ume/libcoregrind_x86_darwin_a-script.o  m_mach/libcoregrind_x86_darwin_a-mach_vmUser.o m_mach/libcoregrind_x86_darwin_a-taskUser.o m_mach/libcoregrind_x86_darwin_a-thread_actUser.o m_mach/libcoregrind_x86_darwin_a-vm_mapUser.o  
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-coredump-elf.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-coredump-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-readelf.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-readexidx.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-x86-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-amd64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-ppc32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-ppc64be-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-ppc64le-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-arm-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-arm64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-s390x-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-mips32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-mips64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-tilegx-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-amd64-darwin.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-x86-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-amd64-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-initimg-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-initimg-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-mach_traps-amd64-darwin.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-x86-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-amd64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-ppc32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-ppc64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-arm-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-arm64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-s390x-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-mips32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-mips64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-tilegx-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-amd64-darwin.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-x86-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-amd64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-ppc32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-ppc64be-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-ppc64le-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-arm-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-arm64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-s390x-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-mips32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-mips64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-tilegx-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-amd64-darwin.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-x86-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-amd64-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-linux-variants.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-x86-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-amd64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-ppc32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-ppc64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-arm-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-arm64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-s390x-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-mips32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-mips64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-tilegx-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-amd64-darwin.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-xen.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-x86-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-amd64-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-elf.o) has no symbols
+ranlib libcoregrind-x86-darwin.a
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-coredump-elf.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-coredump-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-readelf.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-readexidx.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-x86-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-amd64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-ppc32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-ppc64be-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-ppc64le-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-arm-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-arm64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-s390x-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-mips32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-mips64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-tilegx-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-amd64-darwin.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-x86-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-amd64-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-initimg-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-initimg-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-mach_traps-amd64-darwin.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-x86-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-amd64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-ppc32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-ppc64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-arm-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-arm64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-s390x-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-mips32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-mips64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-tilegx-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-amd64-darwin.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-x86-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-amd64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-ppc32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-ppc64be-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-ppc64le-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-arm-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-arm64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-s390x-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-mips32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-mips64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-tilegx-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-amd64-darwin.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-x86-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-amd64-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-linux-variants.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-x86-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-amd64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-ppc32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-ppc64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-arm-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-arm64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-s390x-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-mips32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-mips64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-tilegx-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-amd64-darwin.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-xen.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-x86-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-amd64-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-elf.o) has no symbols
+mkdir -p ../.in_place; \
+	for f in vgpreload_core-amd64-darwin.so vgpreload_core-x86-darwin.so ; do \
+	  rm -f ../.in_place/$f; \
+	  ln -f -s ../coregrind/$f ../.in_place; \
+	done
+for f in vgpreload_core-amd64-darwin.so vgpreload_core-x86-darwin.so; do \
+	  if [ ! -e $f.dSYM  -o  $f -nt $f.dSYM ] ; then \
+	      echo "dsymutil $f"; \
+	      dsymutil $f; \
+	  fi; \
+	done
+mkdir -p ../.in_place; \
+	for f in vgpreload_core-amd64-darwin.so vgpreload_core-x86-darwin.so; do \
+	  rm -f ../.in_place/$f.dSYM; \
+	  ln -f -s ../coregrind/$f.dSYM ../.in_place; \
+	done
+mkdir -p ../.in_place; \
+	for f in m_gdbserver/32bit-core-valgrind-s1.xml m_gdbserver/32bit-core-valgrind-s2.xml m_gdbserver/32bit-core.xml m_gdbserver/32bit-linux-valgrind-s1.xml m_gdbserver/32bit-linux-valgrind-s2.xml m_gdbserver/32bit-linux.xml m_gdbserver/32bit-sse-valgrind-s1.xml m_gdbserver/32bit-sse-valgrind-s2.xml m_gdbserver/32bit-sse.xml m_gdbserver/64bit-avx-valgrind-s2.xml m_gdbserver/64bit-avx-valgrind-s1.xml m_gdbserver/64bit-avx.xml m_gdbserver/64bit-core-valgrind-s1.xml m_gdbserver/64bit-core-valgrind-s2.xml m_gdbserver/64bit-core.xml m_gdbserver/64bit-linux-valgrind-s1.xml m_gdbserver/64bit-linux-valgrind-s2.xml m_gdbserver/64bit-linux.xml m_gdbserver/64bit-sse-valgrind-s1.xml m_gdbserver/64bit-sse-valgrind-s2.xml m_gdbserver/64bit-sse.xml m_gdbserver/amd64-avx-coresse-valgrind.xml m_gdbserver/amd64-avx-coresse.xml m_gdbserver/amd64-avx-linux-valgrind.xml m_gdbserver/amd64-avx-linux.xml m_gdbserver/amd64-coresse-valgrind.xml m_gdbserver/amd64-linux-valgrind.xml m_gdbserver/arm-core-valgrind-s1.xml m_gdbserver/arm-core-valgrind-s2.xml m_gdbserver/arm-core.xml m_gdbserver/arm-vfpv3-valgrind-s1.xml m_gdbserver/arm-vfpv3-valgrind-s2.xml m_gdbserver/arm-vfpv3.xml m_gdbserver/arm-with-vfpv3-valgrind.xml m_gdbserver/arm-with-vfpv3.xml m_gdbserver/i386-coresse-valgrind.xml m_gdbserver/i386-linux-valgrind.xml m_gdbserver/power64-core-valgrind-s1.xml m_gdbserver/power64-core-valgrind-s2.xml m_gdbserver/power64-core.xml m_gdbserver/power64-core2-valgrind-s1.xml m_gdbserver/power64-core2-valgrind-s2.xml m_gdbserver/power64-linux-valgrind-s1.xml m_gdbserver/power64-linux-valgrind-s2.xml m_gdbserver/power64-linux.xml m_gdbserver/power-altivec-valgrind-s1.xml m_gdbserver/power-altivec-valgrind-s2.xml m_gdbserver/power-altivec.xml m_gdbserver/power-vsx-valgrind-s1.xml m_gdbserver/power-vsx-valgrind-s2.xml m_gdbserver/power-vsx.xml m_gdbserver/power-core-valgrind-s1.xml m_gdbserver/power-core-valgrind-s2.xml m_gdbserver/power-core.xml m_gdbserver/power-fpu-valgrind-s1.xml m_gdbserver/power-fpu-valgrind-s2.xml m_gdbserver/power-fpu.xml m_gdbserver/power-linux-valgrind-s1.xml m_gdbserver/power-linux-valgrind-s2.xml m_gdbserver/power-linux.xml m_gdbserver/powerpc-altivec32l-valgrind.xml m_gdbserver/powerpc-altivec32l.xml m_gdbserver/powerpc-altivec64l-valgrind.xml m_gdbserver/powerpc-altivec64l.xml m_gdbserver/s390-acr-valgrind-s1.xml m_gdbserver/s390-acr-valgrind-s2.xml m_gdbserver/s390-acr.xml m_gdbserver/s390-fpr-valgrind-s1.xml m_gdbserver/s390-fpr-valgrind-s2.xml m_gdbserver/s390-fpr.xml m_gdbserver/s390x-core64-valgrind-s1.xml m_gdbserver/s390x-core64-valgrind-s2.xml m_gdbserver/s390x-core64.xml m_gdbserver/s390x-generic-valgrind.xml m_gdbserver/s390x-generic.xml m_gdbserver/s390x-linux64-valgrind-s1.xml m_gdbserver/s390x-linux64-valgrind-s2.xml m_gdbserver/s390x-linux64.xml m_gdbserver/mips-cp0-valgrind-s1.xml m_gdbserver/mips-cp0-valgrind-s2.xml m_gdbserver/mips-cp0.xml m_gdbserver/mips-cpu-valgrind-s1.xml m_gdbserver/mips-cpu-valgrind-s2.xml m_gdbserver/mips-cpu.xml m_gdbserver/mips-linux.xml m_gdbserver/mips-linux-valgrind.xml m_gdbserver/mips-fpu-valgrind-s1.xml m_gdbserver/mips-fpu-valgrind-s2.xml m_gdbserver/mips-fpu.xml m_gdbserver/mips64-cp0-valgrind-s1.xml m_gdbserver/mips64-cp0-valgrind-s2.xml m_gdbserver/mips64-cp0.xml m_gdbserver/mips64-cpu-valgrind-s1.xml m_gdbserver/mips64-cpu-valgrind-s2.xml m_gdbserver/mips64-cpu.xml m_gdbserver/mips64-linux.xml m_gdbserver/mips64-linux-valgrind.xml m_gdbserver/mips64-fpu-valgrind-s1.xml m_gdbserver/mips64-fpu-valgrind-s2.xml m_gdbserver/mips64-fpu.xml; do \
+	  rm -f ../.in_place/$f; \
+	  ln -f -s ../coregrind/$f ../.in_place; \
+	done
+ .././install-sh -c -d '/usr/local/bin'
+  /usr/bin/install -c valgrind vgdb '/usr/local/bin'
+/bin/sh /Users/mixelpix/c/valgrind-3.12.0/install-sh -d /usr/local/lib/valgrind; \
+	for f in vgpreload_core-amd64-darwin.so vgpreload_core-x86-darwin.so; do \
+	  /usr/bin/install -c $f /usr/local/lib/valgrind; \
+	done
+for f in vgpreload_core-amd64-darwin.so vgpreload_core-x86-darwin.so; do \
+	  if [ ! -e $f.dSYM  -o  $f -nt $f.dSYM ] ; then \
+	      echo "dsymutil $f"; \
+	      dsymutil $f; \
+	  fi; \
+	done
+/bin/sh /Users/mixelpix/c/valgrind-3.12.0/install-sh -d /usr/local/lib/valgrind; \
+	for f in vgpreload_core-amd64-darwin.so vgpreload_core-x86-darwin.so; do \
+	  cp -R $f.dSYM /usr/local/lib/valgrind; \
+	done
+(cd m_mach && mig /usr/include/mach/mach_vm.defs /usr/include/mach/task.defs /usr/include/mach/thread_act.defs /usr/include/mach/vm_map.defs)
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../VEX/pub -I../VEX/pub -DVGA_amd64=1 -DVGO_darwin=1 -DVGP_amd64_darwin=1 -DVGPV_amd64_darwin_vanilla=1 -I../coregrind -DVG_LIBDIR="\"/usr/local/lib/valgrind"\" -DVG_PLATFORM="\"amd64-darwin\""   -arch x86_64 -O2 -g -std=gnu99 -Wall -Wmissing-prototypes -Wshadow -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wcast-align -Wcast-qual -Wwrite-strings -Wempty-body -Wformat -Wformat-security -Wignored-qualifiers -fno-stack-protector -fno-strict-aliasing -fno-builtin -Wno-cast-align -Wno-self-assign -Wno-tautological-compare -mmacosx-version-min=10.6 -fno-stack-protector   -MT m_mach/libcoregrind_amd64_darwin_a-mach_vmUser.o -MD -MP -MF m_mach/.deps/libcoregrind_amd64_darwin_a-mach_vmUser.Tpo -c -o m_mach/libcoregrind_amd64_darwin_a-mach_vmUser.o `test -f 'm_mach/mach_vmUser.c' || echo './'`m_mach/mach_vmUser.c
+mv -f m_mach/.deps/libcoregrind_amd64_darwin_a-mach_vmUser.Tpo m_mach/.deps/libcoregrind_amd64_darwin_a-mach_vmUser.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../VEX/pub -I../VEX/pub -DVGA_amd64=1 -DVGO_darwin=1 -DVGP_amd64_darwin=1 -DVGPV_amd64_darwin_vanilla=1 -I../coregrind -DVG_LIBDIR="\"/usr/local/lib/valgrind"\" -DVG_PLATFORM="\"amd64-darwin\""   -arch x86_64 -O2 -g -std=gnu99 -Wall -Wmissing-prototypes -Wshadow -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wcast-align -Wcast-qual -Wwrite-strings -Wempty-body -Wformat -Wformat-security -Wignored-qualifiers -fno-stack-protector -fno-strict-aliasing -fno-builtin -Wno-cast-align -Wno-self-assign -Wno-tautological-compare -mmacosx-version-min=10.6 -fno-stack-protector   -MT m_mach/libcoregrind_amd64_darwin_a-taskUser.o -MD -MP -MF m_mach/.deps/libcoregrind_amd64_darwin_a-taskUser.Tpo -c -o m_mach/libcoregrind_amd64_darwin_a-taskUser.o `test -f 'm_mach/taskUser.c' || echo './'`m_mach/taskUser.c
+mv -f m_mach/.deps/libcoregrind_amd64_darwin_a-taskUser.Tpo m_mach/.deps/libcoregrind_amd64_darwin_a-taskUser.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../VEX/pub -I../VEX/pub -DVGA_amd64=1 -DVGO_darwin=1 -DVGP_amd64_darwin=1 -DVGPV_amd64_darwin_vanilla=1 -I../coregrind -DVG_LIBDIR="\"/usr/local/lib/valgrind"\" -DVG_PLATFORM="\"amd64-darwin\""   -arch x86_64 -O2 -g -std=gnu99 -Wall -Wmissing-prototypes -Wshadow -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wcast-align -Wcast-qual -Wwrite-strings -Wempty-body -Wformat -Wformat-security -Wignored-qualifiers -fno-stack-protector -fno-strict-aliasing -fno-builtin -Wno-cast-align -Wno-self-assign -Wno-tautological-compare -mmacosx-version-min=10.6 -fno-stack-protector   -MT m_mach/libcoregrind_amd64_darwin_a-thread_actUser.o -MD -MP -MF m_mach/.deps/libcoregrind_amd64_darwin_a-thread_actUser.Tpo -c -o m_mach/libcoregrind_amd64_darwin_a-thread_actUser.o `test -f 'm_mach/thread_actUser.c' || echo './'`m_mach/thread_actUser.c
+mv -f m_mach/.deps/libcoregrind_amd64_darwin_a-thread_actUser.Tpo m_mach/.deps/libcoregrind_amd64_darwin_a-thread_actUser.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../VEX/pub -I../VEX/pub -DVGA_amd64=1 -DVGO_darwin=1 -DVGP_amd64_darwin=1 -DVGPV_amd64_darwin_vanilla=1 -I../coregrind -DVG_LIBDIR="\"/usr/local/lib/valgrind"\" -DVG_PLATFORM="\"amd64-darwin\""   -arch x86_64 -O2 -g -std=gnu99 -Wall -Wmissing-prototypes -Wshadow -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wcast-align -Wcast-qual -Wwrite-strings -Wempty-body -Wformat -Wformat-security -Wignored-qualifiers -fno-stack-protector -fno-strict-aliasing -fno-builtin -Wno-cast-align -Wno-self-assign -Wno-tautological-compare -mmacosx-version-min=10.6 -fno-stack-protector   -MT m_mach/libcoregrind_amd64_darwin_a-vm_mapUser.o -MD -MP -MF m_mach/.deps/libcoregrind_amd64_darwin_a-vm_mapUser.Tpo -c -o m_mach/libcoregrind_amd64_darwin_a-vm_mapUser.o `test -f 'm_mach/vm_mapUser.c' || echo './'`m_mach/vm_mapUser.c
+mv -f m_mach/.deps/libcoregrind_amd64_darwin_a-vm_mapUser.Tpo m_mach/.deps/libcoregrind_amd64_darwin_a-vm_mapUser.Po
+rm -f libcoregrind-amd64-darwin.a
+/usr/bin/ar cru libcoregrind-amd64-darwin.a libcoregrind_amd64_darwin_a-m_addrinfo.o libcoregrind_amd64_darwin_a-m_cache.o libcoregrind_amd64_darwin_a-m_commandline.o libcoregrind_amd64_darwin_a-m_compiler.o libcoregrind_amd64_darwin_a-m_clientstate.o libcoregrind_amd64_darwin_a-m_cpuid.o libcoregrind_amd64_darwin_a-m_deduppoolalloc.o libcoregrind_amd64_darwin_a-m_debuglog.o libcoregrind_amd64_darwin_a-m_errormgr.o libcoregrind_amd64_darwin_a-m_execontext.o libcoregrind_amd64_darwin_a-m_hashtable.o libcoregrind_amd64_darwin_a-m_libcbase.o libcoregrind_amd64_darwin_a-m_libcassert.o libcoregrind_amd64_darwin_a-m_libcfile.o libcoregrind_amd64_darwin_a-m_libcprint.o libcoregrind_amd64_darwin_a-m_libcproc.o libcoregrind_amd64_darwin_a-m_libcsetjmp.o libcoregrind_amd64_darwin_a-m_libcsignal.o libcoregrind_amd64_darwin_a-m_machine.o libcoregrind_amd64_darwin_a-m_main.o libcoregrind_amd64_darwin_a-m_mallocfree.o libcoregrind_amd64_darwin_a-m_options.o libcoregrind_amd64_darwin_a-m_oset.o libcoregrind_amd64_darwin_a-m_poolalloc.o libcoregrind_amd64_darwin_a-m_rangemap.o libcoregrind_amd64_darwin_a-m_redir.o libcoregrind_amd64_darwin_a-m_sbprofile.o libcoregrind_amd64_darwin_a-m_seqmatch.o libcoregrind_amd64_darwin_a-m_signals.o libcoregrind_amd64_darwin_a-m_sparsewa.o libcoregrind_amd64_darwin_a-m_stacks.o libcoregrind_amd64_darwin_a-m_stacktrace.o libcoregrind_amd64_darwin_a-m_syscall.o libcoregrind_amd64_darwin_a-m_threadstate.o libcoregrind_amd64_darwin_a-m_tooliface.o libcoregrind_amd64_darwin_a-m_trampoline.o libcoregrind_amd64_darwin_a-m_translate.o libcoregrind_amd64_darwin_a-m_transtab.o libcoregrind_amd64_darwin_a-m_vki.o libcoregrind_amd64_darwin_a-m_vkiscnums.o libcoregrind_amd64_darwin_a-m_wordfm.o libcoregrind_amd64_darwin_a-m_xarray.o libcoregrind_amd64_darwin_a-m_aspacehl.o m_aspacemgr/libcoregrind_amd64_darwin_a-aspacemgr-common.o m_aspacemgr/libcoregrind_amd64_darwin_a-aspacemgr-linux.o m_aspacemgr/libcoregrind_amd64_darwin_a-aspacemgr-segnames.o m_coredump/libcoregrind_amd64_darwin_a-coredump-elf.o m_coredump/libcoregrind_amd64_darwin_a-coredump-macho.o m_coredump/libcoregrind_amd64_darwin_a-coredump-solaris.o m_debuginfo/libcoregrind_amd64_darwin_a-misc.o m_debuginfo/libcoregrind_amd64_darwin_a-d3basics.o m_debuginfo/libcoregrind_amd64_darwin_a-debuginfo.o m_debuginfo/libcoregrind_amd64_darwin_a-image.o m_debuginfo/libcoregrind_amd64_darwin_a-minilzo-inl.o m_debuginfo/libcoregrind_amd64_darwin_a-readdwarf.o m_debuginfo/libcoregrind_amd64_darwin_a-readdwarf3.o m_debuginfo/libcoregrind_amd64_darwin_a-readelf.o m_debuginfo/libcoregrind_amd64_darwin_a-readexidx.o m_debuginfo/libcoregrind_amd64_darwin_a-readmacho.o m_debuginfo/libcoregrind_amd64_darwin_a-readpdb.o m_debuginfo/libcoregrind_amd64_darwin_a-storage.o m_debuginfo/libcoregrind_amd64_darwin_a-tinfl.o m_debuginfo/libcoregrind_amd64_darwin_a-tytypes.o m_demangle/libcoregrind_amd64_darwin_a-cp-demangle.o m_demangle/libcoregrind_amd64_darwin_a-cplus-dem.o m_demangle/libcoregrind_amd64_darwin_a-demangle.o m_demangle/libcoregrind_amd64_darwin_a-dyn-string.o m_demangle/libcoregrind_amd64_darwin_a-d-demangle.o m_demangle/libcoregrind_amd64_darwin_a-safe-ctype.o m_dispatch/libcoregrind_amd64_darwin_a-dispatch-x86-linux.o m_dispatch/libcoregrind_amd64_darwin_a-dispatch-amd64-linux.o m_dispatch/libcoregrind_amd64_darwin_a-dispatch-ppc32-linux.o m_dispatch/libcoregrind_amd64_darwin_a-dispatch-ppc64be-linux.o m_dispatch/libcoregrind_amd64_darwin_a-dispatch-ppc64le-linux.o m_dispatch/libcoregrind_amd64_darwin_a-dispatch-arm-linux.o m_dispatch/libcoregrind_amd64_darwin_a-dispatch-arm64-linux.o m_dispatch/libcoregrind_amd64_darwin_a-dispatch-s390x-linux.o m_dispatch/libcoregrind_amd64_darwin_a-dispatch-mips32-linux.o m_dispatch/libcoregrind_amd64_darwin_a-dispatch-mips64-linux.o m_dispatch/libcoregrind_amd64_darwin_a-dispatch-tilegx-linux.o m_dispatch/libcoregrind_amd64_darwin_a-dispatch-x86-darwin.o m_dispatch/libcoregrind_amd64_darwin_a-dispatch-amd64-darwin.o m_dispatch/libcoregrind_amd64_darwin_a-dispatch-x86-solaris.o m_dispatch/libcoregrind_amd64_darwin_a-dispatch-amd64-solaris.o m_gdbserver/libcoregrind_amd64_darwin_a-inferiors.o m_gdbserver/libcoregrind_amd64_darwin_a-m_gdbserver.o m_gdbserver/libcoregrind_amd64_darwin_a-regcache.o m_gdbserver/libcoregrind_amd64_darwin_a-remote-utils.o m_gdbserver/libcoregrind_amd64_darwin_a-server.o m_gdbserver/libcoregrind_amd64_darwin_a-signals.o m_gdbserver/libcoregrind_amd64_darwin_a-target.o m_gdbserver/libcoregrind_amd64_darwin_a-utils.o m_gdbserver/libcoregrind_amd64_darwin_a-valgrind-low-x86.o m_gdbserver/libcoregrind_amd64_darwin_a-valgrind-low-amd64.o m_gdbserver/libcoregrind_amd64_darwin_a-valgrind-low-arm.o m_gdbserver/libcoregrind_amd64_darwin_a-valgrind-low-arm64.o m_gdbserver/libcoregrind_amd64_darwin_a-valgrind-low-ppc32.o m_gdbserver/libcoregrind_amd64_darwin_a-valgrind-low-ppc64.o m_gdbserver/libcoregrind_amd64_darwin_a-valgrind-low-s390x.o m_gdbserver/libcoregrind_amd64_darwin_a-valgrind-low-mips32.o m_gdbserver/libcoregrind_amd64_darwin_a-valgrind-low-mips64.o m_gdbserver/libcoregrind_amd64_darwin_a-valgrind-low-tilegx.o m_gdbserver/libcoregrind_amd64_darwin_a-version.o m_initimg/libcoregrind_amd64_darwin_a-initimg-linux.o m_initimg/libcoregrind_amd64_darwin_a-initimg-darwin.o m_initimg/libcoregrind_amd64_darwin_a-initimg-solaris.o m_initimg/libcoregrind_amd64_darwin_a-initimg-pathscan.o m_mach/libcoregrind_amd64_darwin_a-mach_basics.o m_mach/libcoregrind_amd64_darwin_a-mach_msg.o m_mach/libcoregrind_amd64_darwin_a-mach_traps-x86-darwin.o m_mach/libcoregrind_amd64_darwin_a-mach_traps-amd64-darwin.o m_replacemalloc/libcoregrind_amd64_darwin_a-replacemalloc_core.o m_scheduler/libcoregrind_amd64_darwin_a-sched-lock.o m_scheduler/libcoregrind_amd64_darwin_a-sched-lock-generic.o m_scheduler/libcoregrind_amd64_darwin_a-scheduler.o m_scheduler/libcoregrind_amd64_darwin_a-sema.o m_sigframe/libcoregrind_amd64_darwin_a-sigframe-common.o m_sigframe/libcoregrind_amd64_darwin_a-sigframe-x86-linux.o m_sigframe/libcoregrind_amd64_darwin_a-sigframe-amd64-linux.o m_sigframe/libcoregrind_amd64_darwin_a-sigframe-ppc32-linux.o m_sigframe/libcoregrind_amd64_darwin_a-sigframe-ppc64-linux.o m_sigframe/libcoregrind_amd64_darwin_a-sigframe-arm-linux.o m_sigframe/libcoregrind_amd64_darwin_a-sigframe-arm64-linux.o m_sigframe/libcoregrind_amd64_darwin_a-sigframe-s390x-linux.o m_sigframe/libcoregrind_amd64_darwin_a-sigframe-mips32-linux.o m_sigframe/libcoregrind_amd64_darwin_a-sigframe-mips64-linux.o m_sigframe/libcoregrind_amd64_darwin_a-sigframe-tilegx-linux.o m_sigframe/libcoregrind_amd64_darwin_a-sigframe-x86-darwin.o m_sigframe/libcoregrind_amd64_darwin_a-sigframe-amd64-darwin.o m_sigframe/libcoregrind_amd64_darwin_a-sigframe-solaris.o m_syswrap/libcoregrind_amd64_darwin_a-syscall-x86-linux.o m_syswrap/libcoregrind_amd64_darwin_a-syscall-amd64-linux.o m_syswrap/libcoregrind_amd64_darwin_a-syscall-ppc32-linux.o m_syswrap/libcoregrind_amd64_darwin_a-syscall-ppc64be-linux.o m_syswrap/libcoregrind_amd64_darwin_a-syscall-ppc64le-linux.o m_syswrap/libcoregrind_amd64_darwin_a-syscall-arm-linux.o m_syswrap/libcoregrind_amd64_darwin_a-syscall-arm64-linux.o m_syswrap/libcoregrind_amd64_darwin_a-syscall-s390x-linux.o m_syswrap/libcoregrind_amd64_darwin_a-syscall-mips32-linux.o m_syswrap/libcoregrind_amd64_darwin_a-syscall-mips64-linux.o m_syswrap/libcoregrind_amd64_darwin_a-syscall-tilegx-linux.o m_syswrap/libcoregrind_amd64_darwin_a-syscall-x86-darwin.o m_syswrap/libcoregrind_amd64_darwin_a-syscall-amd64-darwin.o m_syswrap/libcoregrind_amd64_darwin_a-syscall-x86-solaris.o m_syswrap/libcoregrind_amd64_darwin_a-syscall-amd64-solaris.o m_syswrap/libcoregrind_amd64_darwin_a-syswrap-main.o m_syswrap/libcoregrind_amd64_darwin_a-syswrap-generic.o m_syswrap/libcoregrind_amd64_darwin_a-syswrap-linux.o m_syswrap/libcoregrind_amd64_darwin_a-syswrap-linux-variants.o m_syswrap/libcoregrind_amd64_darwin_a-syswrap-darwin.o m_syswrap/libcoregrind_amd64_darwin_a-syswrap-solaris.o m_syswrap/libcoregrind_amd64_darwin_a-syswrap-x86-linux.o m_syswrap/libcoregrind_amd64_darwin_a-syswrap-amd64-linux.o m_syswrap/libcoregrind_amd64_darwin_a-syswrap-ppc32-linux.o m_syswrap/libcoregrind_amd64_darwin_a-syswrap-ppc64-linux.o m_syswrap/libcoregrind_amd64_darwin_a-syswrap-arm-linux.o m_syswrap/libcoregrind_amd64_darwin_a-syswrap-arm64-linux.o m_syswrap/libcoregrind_amd64_darwin_a-syswrap-s390x-linux.o m_syswrap/libcoregrind_amd64_darwin_a-syswrap-mips32-linux.o m_syswrap/libcoregrind_amd64_darwin_a-syswrap-mips64-linux.o m_syswrap/libcoregrind_amd64_darwin_a-syswrap-tilegx-linux.o m_syswrap/libcoregrind_amd64_darwin_a-syswrap-x86-darwin.o m_syswrap/libcoregrind_amd64_darwin_a-syswrap-amd64-darwin.o m_syswrap/libcoregrind_amd64_darwin_a-syswrap-xen.o m_syswrap/libcoregrind_amd64_darwin_a-syswrap-x86-solaris.o m_syswrap/libcoregrind_amd64_darwin_a-syswrap-amd64-solaris.o m_ume/libcoregrind_amd64_darwin_a-elf.o m_ume/libcoregrind_amd64_darwin_a-macho.o m_ume/libcoregrind_amd64_darwin_a-main.o m_ume/libcoregrind_amd64_darwin_a-script.o  m_mach/libcoregrind_amd64_darwin_a-mach_vmUser.o m_mach/libcoregrind_amd64_darwin_a-taskUser.o m_mach/libcoregrind_amd64_darwin_a-thread_actUser.o m_mach/libcoregrind_amd64_darwin_a-vm_mapUser.o  
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-coredump-elf.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-coredump-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-readelf.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-readexidx.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-x86-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-amd64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-ppc32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-ppc64be-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-ppc64le-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-arm-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-arm64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-s390x-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-mips32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-mips64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-tilegx-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-x86-darwin.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-x86-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-amd64-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-initimg-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-initimg-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-mach_traps-x86-darwin.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-x86-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-amd64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-ppc32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-ppc64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-arm-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-arm64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-s390x-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-mips32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-mips64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-tilegx-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-x86-darwin.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-x86-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-amd64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-ppc32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-ppc64be-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-ppc64le-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-arm-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-arm64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-s390x-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-mips32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-mips64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-tilegx-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-x86-darwin.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-x86-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-amd64-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-linux-variants.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-x86-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-amd64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-ppc32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-ppc64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-arm-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-arm64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-s390x-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-mips32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-mips64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-tilegx-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-x86-darwin.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-xen.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-x86-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-amd64-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-elf.o) has no symbols
+ranlib libcoregrind-amd64-darwin.a
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-coredump-elf.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-coredump-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-readelf.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-readexidx.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-x86-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-amd64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-ppc32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-ppc64be-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-ppc64le-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-arm-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-arm64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-s390x-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-mips32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-mips64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-tilegx-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-x86-darwin.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-x86-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-amd64-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-initimg-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-initimg-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-mach_traps-x86-darwin.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-x86-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-amd64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-ppc32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-ppc64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-arm-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-arm64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-s390x-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-mips32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-mips64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-tilegx-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-x86-darwin.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-x86-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-amd64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-ppc32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-ppc64be-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-ppc64le-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-arm-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-arm64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-s390x-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-mips32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-mips64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-tilegx-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-x86-darwin.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-x86-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-amd64-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-linux-variants.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-x86-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-amd64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-ppc32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-ppc64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-arm-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-arm64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-s390x-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-mips32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-mips64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-tilegx-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-x86-darwin.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-xen.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-x86-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-amd64-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-elf.o) has no symbols
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../VEX/pub -I../VEX/pub -DVGA_x86=1 -DVGO_darwin=1 -DVGP_x86_darwin=1 -DVGPV_x86_darwin_vanilla=1 -I../coregrind -DVG_LIBDIR="\"/usr/local/lib/valgrind"\" -DVG_PLATFORM="\"x86-darwin\""   -arch i386 -O2 -g -std=gnu99 -Wall -Wmissing-prototypes -Wshadow -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wcast-align -Wcast-qual -Wwrite-strings -Wempty-body -Wformat -Wformat-security -Wignored-qualifiers -fno-stack-protector -fno-strict-aliasing -fno-builtin -Wno-cast-align -Wno-self-assign -Wno-tautological-compare -mmacosx-version-min=10.6 -fno-stack-protector -fno-pic -fno-PIC   -MT m_mach/libcoregrind_x86_darwin_a-mach_vmUser.o -MD -MP -MF m_mach/.deps/libcoregrind_x86_darwin_a-mach_vmUser.Tpo -c -o m_mach/libcoregrind_x86_darwin_a-mach_vmUser.o `test -f 'm_mach/mach_vmUser.c' || echo './'`m_mach/mach_vmUser.c
+mv -f m_mach/.deps/libcoregrind_x86_darwin_a-mach_vmUser.Tpo m_mach/.deps/libcoregrind_x86_darwin_a-mach_vmUser.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../VEX/pub -I../VEX/pub -DVGA_x86=1 -DVGO_darwin=1 -DVGP_x86_darwin=1 -DVGPV_x86_darwin_vanilla=1 -I../coregrind -DVG_LIBDIR="\"/usr/local/lib/valgrind"\" -DVG_PLATFORM="\"x86-darwin\""   -arch i386 -O2 -g -std=gnu99 -Wall -Wmissing-prototypes -Wshadow -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wcast-align -Wcast-qual -Wwrite-strings -Wempty-body -Wformat -Wformat-security -Wignored-qualifiers -fno-stack-protector -fno-strict-aliasing -fno-builtin -Wno-cast-align -Wno-self-assign -Wno-tautological-compare -mmacosx-version-min=10.6 -fno-stack-protector -fno-pic -fno-PIC   -MT m_mach/libcoregrind_x86_darwin_a-taskUser.o -MD -MP -MF m_mach/.deps/libcoregrind_x86_darwin_a-taskUser.Tpo -c -o m_mach/libcoregrind_x86_darwin_a-taskUser.o `test -f 'm_mach/taskUser.c' || echo './'`m_mach/taskUser.c
+mv -f m_mach/.deps/libcoregrind_x86_darwin_a-taskUser.Tpo m_mach/.deps/libcoregrind_x86_darwin_a-taskUser.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../VEX/pub -I../VEX/pub -DVGA_x86=1 -DVGO_darwin=1 -DVGP_x86_darwin=1 -DVGPV_x86_darwin_vanilla=1 -I../coregrind -DVG_LIBDIR="\"/usr/local/lib/valgrind"\" -DVG_PLATFORM="\"x86-darwin\""   -arch i386 -O2 -g -std=gnu99 -Wall -Wmissing-prototypes -Wshadow -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wcast-align -Wcast-qual -Wwrite-strings -Wempty-body -Wformat -Wformat-security -Wignored-qualifiers -fno-stack-protector -fno-strict-aliasing -fno-builtin -Wno-cast-align -Wno-self-assign -Wno-tautological-compare -mmacosx-version-min=10.6 -fno-stack-protector -fno-pic -fno-PIC   -MT m_mach/libcoregrind_x86_darwin_a-thread_actUser.o -MD -MP -MF m_mach/.deps/libcoregrind_x86_darwin_a-thread_actUser.Tpo -c -o m_mach/libcoregrind_x86_darwin_a-thread_actUser.o `test -f 'm_mach/thread_actUser.c' || echo './'`m_mach/thread_actUser.c
+mv -f m_mach/.deps/libcoregrind_x86_darwin_a-thread_actUser.Tpo m_mach/.deps/libcoregrind_x86_darwin_a-thread_actUser.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../include -I../VEX/pub -I../VEX/pub -DVGA_x86=1 -DVGO_darwin=1 -DVGP_x86_darwin=1 -DVGPV_x86_darwin_vanilla=1 -I../coregrind -DVG_LIBDIR="\"/usr/local/lib/valgrind"\" -DVG_PLATFORM="\"x86-darwin\""   -arch i386 -O2 -g -std=gnu99 -Wall -Wmissing-prototypes -Wshadow -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wcast-align -Wcast-qual -Wwrite-strings -Wempty-body -Wformat -Wformat-security -Wignored-qualifiers -fno-stack-protector -fno-strict-aliasing -fno-builtin -Wno-cast-align -Wno-self-assign -Wno-tautological-compare -mmacosx-version-min=10.6 -fno-stack-protector -fno-pic -fno-PIC   -MT m_mach/libcoregrind_x86_darwin_a-vm_mapUser.o -MD -MP -MF m_mach/.deps/libcoregrind_x86_darwin_a-vm_mapUser.Tpo -c -o m_mach/libcoregrind_x86_darwin_a-vm_mapUser.o `test -f 'm_mach/vm_mapUser.c' || echo './'`m_mach/vm_mapUser.c
+mv -f m_mach/.deps/libcoregrind_x86_darwin_a-vm_mapUser.Tpo m_mach/.deps/libcoregrind_x86_darwin_a-vm_mapUser.Po
+rm -f libcoregrind-x86-darwin.a
+/usr/bin/ar cru libcoregrind-x86-darwin.a libcoregrind_x86_darwin_a-m_addrinfo.o libcoregrind_x86_darwin_a-m_cache.o libcoregrind_x86_darwin_a-m_commandline.o libcoregrind_x86_darwin_a-m_compiler.o libcoregrind_x86_darwin_a-m_clientstate.o libcoregrind_x86_darwin_a-m_cpuid.o libcoregrind_x86_darwin_a-m_deduppoolalloc.o libcoregrind_x86_darwin_a-m_debuglog.o libcoregrind_x86_darwin_a-m_errormgr.o libcoregrind_x86_darwin_a-m_execontext.o libcoregrind_x86_darwin_a-m_hashtable.o libcoregrind_x86_darwin_a-m_libcbase.o libcoregrind_x86_darwin_a-m_libcassert.o libcoregrind_x86_darwin_a-m_libcfile.o libcoregrind_x86_darwin_a-m_libcprint.o libcoregrind_x86_darwin_a-m_libcproc.o libcoregrind_x86_darwin_a-m_libcsetjmp.o libcoregrind_x86_darwin_a-m_libcsignal.o libcoregrind_x86_darwin_a-m_machine.o libcoregrind_x86_darwin_a-m_main.o libcoregrind_x86_darwin_a-m_mallocfree.o libcoregrind_x86_darwin_a-m_options.o libcoregrind_x86_darwin_a-m_oset.o libcoregrind_x86_darwin_a-m_poolalloc.o libcoregrind_x86_darwin_a-m_rangemap.o libcoregrind_x86_darwin_a-m_redir.o libcoregrind_x86_darwin_a-m_sbprofile.o libcoregrind_x86_darwin_a-m_seqmatch.o libcoregrind_x86_darwin_a-m_signals.o libcoregrind_x86_darwin_a-m_sparsewa.o libcoregrind_x86_darwin_a-m_stacks.o libcoregrind_x86_darwin_a-m_stacktrace.o libcoregrind_x86_darwin_a-m_syscall.o libcoregrind_x86_darwin_a-m_threadstate.o libcoregrind_x86_darwin_a-m_tooliface.o libcoregrind_x86_darwin_a-m_trampoline.o libcoregrind_x86_darwin_a-m_translate.o libcoregrind_x86_darwin_a-m_transtab.o libcoregrind_x86_darwin_a-m_vki.o libcoregrind_x86_darwin_a-m_vkiscnums.o libcoregrind_x86_darwin_a-m_wordfm.o libcoregrind_x86_darwin_a-m_xarray.o libcoregrind_x86_darwin_a-m_aspacehl.o m_aspacemgr/libcoregrind_x86_darwin_a-aspacemgr-common.o m_aspacemgr/libcoregrind_x86_darwin_a-aspacemgr-linux.o m_aspacemgr/libcoregrind_x86_darwin_a-aspacemgr-segnames.o m_coredump/libcoregrind_x86_darwin_a-coredump-elf.o m_coredump/libcoregrind_x86_darwin_a-coredump-macho.o m_coredump/libcoregrind_x86_darwin_a-coredump-solaris.o m_debuginfo/libcoregrind_x86_darwin_a-misc.o m_debuginfo/libcoregrind_x86_darwin_a-d3basics.o m_debuginfo/libcoregrind_x86_darwin_a-debuginfo.o m_debuginfo/libcoregrind_x86_darwin_a-image.o m_debuginfo/libcoregrind_x86_darwin_a-minilzo-inl.o m_debuginfo/libcoregrind_x86_darwin_a-readdwarf.o m_debuginfo/libcoregrind_x86_darwin_a-readdwarf3.o m_debuginfo/libcoregrind_x86_darwin_a-readelf.o m_debuginfo/libcoregrind_x86_darwin_a-readexidx.o m_debuginfo/libcoregrind_x86_darwin_a-readmacho.o m_debuginfo/libcoregrind_x86_darwin_a-readpdb.o m_debuginfo/libcoregrind_x86_darwin_a-storage.o m_debuginfo/libcoregrind_x86_darwin_a-tinfl.o m_debuginfo/libcoregrind_x86_darwin_a-tytypes.o m_demangle/libcoregrind_x86_darwin_a-cp-demangle.o m_demangle/libcoregrind_x86_darwin_a-cplus-dem.o m_demangle/libcoregrind_x86_darwin_a-demangle.o m_demangle/libcoregrind_x86_darwin_a-dyn-string.o m_demangle/libcoregrind_x86_darwin_a-d-demangle.o m_demangle/libcoregrind_x86_darwin_a-safe-ctype.o m_dispatch/libcoregrind_x86_darwin_a-dispatch-x86-linux.o m_dispatch/libcoregrind_x86_darwin_a-dispatch-amd64-linux.o m_dispatch/libcoregrind_x86_darwin_a-dispatch-ppc32-linux.o m_dispatch/libcoregrind_x86_darwin_a-dispatch-ppc64be-linux.o m_dispatch/libcoregrind_x86_darwin_a-dispatch-ppc64le-linux.o m_dispatch/libcoregrind_x86_darwin_a-dispatch-arm-linux.o m_dispatch/libcoregrind_x86_darwin_a-dispatch-arm64-linux.o m_dispatch/libcoregrind_x86_darwin_a-dispatch-s390x-linux.o m_dispatch/libcoregrind_x86_darwin_a-dispatch-mips32-linux.o m_dispatch/libcoregrind_x86_darwin_a-dispatch-mips64-linux.o m_dispatch/libcoregrind_x86_darwin_a-dispatch-tilegx-linux.o m_dispatch/libcoregrind_x86_darwin_a-dispatch-x86-darwin.o m_dispatch/libcoregrind_x86_darwin_a-dispatch-amd64-darwin.o m_dispatch/libcoregrind_x86_darwin_a-dispatch-x86-solaris.o m_dispatch/libcoregrind_x86_darwin_a-dispatch-amd64-solaris.o m_gdbserver/libcoregrind_x86_darwin_a-inferiors.o m_gdbserver/libcoregrind_x86_darwin_a-m_gdbserver.o m_gdbserver/libcoregrind_x86_darwin_a-regcache.o m_gdbserver/libcoregrind_x86_darwin_a-remote-utils.o m_gdbserver/libcoregrind_x86_darwin_a-server.o m_gdbserver/libcoregrind_x86_darwin_a-signals.o m_gdbserver/libcoregrind_x86_darwin_a-target.o m_gdbserver/libcoregrind_x86_darwin_a-utils.o m_gdbserver/libcoregrind_x86_darwin_a-valgrind-low-x86.o m_gdbserver/libcoregrind_x86_darwin_a-valgrind-low-amd64.o m_gdbserver/libcoregrind_x86_darwin_a-valgrind-low-arm.o m_gdbserver/libcoregrind_x86_darwin_a-valgrind-low-arm64.o m_gdbserver/libcoregrind_x86_darwin_a-valgrind-low-ppc32.o m_gdbserver/libcoregrind_x86_darwin_a-valgrind-low-ppc64.o m_gdbserver/libcoregrind_x86_darwin_a-valgrind-low-s390x.o m_gdbserver/libcoregrind_x86_darwin_a-valgrind-low-mips32.o m_gdbserver/libcoregrind_x86_darwin_a-valgrind-low-mips64.o m_gdbserver/libcoregrind_x86_darwin_a-valgrind-low-tilegx.o m_gdbserver/libcoregrind_x86_darwin_a-version.o m_initimg/libcoregrind_x86_darwin_a-initimg-linux.o m_initimg/libcoregrind_x86_darwin_a-initimg-darwin.o m_initimg/libcoregrind_x86_darwin_a-initimg-solaris.o m_initimg/libcoregrind_x86_darwin_a-initimg-pathscan.o m_mach/libcoregrind_x86_darwin_a-mach_basics.o m_mach/libcoregrind_x86_darwin_a-mach_msg.o m_mach/libcoregrind_x86_darwin_a-mach_traps-x86-darwin.o m_mach/libcoregrind_x86_darwin_a-mach_traps-amd64-darwin.o m_replacemalloc/libcoregrind_x86_darwin_a-replacemalloc_core.o m_scheduler/libcoregrind_x86_darwin_a-sched-lock.o m_scheduler/libcoregrind_x86_darwin_a-sched-lock-generic.o m_scheduler/libcoregrind_x86_darwin_a-scheduler.o m_scheduler/libcoregrind_x86_darwin_a-sema.o m_sigframe/libcoregrind_x86_darwin_a-sigframe-common.o m_sigframe/libcoregrind_x86_darwin_a-sigframe-x86-linux.o m_sigframe/libcoregrind_x86_darwin_a-sigframe-amd64-linux.o m_sigframe/libcoregrind_x86_darwin_a-sigframe-ppc32-linux.o m_sigframe/libcoregrind_x86_darwin_a-sigframe-ppc64-linux.o m_sigframe/libcoregrind_x86_darwin_a-sigframe-arm-linux.o m_sigframe/libcoregrind_x86_darwin_a-sigframe-arm64-linux.o m_sigframe/libcoregrind_x86_darwin_a-sigframe-s390x-linux.o m_sigframe/libcoregrind_x86_darwin_a-sigframe-mips32-linux.o m_sigframe/libcoregrind_x86_darwin_a-sigframe-mips64-linux.o m_sigframe/libcoregrind_x86_darwin_a-sigframe-tilegx-linux.o m_sigframe/libcoregrind_x86_darwin_a-sigframe-x86-darwin.o m_sigframe/libcoregrind_x86_darwin_a-sigframe-amd64-darwin.o m_sigframe/libcoregrind_x86_darwin_a-sigframe-solaris.o m_syswrap/libcoregrind_x86_darwin_a-syscall-x86-linux.o m_syswrap/libcoregrind_x86_darwin_a-syscall-amd64-linux.o m_syswrap/libcoregrind_x86_darwin_a-syscall-ppc32-linux.o m_syswrap/libcoregrind_x86_darwin_a-syscall-ppc64be-linux.o m_syswrap/libcoregrind_x86_darwin_a-syscall-ppc64le-linux.o m_syswrap/libcoregrind_x86_darwin_a-syscall-arm-linux.o m_syswrap/libcoregrind_x86_darwin_a-syscall-arm64-linux.o m_syswrap/libcoregrind_x86_darwin_a-syscall-s390x-linux.o m_syswrap/libcoregrind_x86_darwin_a-syscall-mips32-linux.o m_syswrap/libcoregrind_x86_darwin_a-syscall-mips64-linux.o m_syswrap/libcoregrind_x86_darwin_a-syscall-tilegx-linux.o m_syswrap/libcoregrind_x86_darwin_a-syscall-x86-darwin.o m_syswrap/libcoregrind_x86_darwin_a-syscall-amd64-darwin.o m_syswrap/libcoregrind_x86_darwin_a-syscall-x86-solaris.o m_syswrap/libcoregrind_x86_darwin_a-syscall-amd64-solaris.o m_syswrap/libcoregrind_x86_darwin_a-syswrap-main.o m_syswrap/libcoregrind_x86_darwin_a-syswrap-generic.o m_syswrap/libcoregrind_x86_darwin_a-syswrap-linux.o m_syswrap/libcoregrind_x86_darwin_a-syswrap-linux-variants.o m_syswrap/libcoregrind_x86_darwin_a-syswrap-darwin.o m_syswrap/libcoregrind_x86_darwin_a-syswrap-solaris.o m_syswrap/libcoregrind_x86_darwin_a-syswrap-x86-linux.o m_syswrap/libcoregrind_x86_darwin_a-syswrap-amd64-linux.o m_syswrap/libcoregrind_x86_darwin_a-syswrap-ppc32-linux.o m_syswrap/libcoregrind_x86_darwin_a-syswrap-ppc64-linux.o m_syswrap/libcoregrind_x86_darwin_a-syswrap-arm-linux.o m_syswrap/libcoregrind_x86_darwin_a-syswrap-arm64-linux.o m_syswrap/libcoregrind_x86_darwin_a-syswrap-s390x-linux.o m_syswrap/libcoregrind_x86_darwin_a-syswrap-mips32-linux.o m_syswrap/libcoregrind_x86_darwin_a-syswrap-mips64-linux.o m_syswrap/libcoregrind_x86_darwin_a-syswrap-tilegx-linux.o m_syswrap/libcoregrind_x86_darwin_a-syswrap-x86-darwin.o m_syswrap/libcoregrind_x86_darwin_a-syswrap-amd64-darwin.o m_syswrap/libcoregrind_x86_darwin_a-syswrap-xen.o m_syswrap/libcoregrind_x86_darwin_a-syswrap-x86-solaris.o m_syswrap/libcoregrind_x86_darwin_a-syswrap-amd64-solaris.o m_ume/libcoregrind_x86_darwin_a-elf.o m_ume/libcoregrind_x86_darwin_a-macho.o m_ume/libcoregrind_x86_darwin_a-main.o m_ume/libcoregrind_x86_darwin_a-script.o  m_mach/libcoregrind_x86_darwin_a-mach_vmUser.o m_mach/libcoregrind_x86_darwin_a-taskUser.o m_mach/libcoregrind_x86_darwin_a-thread_actUser.o m_mach/libcoregrind_x86_darwin_a-vm_mapUser.o  
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-coredump-elf.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-coredump-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-readelf.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-readexidx.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-x86-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-amd64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-ppc32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-ppc64be-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-ppc64le-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-arm-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-arm64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-s390x-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-mips32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-mips64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-tilegx-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-amd64-darwin.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-x86-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-amd64-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-initimg-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-initimg-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-mach_traps-amd64-darwin.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-x86-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-amd64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-ppc32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-ppc64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-arm-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-arm64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-s390x-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-mips32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-mips64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-tilegx-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-amd64-darwin.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-x86-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-amd64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-ppc32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-ppc64be-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-ppc64le-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-arm-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-arm64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-s390x-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-mips32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-mips64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-tilegx-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-amd64-darwin.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-x86-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-amd64-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-linux-variants.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-x86-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-amd64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-ppc32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-ppc64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-arm-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-arm64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-s390x-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-mips32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-mips64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-tilegx-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-amd64-darwin.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-xen.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-x86-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-amd64-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-elf.o) has no symbols
+ranlib libcoregrind-x86-darwin.a
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-coredump-elf.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-coredump-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-readelf.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-readexidx.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-x86-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-amd64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-ppc32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-ppc64be-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-ppc64le-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-arm-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-arm64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-s390x-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-mips32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-mips64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-tilegx-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-amd64-darwin.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-x86-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-amd64-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-initimg-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-initimg-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-mach_traps-amd64-darwin.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-x86-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-amd64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-ppc32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-ppc64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-arm-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-arm64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-s390x-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-mips32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-mips64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-tilegx-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-amd64-darwin.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-x86-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-amd64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-ppc32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-ppc64be-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-ppc64le-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-arm-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-arm64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-s390x-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-mips32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-mips64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-tilegx-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-amd64-darwin.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-x86-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-amd64-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-linux-variants.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-x86-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-amd64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-ppc32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-ppc64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-arm-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-arm64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-s390x-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-mips32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-mips64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-tilegx-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-amd64-darwin.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-xen.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-x86-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-amd64-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-elf.o) has no symbols
+ .././install-sh -c -d '/usr/local/lib/valgrind'
+ /usr/bin/install -c -m 644  libcoregrind-amd64-darwin.a libcoregrind-x86-darwin.a libreplacemalloc_toolpreload-amd64-darwin.a libreplacemalloc_toolpreload-x86-darwin.a '/usr/local/lib/valgrind'
+ ( cd '/usr/local/lib/valgrind' && ranlib libcoregrind-amd64-darwin.a )
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-coredump-elf.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-coredump-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-readelf.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-readexidx.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-x86-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-amd64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-ppc32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-ppc64be-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-ppc64le-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-arm-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-arm64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-s390x-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-mips32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-mips64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-tilegx-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-x86-darwin.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-x86-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-dispatch-amd64-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-initimg-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-initimg-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-mach_traps-x86-darwin.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-x86-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-amd64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-ppc32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-ppc64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-arm-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-arm64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-s390x-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-mips32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-mips64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-tilegx-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-x86-darwin.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-sigframe-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-x86-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-amd64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-ppc32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-ppc64be-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-ppc64le-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-arm-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-arm64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-s390x-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-mips32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-mips64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-tilegx-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-x86-darwin.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-x86-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syscall-amd64-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-linux-variants.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-x86-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-amd64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-ppc32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-ppc64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-arm-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-arm64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-s390x-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-mips32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-mips64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-tilegx-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-x86-darwin.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-xen.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-x86-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-syswrap-amd64-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-amd64-darwin.a(libcoregrind_amd64_darwin_a-elf.o) has no symbols
+ ( cd '/usr/local/lib/valgrind' && ranlib libcoregrind-x86-darwin.a )
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-coredump-elf.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-coredump-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-readelf.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-readexidx.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-x86-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-amd64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-ppc32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-ppc64be-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-ppc64le-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-arm-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-arm64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-s390x-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-mips32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-mips64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-tilegx-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-amd64-darwin.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-x86-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-dispatch-amd64-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-initimg-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-initimg-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-mach_traps-amd64-darwin.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-x86-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-amd64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-ppc32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-ppc64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-arm-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-arm64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-s390x-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-mips32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-mips64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-tilegx-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-amd64-darwin.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-sigframe-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-x86-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-amd64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-ppc32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-ppc64be-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-ppc64le-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-arm-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-arm64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-s390x-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-mips32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-mips64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-tilegx-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-amd64-darwin.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-x86-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syscall-amd64-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-linux-variants.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-x86-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-amd64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-ppc32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-ppc64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-arm-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-arm64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-s390x-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-mips32-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-mips64-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-tilegx-linux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-amd64-darwin.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-xen.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-x86-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-syswrap-amd64-solaris.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libcoregrind-x86-darwin.a(libcoregrind_x86_darwin_a-elf.o) has no symbols
+ ( cd '/usr/local/lib/valgrind' && ranlib libreplacemalloc_toolpreload-amd64-darwin.a )
+ ( cd '/usr/local/lib/valgrind' && ranlib libreplacemalloc_toolpreload-x86-darwin.a )
+ .././install-sh -c -d '/usr/local/lib/valgrind'
+ /usr/bin/install -c -m 644 m_gdbserver/32bit-core-valgrind-s1.xml m_gdbserver/32bit-core-valgrind-s2.xml m_gdbserver/32bit-core.xml m_gdbserver/32bit-linux-valgrind-s1.xml m_gdbserver/32bit-linux-valgrind-s2.xml m_gdbserver/32bit-linux.xml m_gdbserver/32bit-sse-valgrind-s1.xml m_gdbserver/32bit-sse-valgrind-s2.xml m_gdbserver/32bit-sse.xml m_gdbserver/64bit-avx-valgrind-s2.xml m_gdbserver/64bit-avx-valgrind-s1.xml m_gdbserver/64bit-avx.xml m_gdbserver/64bit-core-valgrind-s1.xml m_gdbserver/64bit-core-valgrind-s2.xml m_gdbserver/64bit-core.xml m_gdbserver/64bit-linux-valgrind-s1.xml m_gdbserver/64bit-linux-valgrind-s2.xml m_gdbserver/64bit-linux.xml m_gdbserver/64bit-sse-valgrind-s1.xml m_gdbserver/64bit-sse-valgrind-s2.xml m_gdbserver/64bit-sse.xml m_gdbserver/amd64-avx-coresse-valgrind.xml m_gdbserver/amd64-avx-coresse.xml m_gdbserver/amd64-avx-linux-valgrind.xml m_gdbserver/amd64-avx-linux.xml m_gdbserver/amd64-coresse-valgrind.xml m_gdbserver/amd64-linux-valgrind.xml m_gdbserver/arm-core-valgrind-s1.xml m_gdbserver/arm-core-valgrind-s2.xml m_gdbserver/arm-core.xml m_gdbserver/arm-vfpv3-valgrind-s1.xml m_gdbserver/arm-vfpv3-valgrind-s2.xml m_gdbserver/arm-vfpv3.xml m_gdbserver/arm-with-vfpv3-valgrind.xml m_gdbserver/arm-with-vfpv3.xml m_gdbserver/i386-coresse-valgrind.xml m_gdbserver/i386-linux-valgrind.xml m_gdbserver/power64-core-valgrind-s1.xml m_gdbserver/power64-core-valgrind-s2.xml m_gdbserver/power64-core.xml '/usr/local/lib/valgrind'
+ /usr/bin/install -c -m 644 m_gdbserver/power64-core2-valgrind-s1.xml m_gdbserver/power64-core2-valgrind-s2.xml m_gdbserver/power64-linux-valgrind-s1.xml m_gdbserver/power64-linux-valgrind-s2.xml m_gdbserver/power64-linux.xml m_gdbserver/power-altivec-valgrind-s1.xml m_gdbserver/power-altivec-valgrind-s2.xml m_gdbserver/power-altivec.xml m_gdbserver/power-vsx-valgrind-s1.xml m_gdbserver/power-vsx-valgrind-s2.xml m_gdbserver/power-vsx.xml m_gdbserver/power-core-valgrind-s1.xml m_gdbserver/power-core-valgrind-s2.xml m_gdbserver/power-core.xml m_gdbserver/power-fpu-valgrind-s1.xml m_gdbserver/power-fpu-valgrind-s2.xml m_gdbserver/power-fpu.xml m_gdbserver/power-linux-valgrind-s1.xml m_gdbserver/power-linux-valgrind-s2.xml m_gdbserver/power-linux.xml m_gdbserver/powerpc-altivec32l-valgrind.xml m_gdbserver/powerpc-altivec32l.xml m_gdbserver/powerpc-altivec64l-valgrind.xml m_gdbserver/powerpc-altivec64l.xml m_gdbserver/s390-acr-valgrind-s1.xml m_gdbserver/s390-acr-valgrind-s2.xml m_gdbserver/s390-acr.xml m_gdbserver/s390-fpr-valgrind-s1.xml m_gdbserver/s390-fpr-valgrind-s2.xml m_gdbserver/s390-fpr.xml m_gdbserver/s390x-core64-valgrind-s1.xml m_gdbserver/s390x-core64-valgrind-s2.xml m_gdbserver/s390x-core64.xml m_gdbserver/s390x-generic-valgrind.xml m_gdbserver/s390x-generic.xml m_gdbserver/s390x-linux64-valgrind-s1.xml m_gdbserver/s390x-linux64-valgrind-s2.xml m_gdbserver/s390x-linux64.xml m_gdbserver/mips-cp0-valgrind-s1.xml m_gdbserver/mips-cp0-valgrind-s2.xml '/usr/local/lib/valgrind'
+ /usr/bin/install -c -m 644 m_gdbserver/mips-cp0.xml m_gdbserver/mips-cpu-valgrind-s1.xml m_gdbserver/mips-cpu-valgrind-s2.xml m_gdbserver/mips-cpu.xml m_gdbserver/mips-linux.xml m_gdbserver/mips-linux-valgrind.xml m_gdbserver/mips-fpu-valgrind-s1.xml m_gdbserver/mips-fpu-valgrind-s2.xml m_gdbserver/mips-fpu.xml m_gdbserver/mips64-cp0-valgrind-s1.xml m_gdbserver/mips64-cp0-valgrind-s2.xml m_gdbserver/mips64-cp0.xml m_gdbserver/mips64-cpu-valgrind-s1.xml m_gdbserver/mips64-cpu-valgrind-s2.xml m_gdbserver/mips64-cpu.xml m_gdbserver/mips64-linux.xml m_gdbserver/mips64-linux-valgrind.xml m_gdbserver/mips64-fpu-valgrind-s1.xml m_gdbserver/mips64-fpu-valgrind-s2.xml m_gdbserver/mips64-fpu.xml '/usr/local/lib/valgrind'
+Making install in .
+mkdir -p ./.in_place
+rm -f ./.in_place/default.supp
+ln -s ../default.supp ./.in_place
+make[3]: Nothing to be done for `install-exec-am'.
+ ./install-sh -c -d '/usr/local/lib/pkgconfig'
+ /usr/bin/install -c -m 644 valgrind.pc '/usr/local/lib/pkgconfig'
+ ./install-sh -c -d '/usr/local/include/valgrind'
+ /usr/bin/install -c -m 644 config.h '/usr/local/include/valgrind'
+ ./install-sh -c -d '/usr/local/lib/valgrind'
+ /usr/bin/install -c -m 644 default.supp '/usr/local/lib/valgrind'
+Making install in memcheck
+Making install in .
+../coregrind/link_tool_exe_darwin 0x138000000 gcc     -o memcheck-amd64-darwin  -arch x86_64 -O2 -g -std=gnu99 -Wall -Wmissing-prototypes -Wshadow -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wcast-align -Wcast-qual -Wwrite-strings -Wempty-body -Wformat -Wformat-security -Wignored-qualifiers -fno-stack-protector -fno-strict-aliasing -fno-builtin -Wno-cast-align -Wno-self-assign -Wno-tautological-compare -mmacosx-version-min=10.6 -fno-stack-protector -O2 -nodefaultlibs -nostartfiles -Wl,-u,__start -Wl,-e,__start -arch x86_64 memcheck_amd64_darwin-mc_leakcheck.o memcheck_amd64_darwin-mc_malloc_wrappers.o memcheck_amd64_darwin-mc_main.o memcheck_amd64_darwin-mc_translate.o memcheck_amd64_darwin-mc_machine.o memcheck_amd64_darwin-mc_errors.o ../coregrind/libcoregrind-amd64-darwin.a ../VEX/libvex-amd64-darwin.a -lgcc
+link_tool_exe_darwin: /usr/bin/ld -static -arch x86_64 -macosx_version_min 10.6 -o memcheck-amd64-darwin -u __start -e __start -image_base 0x138000000 -stack_addr 0x134000000 -stack_size 0x800000 memcheck_amd64_darwin-mc_leakcheck.o memcheck_amd64_darwin-mc_malloc_wrappers.o memcheck_amd64_darwin-mc_main.o memcheck_amd64_darwin-mc_translate.o memcheck_amd64_darwin-mc_machine.o memcheck_amd64_darwin-mc_errors.o ../coregrind/libcoregrind-amd64-darwin.a ../VEX/libvex-amd64-darwin.a
+link_tool_exe_darwin: ../coregrind/fixup_macho_loadcmds 0x134000000 0x800000 memcheck-amd64-darwin
+fixup_macho_loadcmds: requested stack_addr (top) 0x134000000, stack_size 0x800000
+fixup_macho_loadcmds: examining tool exe: memcheck-amd64-darwin
+fixup_macho_loadcmds:   initial RSP is as expected (0x134000000)
+fixup_macho_loadcmds:   acceptable __UNIXSTACK present; no modifications.
+fixup_macho_loadcmds:   changing __PAGEZERO.vmaddr from 0x138000000 to 0x0.
+../coregrind/link_tool_exe_darwin 0x38000000 gcc     -o memcheck-x86-darwin  -arch i386 -O2 -g -std=gnu99 -Wall -Wmissing-prototypes -Wshadow -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wcast-align -Wcast-qual -Wwrite-strings -Wempty-body -Wformat -Wformat-security -Wignored-qualifiers -fno-stack-protector -fno-strict-aliasing -fno-builtin -Wno-cast-align -Wno-self-assign -Wno-tautological-compare -mmacosx-version-min=10.6 -fno-stack-protector -fno-pic -fno-PIC -O2 -nodefaultlibs -nostartfiles -Wl,-u,__start -Wl,-e,__start -arch i386 memcheck_x86_darwin-mc_leakcheck.o memcheck_x86_darwin-mc_malloc_wrappers.o memcheck_x86_darwin-mc_main.o memcheck_x86_darwin-mc_translate.o memcheck_x86_darwin-mc_machine.o memcheck_x86_darwin-mc_errors.o ../coregrind/libcoregrind-x86-darwin.a ../VEX/libvex-x86-darwin.a -lgcc
+link_tool_exe_darwin: /usr/bin/ld -static -arch i386 -macosx_version_min 10.6 -o memcheck-x86-darwin -u __start -e __start -image_base 0x38000000 -stack_addr 0x34000000 -stack_size 0x800000 memcheck_x86_darwin-mc_leakcheck.o memcheck_x86_darwin-mc_malloc_wrappers.o memcheck_x86_darwin-mc_main.o memcheck_x86_darwin-mc_translate.o memcheck_x86_darwin-mc_machine.o memcheck_x86_darwin-mc_errors.o ../coregrind/libcoregrind-x86-darwin.a ../VEX/libvex-x86-darwin.a
+link_tool_exe_darwin: ../coregrind/fixup_macho_loadcmds 0x34000000 0x800000 memcheck-x86-darwin
+fixup_macho_loadcmds: requested stack_addr (top) 0x34000000, stack_size 0x800000
+fixup_macho_loadcmds: examining tool exe: memcheck-x86-darwin
+fixup_macho_loadcmds:   Is 32-bit MachO file; no modifications needed.
+mkdir -p ../.in_place; \
+	for f in memcheck-amd64-darwin memcheck-x86-darwin vgpreload_memcheck-amd64-darwin.so vgpreload_memcheck-x86-darwin.so ; do \
+	  rm -f ../.in_place/$f; \
+	  ln -f -s ../memcheck/$f ../.in_place; \
+	done
+for f in memcheck-amd64-darwin memcheck-x86-darwin vgpreload_memcheck-amd64-darwin.so vgpreload_memcheck-x86-darwin.so; do \
+	  if [ ! -e $f.dSYM  -o  $f -nt $f.dSYM ] ; then \
+	      echo "dsymutil $f"; \
+	      dsymutil $f; \
+	  fi; \
+	done
+dsymutil memcheck-amd64-darwin
+dsymutil memcheck-x86-darwin
+mkdir -p ../.in_place; \
+	for f in memcheck-amd64-darwin memcheck-x86-darwin vgpreload_memcheck-amd64-darwin.so vgpreload_memcheck-x86-darwin.so; do \
+	  rm -f ../.in_place/$f.dSYM; \
+	  ln -f -s ../memcheck/$f.dSYM ../.in_place; \
+	done
+/bin/sh /Users/mixelpix/c/valgrind-3.12.0/install-sh -d /usr/local/lib/valgrind; \
+	for f in memcheck-amd64-darwin memcheck-x86-darwin vgpreload_memcheck-amd64-darwin.so vgpreload_memcheck-x86-darwin.so; do \
+	  /usr/bin/install -c $f /usr/local/lib/valgrind; \
+	done
+for f in memcheck-amd64-darwin memcheck-x86-darwin vgpreload_memcheck-amd64-darwin.so vgpreload_memcheck-x86-darwin.so; do \
+	  if [ ! -e $f.dSYM  -o  $f -nt $f.dSYM ] ; then \
+	      echo "dsymutil $f"; \
+	      dsymutil $f; \
+	  fi; \
+	done
+dsymutil memcheck-amd64-darwin
+dsymutil memcheck-x86-darwin
+/bin/sh /Users/mixelpix/c/valgrind-3.12.0/install-sh -d /usr/local/lib/valgrind; \
+	for f in memcheck-amd64-darwin memcheck-x86-darwin vgpreload_memcheck-amd64-darwin.so vgpreload_memcheck-x86-darwin.so; do \
+	  cp -R $f.dSYM /usr/local/lib/valgrind; \
+	done
+ .././install-sh -c -d '/usr/local/include/valgrind'
+ /usr/bin/install -c -m 644 memcheck.h '/usr/local/include/valgrind'
+Making install in tests
+Making install in .
+make[5]: Nothing to be done for `install-exec-am'.
+make[5]: Nothing to be done for `install-data-am'.
+Making install in x86
+make[5]: Nothing to be done for `install-exec-am'.
+make[5]: Nothing to be done for `install-data-am'.
+Making install in amd64
+make[5]: Nothing to be done for `install-exec-am'.
+make[5]: Nothing to be done for `install-data-am'.
+Making install in darwin
+make[5]: Nothing to be done for `install-exec-am'.
+make[5]: Nothing to be done for `install-data-am'.
+Making install in cachegrind
+Making install in .
+../coregrind/link_tool_exe_darwin 0x138000000 gcc     -o cachegrind-amd64-darwin  -arch x86_64 -O2 -g -std=gnu99 -Wall -Wmissing-prototypes -Wshadow -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wcast-align -Wcast-qual -Wwrite-strings -Wempty-body -Wformat -Wformat-security -Wignored-qualifiers -fno-stack-protector -fno-strict-aliasing -fno-builtin -Wno-cast-align -Wno-self-assign -Wno-tautological-compare -mmacosx-version-min=10.6 -fno-stack-protector -nodefaultlibs -nostartfiles -Wl,-u,__start -Wl,-e,__start -arch x86_64 cachegrind_amd64_darwin-cg_main.o cachegrind_amd64_darwin-cg_arch.o ../coregrind/libcoregrind-amd64-darwin.a ../VEX/libvex-amd64-darwin.a -lgcc
+link_tool_exe_darwin: /usr/bin/ld -static -arch x86_64 -macosx_version_min 10.6 -o cachegrind-amd64-darwin -u __start -e __start -image_base 0x138000000 -stack_addr 0x134000000 -stack_size 0x800000 cachegrind_amd64_darwin-cg_main.o cachegrind_amd64_darwin-cg_arch.o ../coregrind/libcoregrind-amd64-darwin.a ../VEX/libvex-amd64-darwin.a
+link_tool_exe_darwin: ../coregrind/fixup_macho_loadcmds 0x134000000 0x800000 cachegrind-amd64-darwin
+fixup_macho_loadcmds: requested stack_addr (top) 0x134000000, stack_size 0x800000
+fixup_macho_loadcmds: examining tool exe: cachegrind-amd64-darwin
+fixup_macho_loadcmds:   initial RSP is as expected (0x134000000)
+fixup_macho_loadcmds:   acceptable __UNIXSTACK present; no modifications.
+fixup_macho_loadcmds:   changing __PAGEZERO.vmaddr from 0x138000000 to 0x0.
+../coregrind/link_tool_exe_darwin 0x38000000 gcc     -o cachegrind-x86-darwin  -arch i386 -O2 -g -std=gnu99 -Wall -Wmissing-prototypes -Wshadow -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wcast-align -Wcast-qual -Wwrite-strings -Wempty-body -Wformat -Wformat-security -Wignored-qualifiers -fno-stack-protector -fno-strict-aliasing -fno-builtin -Wno-cast-align -Wno-self-assign -Wno-tautological-compare -mmacosx-version-min=10.6 -fno-stack-protector -fno-pic -fno-PIC -nodefaultlibs -nostartfiles -Wl,-u,__start -Wl,-e,__start -arch i386 cachegrind_x86_darwin-cg_main.o cachegrind_x86_darwin-cg_arch.o ../coregrind/libcoregrind-x86-darwin.a ../VEX/libvex-x86-darwin.a -lgcc
+link_tool_exe_darwin: /usr/bin/ld -static -arch i386 -macosx_version_min 10.6 -o cachegrind-x86-darwin -u __start -e __start -image_base 0x38000000 -stack_addr 0x34000000 -stack_size 0x800000 cachegrind_x86_darwin-cg_main.o cachegrind_x86_darwin-cg_arch.o ../coregrind/libcoregrind-x86-darwin.a ../VEX/libvex-x86-darwin.a
+link_tool_exe_darwin: ../coregrind/fixup_macho_loadcmds 0x34000000 0x800000 cachegrind-x86-darwin
+fixup_macho_loadcmds: requested stack_addr (top) 0x34000000, stack_size 0x800000
+fixup_macho_loadcmds: examining tool exe: cachegrind-x86-darwin
+fixup_macho_loadcmds:   Is 32-bit MachO file; no modifications needed.
+mkdir -p ../.in_place; \
+	for f in cachegrind-amd64-darwin cachegrind-x86-darwin ; do \
+	  rm -f ../.in_place/$f; \
+	  ln -f -s ../cachegrind/$f ../.in_place; \
+	done
+for f in ; do \
+	  if [ ! -e $f.dSYM  -o  $f -nt $f.dSYM ] ; then \
+	      echo "dsymutil $f"; \
+	      dsymutil $f; \
+	  fi; \
+	done
+mkdir -p ../.in_place; \
+	for f in ; do \
+	  rm -f ../.in_place/$f.dSYM; \
+	  ln -f -s ../cachegrind/$f.dSYM ../.in_place; \
+	done
+ .././install-sh -c -d '/usr/local/bin'
+  /usr/bin/install -c cg_merge '/usr/local/bin'
+ .././install-sh -c -d '/usr/local/bin'
+ /usr/bin/install -c cg_annotate cg_diff '/usr/local/bin'
+/bin/sh /Users/mixelpix/c/valgrind-3.12.0/install-sh -d /usr/local/lib/valgrind; \
+	for f in cachegrind-amd64-darwin cachegrind-x86-darwin; do \
+	  /usr/bin/install -c $f /usr/local/lib/valgrind; \
+	done
+for f in ; do \
+	  if [ ! -e $f.dSYM  -o  $f -nt $f.dSYM ] ; then \
+	      echo "dsymutil $f"; \
+	      dsymutil $f; \
+	  fi; \
+	done
+/bin/sh /Users/mixelpix/c/valgrind-3.12.0/install-sh -d /usr/local/lib/valgrind; \
+	for f in ; do \
+	  cp -R $f.dSYM /usr/local/lib/valgrind; \
+	done
+make[4]: Nothing to be done for `install-data-am'.
+Making install in tests
+Making install in .
+make[5]: Nothing to be done for `install-exec-am'.
+make[5]: Nothing to be done for `install-data-am'.
+Making install in x86
+make[5]: Nothing to be done for `install-exec-am'.
+make[5]: Nothing to be done for `install-data-am'.
+Making install in callgrind
+Making install in .
+../coregrind/link_tool_exe_darwin 0x138000000 gcc     -o callgrind-amd64-darwin  -arch x86_64 -O2 -g -std=gnu99 -Wall -Wmissing-prototypes -Wshadow -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wcast-align -Wcast-qual -Wwrite-strings -Wempty-body -Wformat -Wformat-security -Wignored-qualifiers -fno-stack-protector -fno-strict-aliasing -fno-builtin -Wno-cast-align -Wno-self-assign -Wno-tautological-compare -mmacosx-version-min=10.6 -fno-stack-protector -I../cachegrind -nodefaultlibs -nostartfiles -Wl,-u,__start -Wl,-e,__start -arch x86_64 callgrind_amd64_darwin-bb.o callgrind_amd64_darwin-bbcc.o callgrind_amd64_darwin-callstack.o callgrind_amd64_darwin-clo.o callgrind_amd64_darwin-context.o callgrind_amd64_darwin-costs.o callgrind_amd64_darwin-debug.o callgrind_amd64_darwin-dump.o callgrind_amd64_darwin-events.o callgrind_amd64_darwin-fn.o callgrind_amd64_darwin-jumps.o callgrind_amd64_darwin-main.o callgrind_amd64_darwin-sim.o callgrind_amd64_darwin-threads.o ../coregrind/libcoregrind-amd64-darwin.a ../VEX/libvex-amd64-darwin.a -lgcc
+link_tool_exe_darwin: /usr/bin/ld -static -arch x86_64 -macosx_version_min 10.6 -o callgrind-amd64-darwin -u __start -e __start -image_base 0x138000000 -stack_addr 0x134000000 -stack_size 0x800000 callgrind_amd64_darwin-bb.o callgrind_amd64_darwin-bbcc.o callgrind_amd64_darwin-callstack.o callgrind_amd64_darwin-clo.o callgrind_amd64_darwin-context.o callgrind_amd64_darwin-costs.o callgrind_amd64_darwin-debug.o callgrind_amd64_darwin-dump.o callgrind_amd64_darwin-events.o callgrind_amd64_darwin-fn.o callgrind_amd64_darwin-jumps.o callgrind_amd64_darwin-main.o callgrind_amd64_darwin-sim.o callgrind_amd64_darwin-threads.o ../coregrind/libcoregrind-amd64-darwin.a ../VEX/libvex-amd64-darwin.a
+link_tool_exe_darwin: ../coregrind/fixup_macho_loadcmds 0x134000000 0x800000 callgrind-amd64-darwin
+fixup_macho_loadcmds: requested stack_addr (top) 0x134000000, stack_size 0x800000
+fixup_macho_loadcmds: examining tool exe: callgrind-amd64-darwin
+fixup_macho_loadcmds:   initial RSP is as expected (0x134000000)
+fixup_macho_loadcmds:   acceptable __UNIXSTACK present; no modifications.
+fixup_macho_loadcmds:   changing __PAGEZERO.vmaddr from 0x138000000 to 0x0.
+../coregrind/link_tool_exe_darwin 0x38000000 gcc     -o callgrind-x86-darwin  -arch i386 -O2 -g -std=gnu99 -Wall -Wmissing-prototypes -Wshadow -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wcast-align -Wcast-qual -Wwrite-strings -Wempty-body -Wformat -Wformat-security -Wignored-qualifiers -fno-stack-protector -fno-strict-aliasing -fno-builtin -Wno-cast-align -Wno-self-assign -Wno-tautological-compare -mmacosx-version-min=10.6 -fno-stack-protector -fno-pic -fno-PIC -I../cachegrind -nodefaultlibs -nostartfiles -Wl,-u,__start -Wl,-e,__start -arch i386 callgrind_x86_darwin-bb.o callgrind_x86_darwin-bbcc.o callgrind_x86_darwin-callstack.o callgrind_x86_darwin-clo.o callgrind_x86_darwin-context.o callgrind_x86_darwin-costs.o callgrind_x86_darwin-debug.o callgrind_x86_darwin-dump.o callgrind_x86_darwin-events.o callgrind_x86_darwin-fn.o callgrind_x86_darwin-jumps.o callgrind_x86_darwin-main.o callgrind_x86_darwin-sim.o callgrind_x86_darwin-threads.o ../coregrind/libcoregrind-x86-darwin.a ../VEX/libvex-x86-darwin.a -lgcc
+link_tool_exe_darwin: /usr/bin/ld -static -arch i386 -macosx_version_min 10.6 -o callgrind-x86-darwin -u __start -e __start -image_base 0x38000000 -stack_addr 0x34000000 -stack_size 0x800000 callgrind_x86_darwin-bb.o callgrind_x86_darwin-bbcc.o callgrind_x86_darwin-callstack.o callgrind_x86_darwin-clo.o callgrind_x86_darwin-context.o callgrind_x86_darwin-costs.o callgrind_x86_darwin-debug.o callgrind_x86_darwin-dump.o callgrind_x86_darwin-events.o callgrind_x86_darwin-fn.o callgrind_x86_darwin-jumps.o callgrind_x86_darwin-main.o callgrind_x86_darwin-sim.o callgrind_x86_darwin-threads.o ../coregrind/libcoregrind-x86-darwin.a ../VEX/libvex-x86-darwin.a
+link_tool_exe_darwin: ../coregrind/fixup_macho_loadcmds 0x34000000 0x800000 callgrind-x86-darwin
+fixup_macho_loadcmds: requested stack_addr (top) 0x34000000, stack_size 0x800000
+fixup_macho_loadcmds: examining tool exe: callgrind-x86-darwin
+fixup_macho_loadcmds:   Is 32-bit MachO file; no modifications needed.
+mkdir -p ../.in_place; \
+	for f in callgrind-amd64-darwin callgrind-x86-darwin ; do \
+	  rm -f ../.in_place/$f; \
+	  ln -f -s ../callgrind/$f ../.in_place; \
+	done
+for f in ; do \
+	  if [ ! -e $f.dSYM  -o  $f -nt $f.dSYM ] ; then \
+	      echo "dsymutil $f"; \
+	      dsymutil $f; \
+	  fi; \
+	done
+mkdir -p ../.in_place; \
+	for f in ; do \
+	  rm -f ../.in_place/$f.dSYM; \
+	  ln -f -s ../callgrind/$f.dSYM ../.in_place; \
+	done
+ .././install-sh -c -d '/usr/local/bin'
+ /usr/bin/install -c callgrind_annotate callgrind_control '/usr/local/bin'
+/bin/sh /Users/mixelpix/c/valgrind-3.12.0/install-sh -d /usr/local/lib/valgrind; \
+	for f in callgrind-amd64-darwin callgrind-x86-darwin; do \
+	  /usr/bin/install -c $f /usr/local/lib/valgrind; \
+	done
+for f in ; do \
+	  if [ ! -e $f.dSYM  -o  $f -nt $f.dSYM ] ; then \
+	      echo "dsymutil $f"; \
+	      dsymutil $f; \
+	  fi; \
+	done
+/bin/sh /Users/mixelpix/c/valgrind-3.12.0/install-sh -d /usr/local/lib/valgrind; \
+	for f in ; do \
+	  cp -R $f.dSYM /usr/local/lib/valgrind; \
+	done
+ .././install-sh -c -d '/usr/local/include/valgrind'
+ /usr/bin/install -c -m 644 callgrind.h '/usr/local/include/valgrind'
+Making install in tests
+Making install in .
+make[5]: Nothing to be done for `install-exec-am'.
+make[5]: Nothing to be done for `install-data-am'.
+Making install in massif
+Making install in .
+../coregrind/link_tool_exe_darwin 0x138000000 gcc     -o massif-amd64-darwin  -arch x86_64 -O2 -g -std=gnu99 -Wall -Wmissing-prototypes -Wshadow -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wcast-align -Wcast-qual -Wwrite-strings -Wempty-body -Wformat -Wformat-security -Wignored-qualifiers -fno-stack-protector -fno-strict-aliasing -fno-builtin -Wno-cast-align -Wno-self-assign -Wno-tautological-compare -mmacosx-version-min=10.6 -fno-stack-protector -nodefaultlibs -nostartfiles -Wl,-u,__start -Wl,-e,__start -arch x86_64 massif_amd64_darwin-ms_main.o ../coregrind/libcoregrind-amd64-darwin.a ../VEX/libvex-amd64-darwin.a -lgcc
+link_tool_exe_darwin: /usr/bin/ld -static -arch x86_64 -macosx_version_min 10.6 -o massif-amd64-darwin -u __start -e __start -image_base 0x138000000 -stack_addr 0x134000000 -stack_size 0x800000 massif_amd64_darwin-ms_main.o ../coregrind/libcoregrind-amd64-darwin.a ../VEX/libvex-amd64-darwin.a
+link_tool_exe_darwin: ../coregrind/fixup_macho_loadcmds 0x134000000 0x800000 massif-amd64-darwin
+fixup_macho_loadcmds: requested stack_addr (top) 0x134000000, stack_size 0x800000
+fixup_macho_loadcmds: examining tool exe: massif-amd64-darwin
+fixup_macho_loadcmds:   initial RSP is as expected (0x134000000)
+fixup_macho_loadcmds:   acceptable __UNIXSTACK present; no modifications.
+fixup_macho_loadcmds:   changing __PAGEZERO.vmaddr from 0x138000000 to 0x0.
+../coregrind/link_tool_exe_darwin 0x38000000 gcc     -o massif-x86-darwin  -arch i386 -O2 -g -std=gnu99 -Wall -Wmissing-prototypes -Wshadow -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wcast-align -Wcast-qual -Wwrite-strings -Wempty-body -Wformat -Wformat-security -Wignored-qualifiers -fno-stack-protector -fno-strict-aliasing -fno-builtin -Wno-cast-align -Wno-self-assign -Wno-tautological-compare -mmacosx-version-min=10.6 -fno-stack-protector -fno-pic -fno-PIC -nodefaultlibs -nostartfiles -Wl,-u,__start -Wl,-e,__start -arch i386 massif_x86_darwin-ms_main.o ../coregrind/libcoregrind-x86-darwin.a ../VEX/libvex-x86-darwin.a -lgcc
+link_tool_exe_darwin: /usr/bin/ld -static -arch i386 -macosx_version_min 10.6 -o massif-x86-darwin -u __start -e __start -image_base 0x38000000 -stack_addr 0x34000000 -stack_size 0x800000 massif_x86_darwin-ms_main.o ../coregrind/libcoregrind-x86-darwin.a ../VEX/libvex-x86-darwin.a
+link_tool_exe_darwin: ../coregrind/fixup_macho_loadcmds 0x34000000 0x800000 massif-x86-darwin
+fixup_macho_loadcmds: requested stack_addr (top) 0x34000000, stack_size 0x800000
+fixup_macho_loadcmds: examining tool exe: massif-x86-darwin
+fixup_macho_loadcmds:   Is 32-bit MachO file; no modifications needed.
+mkdir -p ../.in_place; \
+	for f in massif-amd64-darwin massif-x86-darwin vgpreload_massif-amd64-darwin.so vgpreload_massif-x86-darwin.so ; do \
+	  rm -f ../.in_place/$f; \
+	  ln -f -s ../massif/$f ../.in_place; \
+	done
+for f in massif-amd64-darwin massif-x86-darwin vgpreload_massif-amd64-darwin.so vgpreload_massif-x86-darwin.so; do \
+	  if [ ! -e $f.dSYM  -o  $f -nt $f.dSYM ] ; then \
+	      echo "dsymutil $f"; \
+	      dsymutil $f; \
+	  fi; \
+	done
+dsymutil massif-amd64-darwin
+dsymutil massif-x86-darwin
+mkdir -p ../.in_place; \
+	for f in massif-amd64-darwin massif-x86-darwin vgpreload_massif-amd64-darwin.so vgpreload_massif-x86-darwin.so; do \
+	  rm -f ../.in_place/$f.dSYM; \
+	  ln -f -s ../massif/$f.dSYM ../.in_place; \
+	done
+ .././install-sh -c -d '/usr/local/bin'
+ /usr/bin/install -c ms_print '/usr/local/bin'
+/bin/sh /Users/mixelpix/c/valgrind-3.12.0/install-sh -d /usr/local/lib/valgrind; \
+	for f in massif-amd64-darwin massif-x86-darwin vgpreload_massif-amd64-darwin.so vgpreload_massif-x86-darwin.so; do \
+	  /usr/bin/install -c $f /usr/local/lib/valgrind; \
+	done
+for f in massif-amd64-darwin massif-x86-darwin vgpreload_massif-amd64-darwin.so vgpreload_massif-x86-darwin.so; do \
+	  if [ ! -e $f.dSYM  -o  $f -nt $f.dSYM ] ; then \
+	      echo "dsymutil $f"; \
+	      dsymutil $f; \
+	  fi; \
+	done
+dsymutil massif-amd64-darwin
+dsymutil massif-x86-darwin
+/bin/sh /Users/mixelpix/c/valgrind-3.12.0/install-sh -d /usr/local/lib/valgrind; \
+	for f in massif-amd64-darwin massif-x86-darwin vgpreload_massif-amd64-darwin.so vgpreload_massif-x86-darwin.so; do \
+	  cp -R $f.dSYM /usr/local/lib/valgrind; \
+	done
+make[4]: Nothing to be done for `install-data-am'.
+Making install in tests
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+Making install in lackey
+Making install in .
+../coregrind/link_tool_exe_darwin 0x138000000 gcc     -o lackey-amd64-darwin  -arch x86_64 -O2 -g -std=gnu99 -Wall -Wmissing-prototypes -Wshadow -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wcast-align -Wcast-qual -Wwrite-strings -Wempty-body -Wformat -Wformat-security -Wignored-qualifiers -fno-stack-protector -fno-strict-aliasing -fno-builtin -Wno-cast-align -Wno-self-assign -Wno-tautological-compare -mmacosx-version-min=10.6 -fno-stack-protector -nodefaultlibs -nostartfiles -Wl,-u,__start -Wl,-e,__start -arch x86_64 lackey_amd64_darwin-lk_main.o ../coregrind/libcoregrind-amd64-darwin.a ../VEX/libvex-amd64-darwin.a -lgcc
+link_tool_exe_darwin: /usr/bin/ld -static -arch x86_64 -macosx_version_min 10.6 -o lackey-amd64-darwin -u __start -e __start -image_base 0x138000000 -stack_addr 0x134000000 -stack_size 0x800000 lackey_amd64_darwin-lk_main.o ../coregrind/libcoregrind-amd64-darwin.a ../VEX/libvex-amd64-darwin.a
+link_tool_exe_darwin: ../coregrind/fixup_macho_loadcmds 0x134000000 0x800000 lackey-amd64-darwin
+fixup_macho_loadcmds: requested stack_addr (top) 0x134000000, stack_size 0x800000
+fixup_macho_loadcmds: examining tool exe: lackey-amd64-darwin
+fixup_macho_loadcmds:   initial RSP is as expected (0x134000000)
+fixup_macho_loadcmds:   acceptable __UNIXSTACK present; no modifications.
+fixup_macho_loadcmds:   changing __PAGEZERO.vmaddr from 0x138000000 to 0x0.
+../coregrind/link_tool_exe_darwin 0x38000000 gcc     -o lackey-x86-darwin  -arch i386 -O2 -g -std=gnu99 -Wall -Wmissing-prototypes -Wshadow -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wcast-align -Wcast-qual -Wwrite-strings -Wempty-body -Wformat -Wformat-security -Wignored-qualifiers -fno-stack-protector -fno-strict-aliasing -fno-builtin -Wno-cast-align -Wno-self-assign -Wno-tautological-compare -mmacosx-version-min=10.6 -fno-stack-protector -fno-pic -fno-PIC -nodefaultlibs -nostartfiles -Wl,-u,__start -Wl,-e,__start -arch i386 lackey_x86_darwin-lk_main.o ../coregrind/libcoregrind-x86-darwin.a ../VEX/libvex-x86-darwin.a -lgcc
+link_tool_exe_darwin: /usr/bin/ld -static -arch i386 -macosx_version_min 10.6 -o lackey-x86-darwin -u __start -e __start -image_base 0x38000000 -stack_addr 0x34000000 -stack_size 0x800000 lackey_x86_darwin-lk_main.o ../coregrind/libcoregrind-x86-darwin.a ../VEX/libvex-x86-darwin.a
+link_tool_exe_darwin: ../coregrind/fixup_macho_loadcmds 0x34000000 0x800000 lackey-x86-darwin
+fixup_macho_loadcmds: requested stack_addr (top) 0x34000000, stack_size 0x800000
+fixup_macho_loadcmds: examining tool exe: lackey-x86-darwin
+fixup_macho_loadcmds:   Is 32-bit MachO file; no modifications needed.
+mkdir -p ../.in_place; \
+	for f in lackey-amd64-darwin lackey-x86-darwin ; do \
+	  rm -f ../.in_place/$f; \
+	  ln -f -s ../lackey/$f ../.in_place; \
+	done
+for f in ; do \
+	  if [ ! -e $f.dSYM  -o  $f -nt $f.dSYM ] ; then \
+	      echo "dsymutil $f"; \
+	      dsymutil $f; \
+	  fi; \
+	done
+mkdir -p ../.in_place; \
+	for f in ; do \
+	  rm -f ../.in_place/$f.dSYM; \
+	  ln -f -s ../lackey/$f.dSYM ../.in_place; \
+	done
+/bin/sh /Users/mixelpix/c/valgrind-3.12.0/install-sh -d /usr/local/lib/valgrind; \
+	for f in lackey-amd64-darwin lackey-x86-darwin; do \
+	  /usr/bin/install -c $f /usr/local/lib/valgrind; \
+	done
+for f in ; do \
+	  if [ ! -e $f.dSYM  -o  $f -nt $f.dSYM ] ; then \
+	      echo "dsymutil $f"; \
+	      dsymutil $f; \
+	  fi; \
+	done
+/bin/sh /Users/mixelpix/c/valgrind-3.12.0/install-sh -d /usr/local/lib/valgrind; \
+	for f in ; do \
+	  cp -R $f.dSYM /usr/local/lib/valgrind; \
+	done
+make[4]: Nothing to be done for `install-data-am'.
+Making install in tests
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+Making install in none
+Making install in .
+../coregrind/link_tool_exe_darwin 0x138000000 gcc     -o none-amd64-darwin  -arch x86_64 -O2 -g -std=gnu99 -Wall -Wmissing-prototypes -Wshadow -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wcast-align -Wcast-qual -Wwrite-strings -Wempty-body -Wformat -Wformat-security -Wignored-qualifiers -fno-stack-protector -fno-strict-aliasing -fno-builtin -Wno-cast-align -Wno-self-assign -Wno-tautological-compare -mmacosx-version-min=10.6 -fno-stack-protector -nodefaultlibs -nostartfiles -Wl,-u,__start -Wl,-e,__start -arch x86_64 none_amd64_darwin-nl_main.o ../coregrind/libcoregrind-amd64-darwin.a ../VEX/libvex-amd64-darwin.a -lgcc
+link_tool_exe_darwin: /usr/bin/ld -static -arch x86_64 -macosx_version_min 10.6 -o none-amd64-darwin -u __start -e __start -image_base 0x138000000 -stack_addr 0x134000000 -stack_size 0x800000 none_amd64_darwin-nl_main.o ../coregrind/libcoregrind-amd64-darwin.a ../VEX/libvex-amd64-darwin.a
+link_tool_exe_darwin: ../coregrind/fixup_macho_loadcmds 0x134000000 0x800000 none-amd64-darwin
+fixup_macho_loadcmds: requested stack_addr (top) 0x134000000, stack_size 0x800000
+fixup_macho_loadcmds: examining tool exe: none-amd64-darwin
+fixup_macho_loadcmds:   initial RSP is as expected (0x134000000)
+fixup_macho_loadcmds:   acceptable __UNIXSTACK present; no modifications.
+fixup_macho_loadcmds:   changing __PAGEZERO.vmaddr from 0x138000000 to 0x0.
+../coregrind/link_tool_exe_darwin 0x38000000 gcc     -o none-x86-darwin  -arch i386 -O2 -g -std=gnu99 -Wall -Wmissing-prototypes -Wshadow -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wcast-align -Wcast-qual -Wwrite-strings -Wempty-body -Wformat -Wformat-security -Wignored-qualifiers -fno-stack-protector -fno-strict-aliasing -fno-builtin -Wno-cast-align -Wno-self-assign -Wno-tautological-compare -mmacosx-version-min=10.6 -fno-stack-protector -fno-pic -fno-PIC -nodefaultlibs -nostartfiles -Wl,-u,__start -Wl,-e,__start -arch i386 none_x86_darwin-nl_main.o ../coregrind/libcoregrind-x86-darwin.a ../VEX/libvex-x86-darwin.a -lgcc
+link_tool_exe_darwin: /usr/bin/ld -static -arch i386 -macosx_version_min 10.6 -o none-x86-darwin -u __start -e __start -image_base 0x38000000 -stack_addr 0x34000000 -stack_size 0x800000 none_x86_darwin-nl_main.o ../coregrind/libcoregrind-x86-darwin.a ../VEX/libvex-x86-darwin.a
+link_tool_exe_darwin: ../coregrind/fixup_macho_loadcmds 0x34000000 0x800000 none-x86-darwin
+fixup_macho_loadcmds: requested stack_addr (top) 0x34000000, stack_size 0x800000
+fixup_macho_loadcmds: examining tool exe: none-x86-darwin
+fixup_macho_loadcmds:   Is 32-bit MachO file; no modifications needed.
+mkdir -p ../.in_place; \
+	for f in none-amd64-darwin none-x86-darwin ; do \
+	  rm -f ../.in_place/$f; \
+	  ln -f -s ../none/$f ../.in_place; \
+	done
+for f in ; do \
+	  if [ ! -e $f.dSYM  -o  $f -nt $f.dSYM ] ; then \
+	      echo "dsymutil $f"; \
+	      dsymutil $f; \
+	  fi; \
+	done
+mkdir -p ../.in_place; \
+	for f in ; do \
+	  rm -f ../.in_place/$f.dSYM; \
+	  ln -f -s ../none/$f.dSYM ../.in_place; \
+	done
+/bin/sh /Users/mixelpix/c/valgrind-3.12.0/install-sh -d /usr/local/lib/valgrind; \
+	for f in none-amd64-darwin none-x86-darwin; do \
+	  /usr/bin/install -c $f /usr/local/lib/valgrind; \
+	done
+for f in ; do \
+	  if [ ! -e $f.dSYM  -o  $f -nt $f.dSYM ] ; then \
+	      echo "dsymutil $f"; \
+	      dsymutil $f; \
+	  fi; \
+	done
+/bin/sh /Users/mixelpix/c/valgrind-3.12.0/install-sh -d /usr/local/lib/valgrind; \
+	for f in ; do \
+	  cp -R $f.dSYM /usr/local/lib/valgrind; \
+	done
+make[4]: Nothing to be done for `install-data-am'.
+Making install in tests
+Making install in .
+make[5]: Nothing to be done for `install-exec-am'.
+make[5]: Nothing to be done for `install-data-am'.
+Making install in scripts
+make[5]: Nothing to be done for `install-exec-am'.
+make[5]: Nothing to be done for `install-data-am'.
+Making install in x86
+make[5]: Nothing to be done for `install-exec-am'.
+make[5]: Nothing to be done for `install-data-am'.
+Making install in amd64
+make[5]: Nothing to be done for `install-exec-am'.
+make[5]: Nothing to be done for `install-data-am'.
+Making install in darwin
+make[5]: Nothing to be done for `install-exec-am'.
+make[5]: Nothing to be done for `install-data-am'.
+Making install in amd64-darwin
+make[5]: Nothing to be done for `install-exec-am'.
+make[5]: Nothing to be done for `install-data-am'.
+Making install in x86-darwin
+make[5]: Nothing to be done for `install-exec-am'.
+make[5]: Nothing to be done for `install-data-am'.
+Making install in helgrind
+Making install in .
+../coregrind/link_tool_exe_darwin 0x138000000 gcc     -o helgrind-amd64-darwin  -arch x86_64 -O2 -g -std=gnu99 -Wall -Wmissing-prototypes -Wshadow -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wcast-align -Wcast-qual -Wwrite-strings -Wempty-body -Wformat -Wformat-security -Wignored-qualifiers -fno-stack-protector -fno-strict-aliasing -fno-builtin -Wno-cast-align -Wno-self-assign -Wno-tautological-compare -mmacosx-version-min=10.6 -fno-stack-protector -O2 -nodefaultlibs -nostartfiles -Wl,-u,__start -Wl,-e,__start -arch x86_64 helgrind_amd64_darwin-hg_addrdescr.o helgrind_amd64_darwin-hg_basics.o helgrind_amd64_darwin-hg_errors.o helgrind_amd64_darwin-hg_lock_n_thread.o helgrind_amd64_darwin-hg_main.o helgrind_amd64_darwin-hg_wordset.o helgrind_amd64_darwin-libhb_core.o ../coregrind/libcoregrind-amd64-darwin.a ../VEX/libvex-amd64-darwin.a -lgcc
+link_tool_exe_darwin: /usr/bin/ld -static -arch x86_64 -macosx_version_min 10.6 -o helgrind-amd64-darwin -u __start -e __start -image_base 0x138000000 -stack_addr 0x134000000 -stack_size 0x800000 helgrind_amd64_darwin-hg_addrdescr.o helgrind_amd64_darwin-hg_basics.o helgrind_amd64_darwin-hg_errors.o helgrind_amd64_darwin-hg_lock_n_thread.o helgrind_amd64_darwin-hg_main.o helgrind_amd64_darwin-hg_wordset.o helgrind_amd64_darwin-libhb_core.o ../coregrind/libcoregrind-amd64-darwin.a ../VEX/libvex-amd64-darwin.a
+link_tool_exe_darwin: ../coregrind/fixup_macho_loadcmds 0x134000000 0x800000 helgrind-amd64-darwin
+fixup_macho_loadcmds: requested stack_addr (top) 0x134000000, stack_size 0x800000
+fixup_macho_loadcmds: examining tool exe: helgrind-amd64-darwin
+fixup_macho_loadcmds:   initial RSP is as expected (0x134000000)
+fixup_macho_loadcmds:   acceptable __UNIXSTACK present; no modifications.
+fixup_macho_loadcmds:   changing __PAGEZERO.vmaddr from 0x138000000 to 0x0.
+../coregrind/link_tool_exe_darwin 0x38000000 gcc     -o helgrind-x86-darwin  -arch i386 -O2 -g -std=gnu99 -Wall -Wmissing-prototypes -Wshadow -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wcast-align -Wcast-qual -Wwrite-strings -Wempty-body -Wformat -Wformat-security -Wignored-qualifiers -fno-stack-protector -fno-strict-aliasing -fno-builtin -Wno-cast-align -Wno-self-assign -Wno-tautological-compare -mmacosx-version-min=10.6 -fno-stack-protector -fno-pic -fno-PIC -O2 -nodefaultlibs -nostartfiles -Wl,-u,__start -Wl,-e,__start -arch i386 helgrind_x86_darwin-hg_addrdescr.o helgrind_x86_darwin-hg_basics.o helgrind_x86_darwin-hg_errors.o helgrind_x86_darwin-hg_lock_n_thread.o helgrind_x86_darwin-hg_main.o helgrind_x86_darwin-hg_wordset.o helgrind_x86_darwin-libhb_core.o ../coregrind/libcoregrind-x86-darwin.a ../VEX/libvex-x86-darwin.a -lgcc
+link_tool_exe_darwin: /usr/bin/ld -static -arch i386 -macosx_version_min 10.6 -o helgrind-x86-darwin -u __start -e __start -image_base 0x38000000 -stack_addr 0x34000000 -stack_size 0x800000 helgrind_x86_darwin-hg_addrdescr.o helgrind_x86_darwin-hg_basics.o helgrind_x86_darwin-hg_errors.o helgrind_x86_darwin-hg_lock_n_thread.o helgrind_x86_darwin-hg_main.o helgrind_x86_darwin-hg_wordset.o helgrind_x86_darwin-libhb_core.o ../coregrind/libcoregrind-x86-darwin.a ../VEX/libvex-x86-darwin.a
+link_tool_exe_darwin: ../coregrind/fixup_macho_loadcmds 0x34000000 0x800000 helgrind-x86-darwin
+fixup_macho_loadcmds: requested stack_addr (top) 0x34000000, stack_size 0x800000
+fixup_macho_loadcmds: examining tool exe: helgrind-x86-darwin
+fixup_macho_loadcmds:   Is 32-bit MachO file; no modifications needed.
+mkdir -p ../.in_place; \
+	for f in helgrind-amd64-darwin helgrind-x86-darwin vgpreload_helgrind-amd64-darwin.so vgpreload_helgrind-x86-darwin.so ; do \
+	  rm -f ../.in_place/$f; \
+	  ln -f -s ../helgrind/$f ../.in_place; \
+	done
+for f in helgrind-amd64-darwin helgrind-x86-darwin vgpreload_helgrind-amd64-darwin.so vgpreload_helgrind-x86-darwin.so; do \
+	  if [ ! -e $f.dSYM  -o  $f -nt $f.dSYM ] ; then \
+	      echo "dsymutil $f"; \
+	      dsymutil $f; \
+	  fi; \
+	done
+dsymutil helgrind-amd64-darwin
+dsymutil helgrind-x86-darwin
+mkdir -p ../.in_place; \
+	for f in helgrind-amd64-darwin helgrind-x86-darwin vgpreload_helgrind-amd64-darwin.so vgpreload_helgrind-x86-darwin.so; do \
+	  rm -f ../.in_place/$f.dSYM; \
+	  ln -f -s ../helgrind/$f.dSYM ../.in_place; \
+	done
+/bin/sh /Users/mixelpix/c/valgrind-3.12.0/install-sh -d /usr/local/lib/valgrind; \
+	for f in helgrind-amd64-darwin helgrind-x86-darwin vgpreload_helgrind-amd64-darwin.so vgpreload_helgrind-x86-darwin.so; do \
+	  /usr/bin/install -c $f /usr/local/lib/valgrind; \
+	done
+for f in helgrind-amd64-darwin helgrind-x86-darwin vgpreload_helgrind-amd64-darwin.so vgpreload_helgrind-x86-darwin.so; do \
+	  if [ ! -e $f.dSYM  -o  $f -nt $f.dSYM ] ; then \
+	      echo "dsymutil $f"; \
+	      dsymutil $f; \
+	  fi; \
+	done
+dsymutil helgrind-amd64-darwin
+dsymutil helgrind-x86-darwin
+/bin/sh /Users/mixelpix/c/valgrind-3.12.0/install-sh -d /usr/local/lib/valgrind; \
+	for f in helgrind-amd64-darwin helgrind-x86-darwin vgpreload_helgrind-amd64-darwin.so vgpreload_helgrind-x86-darwin.so; do \
+	  cp -R $f.dSYM /usr/local/lib/valgrind; \
+	done
+ .././install-sh -c -d '/usr/local/include/valgrind'
+ /usr/bin/install -c -m 644 helgrind.h '/usr/local/include/valgrind'
+Making install in tests
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+Making install in drd
+Making install in .
+../coregrind/link_tool_exe_darwin 0x138000000 gcc     -o drd-amd64-darwin  -arch x86_64 -O2 -g -std=gnu99 -Wall -Wmissing-prototypes -Wshadow -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wcast-align -Wcast-qual -Wwrite-strings -Wempty-body -Wformat -Wformat-security -Wignored-qualifiers -fno-stack-protector -fno-strict-aliasing -fno-builtin -Wno-cast-align -Wno-self-assign -Wno-tautological-compare -mmacosx-version-min=10.6 -fno-stack-protector -O2 -Wextra -Wformat-nonliteral -Wswitch-enum -Wno-inline -Wno-unused-parameter -nodefaultlibs -nostartfiles -Wl,-u,__start -Wl,-e,__start -arch x86_64 drd_amd64_darwin-drd_barrier.o drd_amd64_darwin-drd_clientobj.o drd_amd64_darwin-drd_clientreq.o drd_amd64_darwin-drd_cond.o drd_amd64_darwin-drd_cond_initializer.o drd_amd64_darwin-drd_error.o drd_amd64_darwin-drd_hb.o drd_amd64_darwin-drd_load_store.o drd_amd64_darwin-drd_main.o drd_amd64_darwin-drd_malloc_wrappers.o drd_amd64_darwin-drd_mutex.o drd_amd64_darwin-drd_rwlock.o drd_amd64_darwin-drd_semaphore.o drd_amd64_darwin-drd_suppression.o ../coregrind/libcoregrind-amd64-darwin.a ../VEX/libvex-amd64-darwin.a -lgcc
+link_tool_exe_darwin: /usr/bin/ld -static -arch x86_64 -macosx_version_min 10.6 -o drd-amd64-darwin -u __start -e __start -image_base 0x138000000 -stack_addr 0x134000000 -stack_size 0x800000 drd_amd64_darwin-drd_barrier.o drd_amd64_darwin-drd_clientobj.o drd_amd64_darwin-drd_clientreq.o drd_amd64_darwin-drd_cond.o drd_amd64_darwin-drd_cond_initializer.o drd_amd64_darwin-drd_error.o drd_amd64_darwin-drd_hb.o drd_amd64_darwin-drd_load_store.o drd_amd64_darwin-drd_main.o drd_amd64_darwin-drd_malloc_wrappers.o drd_amd64_darwin-drd_mutex.o drd_amd64_darwin-drd_rwlock.o drd_amd64_darwin-drd_semaphore.o drd_amd64_darwin-drd_suppression.o ../coregrind/libcoregrind-amd64-darwin.a ../VEX/libvex-amd64-darwin.a
+link_tool_exe_darwin: ../coregrind/fixup_macho_loadcmds 0x134000000 0x800000 drd-amd64-darwin
+fixup_macho_loadcmds: requested stack_addr (top) 0x134000000, stack_size 0x800000
+fixup_macho_loadcmds: examining tool exe: drd-amd64-darwin
+fixup_macho_loadcmds:   initial RSP is as expected (0x134000000)
+fixup_macho_loadcmds:   acceptable __UNIXSTACK present; no modifications.
+fixup_macho_loadcmds:   changing __PAGEZERO.vmaddr from 0x138000000 to 0x0.
+../coregrind/link_tool_exe_darwin 0x38000000 gcc     -o drd-x86-darwin  -arch i386 -O2 -g -std=gnu99 -Wall -Wmissing-prototypes -Wshadow -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wcast-align -Wcast-qual -Wwrite-strings -Wempty-body -Wformat -Wformat-security -Wignored-qualifiers -fno-stack-protector -fno-strict-aliasing -fno-builtin -Wno-cast-align -Wno-self-assign -Wno-tautological-compare -mmacosx-version-min=10.6 -fno-stack-protector -fno-pic -fno-PIC -O2 -Wextra -Wformat-nonliteral -Wswitch-enum -Wno-inline -Wno-unused-parameter -nodefaultlibs -nostartfiles -Wl,-u,__start -Wl,-e,__start -arch i386 drd_x86_darwin-drd_barrier.o drd_x86_darwin-drd_clientobj.o drd_x86_darwin-drd_clientreq.o drd_x86_darwin-drd_cond.o drd_x86_darwin-drd_cond_initializer.o drd_x86_darwin-drd_error.o drd_x86_darwin-drd_hb.o drd_x86_darwin-drd_load_store.o drd_x86_darwin-drd_main.o drd_x86_darwin-drd_malloc_wrappers.o drd_x86_darwin-drd_mutex.o drd_x86_darwin-drd_rwlock.o drd_x86_darwin-drd_semaphore.o drd_x86_darwin-drd_suppression.o ../coregrind/libcoregrind-x86-darwin.a ../VEX/libvex-x86-darwin.a -lgcc
+link_tool_exe_darwin: /usr/bin/ld -static -arch i386 -macosx_version_min 10.6 -o drd-x86-darwin -u __start -e __start -image_base 0x38000000 -stack_addr 0x34000000 -stack_size 0x800000 drd_x86_darwin-drd_barrier.o drd_x86_darwin-drd_clientobj.o drd_x86_darwin-drd_clientreq.o drd_x86_darwin-drd_cond.o drd_x86_darwin-drd_cond_initializer.o drd_x86_darwin-drd_error.o drd_x86_darwin-drd_hb.o drd_x86_darwin-drd_load_store.o drd_x86_darwin-drd_main.o drd_x86_darwin-drd_malloc_wrappers.o drd_x86_darwin-drd_mutex.o drd_x86_darwin-drd_rwlock.o drd_x86_darwin-drd_semaphore.o drd_x86_darwin-drd_suppression.o ../coregrind/libcoregrind-x86-darwin.a ../VEX/libvex-x86-darwin.a
+link_tool_exe_darwin: ../coregrind/fixup_macho_loadcmds 0x34000000 0x800000 drd-x86-darwin
+fixup_macho_loadcmds: requested stack_addr (top) 0x34000000, stack_size 0x800000
+fixup_macho_loadcmds: examining tool exe: drd-x86-darwin
+fixup_macho_loadcmds:   Is 32-bit MachO file; no modifications needed.
+mkdir -p ../.in_place; \
+	for f in drd-amd64-darwin drd-x86-darwin vgpreload_drd-amd64-darwin.so vgpreload_drd-x86-darwin.so ; do \
+	  rm -f ../.in_place/$f; \
+	  ln -f -s ../drd/$f ../.in_place; \
+	done
+for f in drd-amd64-darwin drd-x86-darwin vgpreload_drd-amd64-darwin.so vgpreload_drd-x86-darwin.so; do \
+	  if [ ! -e $f.dSYM  -o  $f -nt $f.dSYM ] ; then \
+	      echo "dsymutil $f"; \
+	      dsymutil $f; \
+	  fi; \
+	done
+dsymutil drd-amd64-darwin
+dsymutil drd-x86-darwin
+mkdir -p ../.in_place; \
+	for f in drd-amd64-darwin drd-x86-darwin vgpreload_drd-amd64-darwin.so vgpreload_drd-x86-darwin.so; do \
+	  rm -f ../.in_place/$f.dSYM; \
+	  ln -f -s ../drd/$f.dSYM ../.in_place; \
+	done
+/bin/sh /Users/mixelpix/c/valgrind-3.12.0/install-sh -d /usr/local/lib/valgrind; \
+	for f in drd-amd64-darwin drd-x86-darwin vgpreload_drd-amd64-darwin.so vgpreload_drd-x86-darwin.so; do \
+	  /usr/bin/install -c $f /usr/local/lib/valgrind; \
+	done
+for f in drd-amd64-darwin drd-x86-darwin vgpreload_drd-amd64-darwin.so vgpreload_drd-x86-darwin.so; do \
+	  if [ ! -e $f.dSYM  -o  $f -nt $f.dSYM ] ; then \
+	      echo "dsymutil $f"; \
+	      dsymutil $f; \
+	  fi; \
+	done
+dsymutil drd-amd64-darwin
+dsymutil drd-x86-darwin
+/bin/sh /Users/mixelpix/c/valgrind-3.12.0/install-sh -d /usr/local/lib/valgrind; \
+	for f in drd-amd64-darwin drd-x86-darwin vgpreload_drd-amd64-darwin.so vgpreload_drd-x86-darwin.so; do \
+	  cp -R $f.dSYM /usr/local/lib/valgrind; \
+	done
+ .././install-sh -c -d '/usr/local/include/valgrind'
+ /usr/bin/install -c -m 644 drd.h '/usr/local/include/valgrind'
+Making install in tests
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+Making install in exp-sgcheck
+Making install in .
+../coregrind/link_tool_exe_darwin 0x138000000 gcc     -o exp-sgcheck-amd64-darwin  -arch x86_64 -O2 -g -std=gnu99 -Wall -Wmissing-prototypes -Wshadow -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wcast-align -Wcast-qual -Wwrite-strings -Wempty-body -Wformat -Wformat-security -Wignored-qualifiers -fno-stack-protector -fno-strict-aliasing -fno-builtin -Wno-cast-align -Wno-self-assign -Wno-tautological-compare -mmacosx-version-min=10.6 -fno-stack-protector -nodefaultlibs -nostartfiles -Wl,-u,__start -Wl,-e,__start -arch x86_64 exp_sgcheck_amd64_darwin-h_main.o exp_sgcheck_amd64_darwin-pc_common.o exp_sgcheck_amd64_darwin-pc_main.o exp_sgcheck_amd64_darwin-sg_main.o ../coregrind/libcoregrind-amd64-darwin.a ../VEX/libvex-amd64-darwin.a -lgcc
+link_tool_exe_darwin: /usr/bin/ld -static -arch x86_64 -macosx_version_min 10.6 -o exp-sgcheck-amd64-darwin -u __start -e __start -image_base 0x138000000 -stack_addr 0x134000000 -stack_size 0x800000 exp_sgcheck_amd64_darwin-h_main.o exp_sgcheck_amd64_darwin-pc_common.o exp_sgcheck_amd64_darwin-pc_main.o exp_sgcheck_amd64_darwin-sg_main.o ../coregrind/libcoregrind-amd64-darwin.a ../VEX/libvex-amd64-darwin.a
+link_tool_exe_darwin: ../coregrind/fixup_macho_loadcmds 0x134000000 0x800000 exp-sgcheck-amd64-darwin
+fixup_macho_loadcmds: requested stack_addr (top) 0x134000000, stack_size 0x800000
+fixup_macho_loadcmds: examining tool exe: exp-sgcheck-amd64-darwin
+fixup_macho_loadcmds:   initial RSP is as expected (0x134000000)
+fixup_macho_loadcmds:   acceptable __UNIXSTACK present; no modifications.
+fixup_macho_loadcmds:   changing __PAGEZERO.vmaddr from 0x138000000 to 0x0.
+../coregrind/link_tool_exe_darwin 0x38000000 gcc     -o exp-sgcheck-x86-darwin  -arch i386 -O2 -g -std=gnu99 -Wall -Wmissing-prototypes -Wshadow -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wcast-align -Wcast-qual -Wwrite-strings -Wempty-body -Wformat -Wformat-security -Wignored-qualifiers -fno-stack-protector -fno-strict-aliasing -fno-builtin -Wno-cast-align -Wno-self-assign -Wno-tautological-compare -mmacosx-version-min=10.6 -fno-stack-protector -fno-pic -fno-PIC -nodefaultlibs -nostartfiles -Wl,-u,__start -Wl,-e,__start -arch i386 exp_sgcheck_x86_darwin-h_main.o exp_sgcheck_x86_darwin-pc_common.o exp_sgcheck_x86_darwin-pc_main.o exp_sgcheck_x86_darwin-sg_main.o ../coregrind/libcoregrind-x86-darwin.a ../VEX/libvex-x86-darwin.a -lgcc
+link_tool_exe_darwin: /usr/bin/ld -static -arch i386 -macosx_version_min 10.6 -o exp-sgcheck-x86-darwin -u __start -e __start -image_base 0x38000000 -stack_addr 0x34000000 -stack_size 0x800000 exp_sgcheck_x86_darwin-h_main.o exp_sgcheck_x86_darwin-pc_common.o exp_sgcheck_x86_darwin-pc_main.o exp_sgcheck_x86_darwin-sg_main.o ../coregrind/libcoregrind-x86-darwin.a ../VEX/libvex-x86-darwin.a
+link_tool_exe_darwin: ../coregrind/fixup_macho_loadcmds 0x34000000 0x800000 exp-sgcheck-x86-darwin
+fixup_macho_loadcmds: requested stack_addr (top) 0x34000000, stack_size 0x800000
+fixup_macho_loadcmds: examining tool exe: exp-sgcheck-x86-darwin
+fixup_macho_loadcmds:   Is 32-bit MachO file; no modifications needed.
+mkdir -p ../.in_place; \
+	for f in exp-sgcheck-amd64-darwin exp-sgcheck-x86-darwin vgpreload_exp-sgcheck-amd64-darwin.so vgpreload_exp-sgcheck-x86-darwin.so ; do \
+	  rm -f ../.in_place/$f; \
+	  ln -f -s ../exp-sgcheck/$f ../.in_place; \
+	done
+for f in exp-sgcheck-amd64-darwin exp-sgcheck-x86-darwin vgpreload_exp-sgcheck-amd64-darwin.so vgpreload_exp-sgcheck-x86-darwin.so; do \
+	  if [ ! -e $f.dSYM  -o  $f -nt $f.dSYM ] ; then \
+	      echo "dsymutil $f"; \
+	      dsymutil $f; \
+	  fi; \
+	done
+dsymutil exp-sgcheck-amd64-darwin
+dsymutil exp-sgcheck-x86-darwin
+mkdir -p ../.in_place; \
+	for f in exp-sgcheck-amd64-darwin exp-sgcheck-x86-darwin vgpreload_exp-sgcheck-amd64-darwin.so vgpreload_exp-sgcheck-x86-darwin.so; do \
+	  rm -f ../.in_place/$f.dSYM; \
+	  ln -f -s ../exp-sgcheck/$f.dSYM ../.in_place; \
+	done
+/bin/sh /Users/mixelpix/c/valgrind-3.12.0/install-sh -d /usr/local/lib/valgrind; \
+	for f in exp-sgcheck-amd64-darwin exp-sgcheck-x86-darwin vgpreload_exp-sgcheck-amd64-darwin.so vgpreload_exp-sgcheck-x86-darwin.so; do \
+	  /usr/bin/install -c $f /usr/local/lib/valgrind; \
+	done
+for f in exp-sgcheck-amd64-darwin exp-sgcheck-x86-darwin vgpreload_exp-sgcheck-amd64-darwin.so vgpreload_exp-sgcheck-x86-darwin.so; do \
+	  if [ ! -e $f.dSYM  -o  $f -nt $f.dSYM ] ; then \
+	      echo "dsymutil $f"; \
+	      dsymutil $f; \
+	  fi; \
+	done
+dsymutil exp-sgcheck-amd64-darwin
+dsymutil exp-sgcheck-x86-darwin
+/bin/sh /Users/mixelpix/c/valgrind-3.12.0/install-sh -d /usr/local/lib/valgrind; \
+	for f in exp-sgcheck-amd64-darwin exp-sgcheck-x86-darwin vgpreload_exp-sgcheck-amd64-darwin.so vgpreload_exp-sgcheck-x86-darwin.so; do \
+	  cp -R $f.dSYM /usr/local/lib/valgrind; \
+	done
+make[4]: Nothing to be done for `install-data-am'.
+Making install in tests
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+Making install in exp-bbv
+Making install in .
+../coregrind/link_tool_exe_darwin 0x138000000 gcc     -o exp-bbv-amd64-darwin  -arch x86_64 -O2 -g -std=gnu99 -Wall -Wmissing-prototypes -Wshadow -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wcast-align -Wcast-qual -Wwrite-strings -Wempty-body -Wformat -Wformat-security -Wignored-qualifiers -fno-stack-protector -fno-strict-aliasing -fno-builtin -Wno-cast-align -Wno-self-assign -Wno-tautological-compare -mmacosx-version-min=10.6 -fno-stack-protector -nodefaultlibs -nostartfiles -Wl,-u,__start -Wl,-e,__start -arch x86_64 exp_bbv_amd64_darwin-bbv_main.o ../coregrind/libcoregrind-amd64-darwin.a ../VEX/libvex-amd64-darwin.a -lgcc
+link_tool_exe_darwin: /usr/bin/ld -static -arch x86_64 -macosx_version_min 10.6 -o exp-bbv-amd64-darwin -u __start -e __start -image_base 0x138000000 -stack_addr 0x134000000 -stack_size 0x800000 exp_bbv_amd64_darwin-bbv_main.o ../coregrind/libcoregrind-amd64-darwin.a ../VEX/libvex-amd64-darwin.a
+link_tool_exe_darwin: ../coregrind/fixup_macho_loadcmds 0x134000000 0x800000 exp-bbv-amd64-darwin
+fixup_macho_loadcmds: requested stack_addr (top) 0x134000000, stack_size 0x800000
+fixup_macho_loadcmds: examining tool exe: exp-bbv-amd64-darwin
+fixup_macho_loadcmds:   initial RSP is as expected (0x134000000)
+fixup_macho_loadcmds:   acceptable __UNIXSTACK present; no modifications.
+fixup_macho_loadcmds:   changing __PAGEZERO.vmaddr from 0x138000000 to 0x0.
+../coregrind/link_tool_exe_darwin 0x38000000 gcc     -o exp-bbv-x86-darwin  -arch i386 -O2 -g -std=gnu99 -Wall -Wmissing-prototypes -Wshadow -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wcast-align -Wcast-qual -Wwrite-strings -Wempty-body -Wformat -Wformat-security -Wignored-qualifiers -fno-stack-protector -fno-strict-aliasing -fno-builtin -Wno-cast-align -Wno-self-assign -Wno-tautological-compare -mmacosx-version-min=10.6 -fno-stack-protector -fno-pic -fno-PIC -nodefaultlibs -nostartfiles -Wl,-u,__start -Wl,-e,__start -arch i386 exp_bbv_x86_darwin-bbv_main.o ../coregrind/libcoregrind-x86-darwin.a ../VEX/libvex-x86-darwin.a -lgcc
+link_tool_exe_darwin: /usr/bin/ld -static -arch i386 -macosx_version_min 10.6 -o exp-bbv-x86-darwin -u __start -e __start -image_base 0x38000000 -stack_addr 0x34000000 -stack_size 0x800000 exp_bbv_x86_darwin-bbv_main.o ../coregrind/libcoregrind-x86-darwin.a ../VEX/libvex-x86-darwin.a
+link_tool_exe_darwin: ../coregrind/fixup_macho_loadcmds 0x34000000 0x800000 exp-bbv-x86-darwin
+fixup_macho_loadcmds: requested stack_addr (top) 0x34000000, stack_size 0x800000
+fixup_macho_loadcmds: examining tool exe: exp-bbv-x86-darwin
+fixup_macho_loadcmds:   Is 32-bit MachO file; no modifications needed.
+mkdir -p ../.in_place; \
+	for f in exp-bbv-amd64-darwin exp-bbv-x86-darwin ; do \
+	  rm -f ../.in_place/$f; \
+	  ln -f -s ../exp-bbv/$f ../.in_place; \
+	done
+for f in ; do \
+	  if [ ! -e $f.dSYM  -o  $f -nt $f.dSYM ] ; then \
+	      echo "dsymutil $f"; \
+	      dsymutil $f; \
+	  fi; \
+	done
+mkdir -p ../.in_place; \
+	for f in ; do \
+	  rm -f ../.in_place/$f.dSYM; \
+	  ln -f -s ../exp-bbv/$f.dSYM ../.in_place; \
+	done
+/bin/sh /Users/mixelpix/c/valgrind-3.12.0/install-sh -d /usr/local/lib/valgrind; \
+	for f in exp-bbv-amd64-darwin exp-bbv-x86-darwin; do \
+	  /usr/bin/install -c $f /usr/local/lib/valgrind; \
+	done
+for f in ; do \
+	  if [ ! -e $f.dSYM  -o  $f -nt $f.dSYM ] ; then \
+	      echo "dsymutil $f"; \
+	      dsymutil $f; \
+	  fi; \
+	done
+/bin/sh /Users/mixelpix/c/valgrind-3.12.0/install-sh -d /usr/local/lib/valgrind; \
+	for f in ; do \
+	  cp -R $f.dSYM /usr/local/lib/valgrind; \
+	done
+make[4]: Nothing to be done for `install-data-am'.
+Making install in tests
+Making install in .
+make[5]: Nothing to be done for `install-exec-am'.
+make[5]: Nothing to be done for `install-data-am'.
+Making install in exp-dhat
+Making install in .
+../coregrind/link_tool_exe_darwin 0x138000000 gcc     -o exp-dhat-amd64-darwin  -arch x86_64 -O2 -g -std=gnu99 -Wall -Wmissing-prototypes -Wshadow -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wcast-align -Wcast-qual -Wwrite-strings -Wempty-body -Wformat -Wformat-security -Wignored-qualifiers -fno-stack-protector -fno-strict-aliasing -fno-builtin -Wno-cast-align -Wno-self-assign -Wno-tautological-compare -mmacosx-version-min=10.6 -fno-stack-protector -nodefaultlibs -nostartfiles -Wl,-u,__start -Wl,-e,__start -arch x86_64 exp_dhat_amd64_darwin-dh_main.o ../coregrind/libcoregrind-amd64-darwin.a ../VEX/libvex-amd64-darwin.a -lgcc
+link_tool_exe_darwin: /usr/bin/ld -static -arch x86_64 -macosx_version_min 10.6 -o exp-dhat-amd64-darwin -u __start -e __start -image_base 0x138000000 -stack_addr 0x134000000 -stack_size 0x800000 exp_dhat_amd64_darwin-dh_main.o ../coregrind/libcoregrind-amd64-darwin.a ../VEX/libvex-amd64-darwin.a
+link_tool_exe_darwin: ../coregrind/fixup_macho_loadcmds 0x134000000 0x800000 exp-dhat-amd64-darwin
+fixup_macho_loadcmds: requested stack_addr (top) 0x134000000, stack_size 0x800000
+fixup_macho_loadcmds: examining tool exe: exp-dhat-amd64-darwin
+fixup_macho_loadcmds:   initial RSP is as expected (0x134000000)
+fixup_macho_loadcmds:   acceptable __UNIXSTACK present; no modifications.
+fixup_macho_loadcmds:   changing __PAGEZERO.vmaddr from 0x138000000 to 0x0.
+../coregrind/link_tool_exe_darwin 0x38000000 gcc     -o exp-dhat-x86-darwin  -arch i386 -O2 -g -std=gnu99 -Wall -Wmissing-prototypes -Wshadow -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wcast-align -Wcast-qual -Wwrite-strings -Wempty-body -Wformat -Wformat-security -Wignored-qualifiers -fno-stack-protector -fno-strict-aliasing -fno-builtin -Wno-cast-align -Wno-self-assign -Wno-tautological-compare -mmacosx-version-min=10.6 -fno-stack-protector -fno-pic -fno-PIC -nodefaultlibs -nostartfiles -Wl,-u,__start -Wl,-e,__start -arch i386 exp_dhat_x86_darwin-dh_main.o ../coregrind/libcoregrind-x86-darwin.a ../VEX/libvex-x86-darwin.a -lgcc
+link_tool_exe_darwin: /usr/bin/ld -static -arch i386 -macosx_version_min 10.6 -o exp-dhat-x86-darwin -u __start -e __start -image_base 0x38000000 -stack_addr 0x34000000 -stack_size 0x800000 exp_dhat_x86_darwin-dh_main.o ../coregrind/libcoregrind-x86-darwin.a ../VEX/libvex-x86-darwin.a
+link_tool_exe_darwin: ../coregrind/fixup_macho_loadcmds 0x34000000 0x800000 exp-dhat-x86-darwin
+fixup_macho_loadcmds: requested stack_addr (top) 0x34000000, stack_size 0x800000
+fixup_macho_loadcmds: examining tool exe: exp-dhat-x86-darwin
+fixup_macho_loadcmds:   Is 32-bit MachO file; no modifications needed.
+mkdir -p ../.in_place; \
+	for f in exp-dhat-amd64-darwin exp-dhat-x86-darwin vgpreload_exp-dhat-amd64-darwin.so vgpreload_exp-dhat-x86-darwin.so ; do \
+	  rm -f ../.in_place/$f; \
+	  ln -f -s ../exp-dhat/$f ../.in_place; \
+	done
+for f in exp-dhat-amd64-darwin exp-dhat-x86-darwin vgpreload_exp-dhat-amd64-darwin.so vgpreload_exp-dhat-x86-darwin.so; do \
+	  if [ ! -e $f.dSYM  -o  $f -nt $f.dSYM ] ; then \
+	      echo "dsymutil $f"; \
+	      dsymutil $f; \
+	  fi; \
+	done
+dsymutil exp-dhat-amd64-darwin
+dsymutil exp-dhat-x86-darwin
+mkdir -p ../.in_place; \
+	for f in exp-dhat-amd64-darwin exp-dhat-x86-darwin vgpreload_exp-dhat-amd64-darwin.so vgpreload_exp-dhat-x86-darwin.so; do \
+	  rm -f ../.in_place/$f.dSYM; \
+	  ln -f -s ../exp-dhat/$f.dSYM ../.in_place; \
+	done
+/bin/sh /Users/mixelpix/c/valgrind-3.12.0/install-sh -d /usr/local/lib/valgrind; \
+	for f in exp-dhat-amd64-darwin exp-dhat-x86-darwin vgpreload_exp-dhat-amd64-darwin.so vgpreload_exp-dhat-x86-darwin.so; do \
+	  /usr/bin/install -c $f /usr/local/lib/valgrind; \
+	done
+for f in exp-dhat-amd64-darwin exp-dhat-x86-darwin vgpreload_exp-dhat-amd64-darwin.so vgpreload_exp-dhat-x86-darwin.so; do \
+	  if [ ! -e $f.dSYM  -o  $f -nt $f.dSYM ] ; then \
+	      echo "dsymutil $f"; \
+	      dsymutil $f; \
+	  fi; \
+	done
+dsymutil exp-dhat-amd64-darwin
+dsymutil exp-dhat-x86-darwin
+/bin/sh /Users/mixelpix/c/valgrind-3.12.0/install-sh -d /usr/local/lib/valgrind; \
+	for f in exp-dhat-amd64-darwin exp-dhat-x86-darwin vgpreload_exp-dhat-amd64-darwin.so vgpreload_exp-dhat-x86-darwin.so; do \
+	  cp -R $f.dSYM /usr/local/lib/valgrind; \
+	done
+make[4]: Nothing to be done for `install-data-am'.
+Making install in tests
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+Making install in shared
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+Making install in tests
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+Making install in perf
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+Making install in gdbserver_tests
+Making install in .
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+Making install in memcheck/tests/vbit-test
+make[3]: Nothing to be done for `install-exec-am'.
+Making install in auxprogs
+mkdir -p ../.in_place; \
+	for f in getoff-amd64-darwin getoff-x86-darwin ; do \
+	  rm -f ../.in_place/$f; \
+	  ln -f -s ../auxprogs/$f ../.in_place; \
+	done
+for f in ; do \
+	  if [ ! -e $f.dSYM  -o  $f -nt $f.dSYM ] ; then \
+	      echo "dsymutil $f"; \
+	      dsymutil $f; \
+	  fi; \
+	done
+mkdir -p ../.in_place; \
+	for f in ; do \
+	  rm -f ../.in_place/$f.dSYM; \
+	  ln -f -s ../auxprogs/$f.dSYM ../.in_place; \
+	done
+ .././install-sh -c -d '/usr/local/bin'
+  /usr/bin/install -c valgrind-listener valgrind-di-server '/usr/local/bin'
+/bin/sh /Users/mixelpix/c/valgrind-3.12.0/install-sh -d /usr/local/lib/valgrind; \
+	for f in getoff-amd64-darwin getoff-x86-darwin; do \
+	  /usr/bin/install -c $f /usr/local/lib/valgrind; \
+	done
+for f in ; do \
+	  if [ ! -e $f.dSYM  -o  $f -nt $f.dSYM ] ; then \
+	      echo "dsymutil $f"; \
+	      dsymutil $f; \
+	  fi; \
+	done
+/bin/sh /Users/mixelpix/c/valgrind-3.12.0/install-sh -d /usr/local/lib/valgrind; \
+	for f in ; do \
+	  cp -R $f.dSYM /usr/local/lib/valgrind; \
+	done
+make[3]: Nothing to be done for `install-data-am'.
+Making install in mpi
+mkdir -p ../.in_place; \
+	for f in   ; do \
+	  rm -f ../.in_place/$f; \
+	  ln -f -s ../mpi/$f ../.in_place; \
+	done
+for f in  ; do \
+	  if [ ! -e $f.dSYM  -o  $f -nt $f.dSYM ] ; then \
+	      echo "dsymutil $f"; \
+	      dsymutil $f; \
+	  fi; \
+	done
+mkdir -p ../.in_place; \
+	for f in  ; do \
+	  rm -f ../.in_place/$f.dSYM; \
+	  ln -f -s ../mpi/$f.dSYM ../.in_place; \
+	done
+/bin/sh /Users/mixelpix/c/valgrind-3.12.0/install-sh -d /usr/local/lib/valgrind; \
+	for f in  ; do \
+	  /usr/bin/install -c $f /usr/local/lib/valgrind; \
+	done
+for f in  ; do \
+	  if [ ! -e $f.dSYM  -o  $f -nt $f.dSYM ] ; then \
+	      echo "dsymutil $f"; \
+	      dsymutil $f; \
+	  fi; \
+	done
+/bin/sh /Users/mixelpix/c/valgrind-3.12.0/install-sh -d /usr/local/lib/valgrind; \
+	for f in  ; do \
+	  cp -R $f.dSYM /usr/local/lib/valgrind; \
+	done
+make[3]: Nothing to be done for `install-data-am'.
+Making install in solaris
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+Making install in docs
+make[3]: Nothing to be done for `install-exec-am'.
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  install-data-hook
+set -e; \
+	if test -r html ; then \
+		mkdir -p /usr/local/share/doc/valgrind; \
+		cp -r html /usr/local/share/doc/valgrind; \
+	fi
+for f in *.1 ; do \
+		if test -r $f ; then \
+			mkdir -p /usr/local/share/man/man1; \
+			cp $f /usr/local/share/man/man1; \
+		fi \
+	done
+set -e; \
+	if test -r index.pdf ; then \
+		mkdir -p /usr/local/share/doc/valgrind; \
+		cp index.pdf /usr/local/share/doc/valgrind/valgrind_manual.pdf; \
+	fi
+set -e; \
+	if test -r index.ps ; then \
+		mkdir -p /usr/local/share/doc/valgrind; \
+		cp index.ps /usr/local/share/doc/valgrind/valgrind_manual.ps; \
+	fi
 ```
-
-
 </p></details>
 
 # OOF-AH!
