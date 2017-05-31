@@ -111,7 +111,7 @@ What is a .dSYM directory for? When I run the command make using Makefile, I end
   - https://bugs.kde.org/show_bug.cgi?id=365327
   - https://stackoverflow.com/a/43431715/5225057
   - http://valgrind.org/downloads/current.html#current
-    - md5: 6eb03c0c10ea917013a7622e483d61bb
+    - *md5: 6eb03c0c10ea917013a7622e483d61bb*
     ```console
     $  curl -O http://valgrind.org/downloads/valgrind-3.12.0.tar.bz2
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
