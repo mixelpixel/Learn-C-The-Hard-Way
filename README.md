@@ -1,10 +1,10 @@
 # Learn-C-The-Hard-Way
-Zed A. Shaw's C Programming Tutorial, an old version of "(Learn C The Hard Way)[https://web.archive.org/web/20140722163343/http://c.learncodethehardway.org:80/book/]"  
+Zed A. Shaw's C Programming Tutorial, an old version of "[Learn C The Hard Way](https://web.archive.org/web/20140722163343/http://c.learncodethehardway.org:80/book/)"  
 - https://github.com/zedshaw/learn-c-the-hard-way-lectures
 1. I am working with Terminal.app version 2.7.2 (388.1) on macOS Sierra version 10.12.5 (16F73), Kernel Version: Darwin 16.6.0.  
 2. When including quotes from the tutorial I will try and append "(ZAS)"  
 
-# Exercise 1: Dust Off That Compiler
+# Exercise 1: [Dust Off That Compiler](https://web.archive.org/web/20140714084954/http://c.learncodethehardway.org:80/book/ex1.html)
 
 <details><summary> Notes to myself:</summary>Difference between `puts` and `printf`: [puts prints appends newline, printf allows http://stackoverflow.com/a/2454491/5225057)  
 Odd, in the command line I can use `$ printf $ "ab\bcd"` to displat "acd" but `puts` returns "command not found." Not sure why since `man puts` displays the manual. There's also fputs. ...why the 3 in `man 3 puts`? Answer: https://en.wikipedia.org/wiki/Man_page#Manual_sections  
@@ -72,7 +72,7 @@ int main()
 
 [See 1.2.c for a warning free example using "void" and compiling with CFLAGS='-WCL4'](01/1.2.c)
 
-# Exercise 2: Make Is Your Python Now
+# Exercise 2: [Make Is Your Python Now](https://web.archive.org/web/20140725051533/http://c.learncodethehardway.org:80/book/ex2.html)
 <details><summary>Notes to myself:</summary><p>  
 
 Hmm... reading `$ man make` didn't help me to understand the `-"Wall"` or `"-WLC4"`, but this helped some:  
@@ -102,10 +102,10 @@ NOTE for vim: ESC, `:set nolist`, RETURN will disbale the "list display"
 Additional resources: https://www.gnu.org/software/make/  
 What is a .dSYM directory for? When I run the command make using Makefile, I end up, for example, with the directory ex1.dSYM containing the ex1 binary within /Contents/Resources/DWARF/ including an info.plist in the /Contents/ directory.  
 
-# Exercise 3: Formatted Printing
+# Exercise 3: [Formatted Printing](https://web.archive.org/web/20140723032924/http://c.learncodethehardway.org:80/book/ex3.html)
 [c file, Makefile and Extra Credit](03/)
 
-# Exercise 4: Introducing Valgrind
+# Exercise 4: [Introducing Valgrind](https://web.archive.org/web/20140725050055/http://c.learncodethehardway.org:80/book/ex4.html)
 [Introducing Valgrind](04/)
 - http://valgrind.org/
 ### Installing Valgrind
@@ -191,3 +191,5 @@ http://valgrind.org/docs/download_docs.html
 > It's not short for "value grinder", although that's not a bad guess.  
 
 </p></details>
+
+Oddly, and after all this, I decided to install Ubuntu 16.04.2 LTS on a Virtual Box and go through the same process of installation (note: `md5sum` instead of `md5`) but after a successful `make install` the `valgrind` command was not recognized. WTF? So, I simply resorted to `sudo apt install valgrind` and it works fine on Ubuntu... :\
