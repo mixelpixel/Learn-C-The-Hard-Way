@@ -192,4 +192,5 @@ http://valgrind.org/docs/download_docs.html
 
 </p></details>
 
-Oddly, and after all this, I decided to install Ubuntu 16.04.2 LTS on a Virtual Box and go through the same process of installation (note: `md5sum` instead of `md5`) but after a successful `make install` the `valgrind` command was not recognized. WTF? So, I simply resorted to `sudo apt install valgrind` and it works fine on Ubuntu... :\
+- Oddly, and after all this, I decided to install Ubuntu 16.04.2 LTS on a Virtual Box and go through the same process of installation (note: `md5sum` instead of `md5`) but after a successful `make install` the `valgrind` command was not recognized. WTF? So, I simply resorted to `sudo apt install valgrind` and it works fine on Ubuntu... :\
+- Aaand the performance blows on the VirtualBox, so I made a persistent USB stick... it's USB2.0 tho, so I might have to get a usb 3.0 cuz it's not that much better :\
