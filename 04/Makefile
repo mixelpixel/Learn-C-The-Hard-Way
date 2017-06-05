@@ -8,4 +8,3 @@ all: $(src)
 
 clean:
 	rm -rf 4? 4?? *.dSYM
-

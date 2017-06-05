@@ -1,7 +1,5 @@
 #include <stdio.h>
 
-/* Warning: This program is wrong on purpose */
-
 int main()
 {
   int age;
@@ -12,4 +10,3 @@ int main()
 
   return 0;
 }
-
