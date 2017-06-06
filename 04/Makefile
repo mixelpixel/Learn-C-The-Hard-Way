@@ -1,7 +1,7 @@
 CFLAGS=-Wall -g
 # CFLAGS=-WCL4 -g # works on macOS, why?
 
-all: 3.0
+all: 4.0
 
 
 clean:
