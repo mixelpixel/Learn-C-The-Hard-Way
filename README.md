@@ -204,5 +204,5 @@ http://valgrind.org/docs/download_docs.html
 [c file, Makefile](06/)
   - NOTE how `char initial = 'A';` requires SINGLE quotes
 
-# Exercise 6: [More Variables, Some Math](https://web.archive.org/web/20140723032924/http://c.learncodethehardway.org:80/book/ex7.html)
+# Exercise 7: [More Variables, Some Math](https://web.archive.org/web/20140723032924/http://c.learncodethehardway.org:80/book/ex7.html)
 [c file, Makefile](07/)
