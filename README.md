@@ -197,3 +197,5 @@ http://valgrind.org/docs/download_docs.html
 - Aaand the performance blows on the VirtualBox, so I made a persistent USB stick... it's USB2.0 tho, so I might have to get a usb 3.0 cuz it's not that much better :\
 - Tracking this for using MacOS Sierra with valgrind: https://apple.stackexchange.com/questions/285329/valgrind-for-macos-sierra-on-i7-macbook-air
 
+# Exercise 5: [The Structure Of A C Program](https://web.archive.org/web/20140723032924/http://c.learncodethehardway.org:80/book/ex5.html)
+[c file, Makefile and Extra Credit](05/)
