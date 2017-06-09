@@ -3,6 +3,7 @@ Zed A. Shaw's C Programming Tutorial, an old version of "[Learn C The Hard Way](
 - https://github.com/zedshaw/learn-c-the-hard-way-lectures
 1. I am working with Terminal.app version 2.7.2 (388.1) on macOS Sierra version 10.12.5 (16F73), Kernel Version: Darwin 16.6.0.  
 2. When including quotes from the tutorial I will try and append "(ZAS)"  
+3. As of 6/8/2017 valgrind is still inoperable with macOS Sierra, so I am continuing using Ubuntu 16.04.2 LTS on either a persistent USB boot stick, or, as a guest OS in Virtual Box v5.1.22 r115126 (Qt5.6.2), GNOME Terminal 3.18.3 "A terminal emulator for the GNOME desktop. Using VTE version 0.42.5 +GNUTLS.
 
 # Exercise 1: [Dust Off That Compiler](https://web.archive.org/web/20140714084954/http://c.learncodethehardway.org:80/book/ex1.html)
 
