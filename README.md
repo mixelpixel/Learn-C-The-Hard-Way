@@ -199,3 +199,6 @@ http://valgrind.org/docs/download_docs.html
 
 # Exercise 5: [The Structure Of A C Program](https://web.archive.org/web/20140723032924/http://c.learncodethehardway.org:80/book/ex5.html)
 [c file, Makefile](05/)
+
+# Exercise 6: [The Structure Of A C Program](https://web.archive.org/web/20140723032924/http://c.learncodethehardway.org:80/book/ex6.html)
+[c file, Makefile](06/)
