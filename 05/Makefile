@@ -1,5 +1,5 @@
 CFLAGS=-Wall -g
 
 clean:
-	rm -rf 5??
+	rm -rf ex5
 
