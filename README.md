@@ -91,6 +91,8 @@ int main()
 
 </p></details>
 
+[Exercise 1: c files, Makefile and extra credit](01/)
+
 # Exercise 2: [Make Is Your Python Now](https://web.archive.org/web/20140725051533/http://c.learncodethehardway.org:80/book/ex2.html)
 
 <details><summary>Notes re: `make`, `cc`, `-Wall` & `-WCL4`:</summary><p>
@@ -127,10 +129,10 @@ ex1.c:3:5: warning: implicit declaration of function 'puts' is invalid in C99 [-
 
 </p></details>
 
-[Exercise 2 Makefile and extra credit](02/)
+[Exercise 2: c files, Makefile and extra credit](02/)
 
 # Exercise 3: [Formatted Printing](https://web.archive.org/web/20140723032924/http://c.learncodethehardway.org:80/book/ex3.html)
-[c file, Makefile and Extra Credit](03/)
+[Exercise 3: c files, Makefile and Extra Credit](03/)
 
 # Exercise 4: [Introducing Valgrind](https://web.archive.org/web/20140725050055/http://c.learncodethehardway.org:80/book/ex4.html)
 [Introducing Valgrind](04/)
@@ -231,12 +233,14 @@ http://valgrind.org/docs/download_docs.html
 
 </p></details>
 
+[Exercise 4: c file, Makefile](05/)
+
 # Exercise 5: [The Structure Of A C Program](https://web.archive.org/web/20140723032924/http://c.learncodethehardway.org:80/book/ex5.html)
-[c file, Makefile](05/)
+[Exercise 5: c file, Makefile](05/)
 
 # Exercise 6: [Types Of Variables](https://web.archive.org/web/20140723032924/http://c.learncodethehardway.org:80/book/ex6.html)
-[c file, Makefile](06/)
+[Exercise 6: c file, Makefile](06/)
   - `char initial = 'A';` requires SINGLE quotes, double quotes results in an integer assignment
 
 # Exercise 7: [More Variables, Some Math](https://web.archive.org/web/20140723032924/http://c.learncodethehardway.org:80/book/ex7.html)
-[c file, Makefile](07/)
+[Exercise 7: c file, Makefile](07/)
