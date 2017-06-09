@@ -2,8 +2,8 @@
 Zed A. Shaw's C Programming Tutorial, an old version of "[Learn C The Hard Way](https://web.archive.org/web/20140722163343/http://c.learncodethehardway.org:80/book/)"
 1. https://github.com/zedshaw/learn-c-the-hard-way-lectures
 2. I am working with Terminal.app version 2.7.2 (388.1) on macOS Sierra version 10.12.5 (16F73), Kernel Version: Darwin 16.6.0.
-3. When including quotes from the tutorial I will try and append "(ZAS)"
-4. As of 6/8/2017 valgrind is still inoperable with macOS Sierra, so I am continuing using Ubuntu 16.04.2 LTS on either a persistent USB boot stick, or, as a guest OS in Virtual Box v5.1.22 r115126 (Qt5.6.2), GNOME Terminal 3.18.3 "A terminal emulator for the GNOME desktop. Using VTE version 0.42.5 +GNUTLS.
+3. When including quotes from the tutorial I will try and append "_(ZAS)_"
+4. As of 6/8/2017 [valgrind](http://valgrind.org/) is still inoperable with macOS Sierra, so I am continuing using Ubuntu 16.04.2 LTS on either a persistent USB boot stick, or, as a guest OS in Virtual Box v5.1.22 r115126 (Qt5.6.2), GNOME Terminal 3.18.3 "A terminal emulator for the GNOME desktop. Using VTE version 0.42.5 +GNUTLS.
 5. ▶︎ Click ▶︎ on ▶︎ the ▶︎ triangles ▶︎ to ▶︎ display ▶︎ extra ▶︎ notes. ▶︎
 
 # Exercise 1: [Dust Off That Compiler](https://web.archive.org/web/20140714084954/http://c.learncodethehardway.org:80/book/ex1.html)
@@ -65,7 +65,7 @@ int main(int argc, char *argv[])
 3 warnings generated.
 ```
 
-- I "discovered" this flag option because I accidentally wrote `CFLAGS="-WALL"` (all caps) and got the message "`did you mean '-WCL4'?`" and tried it. This flag option also warns about the unused parameters. Not sure what other conditions it covers. Also not sure if `$ man make` is where I should be looking to ascertain what these flags are doing, but I think I am invoking the `-W` `-C` `-L` flags with `make`, but not sure what the `4` is for.
+- I "discovered" this flag option because I accidentally wrote `CFLAGS="-WALL"` (all caps) and got the message "`warning: unknown warning option '-WALL'; did you mean '-WCL4'? [-Wunknown-warning-option]`" and tried it. This flag option also warns about the unused parameters. Not sure what other conditions it covers. Also not sure if `$ man make` is where I should be looking to ascertain what these flags are doing, but I think I am invoking the `-W` `-C` `-L` flags with `make`, but not sure what the `4` is for.
 - NOTE: `-WCL4` seems to only be a thing in MacOS, not Ubuntu. No idea why.
 - Explicitly stating there are no parameters in main with "void" avoids this warning, e.g.
 
@@ -93,13 +93,14 @@ int main()
 
 # Exercise 2: [Make Is Your Python Now](https://web.archive.org/web/20140725051533/http://c.learncodethehardway.org:80/book/ex2.html)
 
-<details><summary>Notes re: `make`, `cc`, `-Wall` & `-WLC4`:</summary><p>
+<details><summary>Notes re: `make`, `cc`, `-Wall` & `-WCL4`:</summary><p>
 
-- Hmm... reading `$ man make` didn't help me to understand the `-"Wall"` or `"-WLC4"`, but this helped some:  
-  > "In this example I did `CFLAGS="-Wall" make ex1` so that it would *add the command line option `-Wall` to the `cc` command that `make` normally runs*"(ZAS)
+- Hmm... reading `$ man make` didn't help me to understand the `-"Wall"` or `"-WCL4"`, but this helped some:  
+  > "In this example I did `CFLAGS="-Wall" make ex1` so that it would *add the command line option `-Wall` to the `cc` command that `make` normally runs*" _(ZAS)_
 
-- So I read `$ man cc` but am still not sure about what is going on here: is `-Wall` like `-W` and `-all`? is `-WLC4` like `-W` `-C` `-L` and `-4` ("`-04`"?)? Per the extra credit, I'll do a little more research...
-- I also found this useful: `CFLAGS='-Wall'` "is a way to pass "modifiers" to the make command. If you're not familiar with how the Unix shell works, you can create these "environment variables" which will get picked up by programs you run. Sometimes you do this with a command like export `CFLAGS="-Wall"` depending on the shell you use. *You can however also just put them before the command you want to run, and that environment variable will be set only while that command runs.*"(ZAS)
+- So I read `$ man cc` but am still not sure about what is going on here: is `-Wall` like `-W` and `-all`? is `-WCL4` like `-W` `-C` `-L` and `-4` ("`-04`"?)? Per the extra credit, I'll do a little more research...
+- I also found this useful: `CFLAGS='-Wall'`
+  > "is a way to pass "modifiers" to the make command. If you're not familiar with how the Unix shell works, you can create these "environment variables" which will get picked up by programs you run. Sometimes you do this with a command like export `CFLAGS="-Wall"` depending on the shell you use. *You can however also just put them before the command you want to run, and that environment variable will be set only while that command runs.*" _(ZAS)_
 
 </p></details>
 
