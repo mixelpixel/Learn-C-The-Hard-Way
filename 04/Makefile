@@ -1,10 +1,6 @@
-CFLAGS = -Wall -g -static
-# CFLAGS=-WCL4 -g # macOS only?
+CFLAGS=-Wall -g
 
-src = 4.0.c
-
-all: $(src)
-	cc -o 4.0 $(src)
+all: 4.0
 
 clean:
-	rm -rf 4? 4?? *.dSYM
+	rm -rf 4??

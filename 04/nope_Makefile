@@ -1,0 +1,6 @@
+CFLAGS=-Wall -g
+
+all: ./bin/4.0
+
+clean:
+	rm -rf ./bin/4??
