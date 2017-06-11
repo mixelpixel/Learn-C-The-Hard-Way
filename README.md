@@ -244,3 +244,6 @@ http://valgrind.org/docs/download_docs.html
 
 # Exercise 7: [More Variables, Some Math](https://web.archive.org/web/20140723032924/http://c.learncodethehardway.org:80/book/ex7.html)
 [Exercise 7: c file, Makefile](07/)
+
+# Exercise 8: [Sizes and Arrays](https://web.archive.org/web/20140723032924/http://c.learncodethehardway.org:80/book/ex8.html)
+[Exercise 8: c file, Makefile](08/)
