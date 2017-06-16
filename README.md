@@ -4,6 +4,7 @@ Zed A. Shaw's C Programming Tutorial, an old version of "[Learn C The Hard Way](
 2. I am working with Terminal.app version 2.7.2 (388.1) on macOS Sierra version 10.12.5 (16F73), Kernel Version: Darwin 16.6.0.
 3. When including quotes from the tutorial I will try and append "_(ZAS)_"
 4. As of 6/8/2017 [valgrind](http://valgrind.org/) is still inoperable with macOS Sierra, so I am continuing using Ubuntu 16.04.2 LTS on either a persistent USB boot stick, or, as a guest OS in Virtual Box v5.1.22 r115126 (Qt5.6.2), GNOME Terminal 3.18.3 "A terminal emulator for the GNOME desktop. Using VTE version 0.42.5 +GNUTLS.
+  - UPDATE 6/15/2017 valgrind 3.13.0 runs on macOS Sierra!
 5. ▶︎ Click ▶︎ on ▶︎ the ▶︎ triangles ▶︎ to ▶︎ display ▶︎ extra ▶︎ notes. ▶︎
 
 # Exercise 1: [Dust Off That Compiler](https://web.archive.org/web/20140714084954/http://c.learncodethehardway.org:80/book/ex1.html)
