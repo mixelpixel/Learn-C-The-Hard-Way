@@ -35,3 +35,7 @@
 tests/*_tests
 tests/*.log
 build
+
+/The_Book
+/learn_c_the_hard_way
+
