@@ -7,6 +7,9 @@ Zed A. Shaw's C Programming Tutorial, an old version of "[Learn C The Hard Way](
   - UPDATE 6/15/2017 valgrind 3.13.0 runs on macOS Sierra!
 5. ▶︎ Click ▶︎ on ▶︎ the ▶︎ triangles ▶︎ to ▶︎ display ▶︎ extra ▶︎ notes. ▶︎
 6. add this to an appropriate section: https://www.go4expert.com/articles/solution-using-scanf-fgets-c-t27148/
+7. extra reference: https://github.com/mwilliams/lcthw-book
+8. https://web.archive.org/web/20150203160832/http://c.learncodethehardway.org/book/
+9. https://www.safaribooksonline.com/library/view/learn-c-the/9780134434452/
 
 # Exercise 1: [Dust Off That Compiler](https://web.archive.org/web/20140714084954/http://c.learncodethehardway.org:80/book/ex1.html)
 
