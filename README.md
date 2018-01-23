@@ -9,7 +9,8 @@ Zed A. Shaw's C Programming Tutorial, "[Learn C The Hard Way](https://learncodet
 1. https://github.com/zedshaw/learn-c-the-hard-way-lectures
 2. I am working with:
   - Terminal.app version 2.7.2 (388.1) through 2.8 on
-  - macOS Sierra version 10.12.5 (16F73), Kernel Version: Darwin 16.6.0 _through_ macOS High Sierra version 10.13.2 (17C205) Kernel Version: Darwin 17.3.0, and
+  - macOS Sierra version 10.12.5 (16F73), Kernel Version: Darwin 16.6.0 _through_
+  macOS High Sierra version 10.13.2 (17C205) Kernel Version: Darwin 17.3.0, and
   - Xcode Version 9.0.1 (9A1004)
   - `$  cc --version` ---> `Apple LLVM version 9.0.0 (clang-900.0.38)`
 3. When including quotes from the tutorial I will try and append "_(ZAS)_"
