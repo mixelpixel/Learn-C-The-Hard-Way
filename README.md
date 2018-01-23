@@ -1,8 +1,8 @@
 # "Learn C The Hard Way" by Zed A. Shaw
 Zed A. Shaw's C Programming Tutorial, "[Learn C The Hard Way](https://learncodethehardway.org/c/)"
-
+***
 ▶︎ Click ▶︎ on ▶︎ the ▶︎ triangles ▶︎ to ▶︎ display ▶︎ extra ▶︎ notes. ▶︎
-
+***
 <details><summary>Setup:</summary><p>
 
 1. https://github.com/zedshaw/learn-c-the-hard-way-lectures
@@ -15,6 +15,8 @@ Zed A. Shaw's C Programming Tutorial, "[Learn C The Hard Way](https://learncodet
 7. https://www.safaribooksonline.com/library/view/learn-c-the/9780134434452/
 
 </p></details>
+
+***
 
 # Exercise 1: [Dust Off That Compiler](https://web.archive.org/web/20140714084954/http://c.learncodethehardway.org:80/book/ex1.html)
 
@@ -104,6 +106,9 @@ int main()
 
 [Exercise 1: c files, Makefile and extra credit](01/)
 
+***
+
+
 # Exercise 2: [Make Is Your Python Now](https://web.archive.org/web/20140725051533/http://c.learncodethehardway.org:80/book/ex2.html)
 
 <details><summary>Notes re: `make`, `cc`, `-Wall` & `-WCL4`:</summary><p>
@@ -142,8 +147,12 @@ ex1.c:3:5: warning: implicit declaration of function 'puts' is invalid in C99 [-
 
 [Exercise 2: c files, Makefile and extra credit](02/)
 
+***
+
 # Exercise 3: [Formatted Printing](https://web.archive.org/web/20140723032924/http://c.learncodethehardway.org:80/book/ex3.html)
 [Exercise 3: c files, Makefile and Extra Credit](03/)
+
+***
 
 # Exercise 4: [Introducing Valgrind](https://web.archive.org/web/20140725050055/http://c.learncodethehardway.org:80/book/ex4.html)
 ### Installing [Valgrind](http://valgrind.org/) - CURRENT v3.12.0 NOT SUPPORTED ENOUGH FOR macOS Sierra.
@@ -245,15 +254,25 @@ http://valgrind.org/docs/download_docs.html
 
 [Exercise 4: c file, Makefile](04/)
 
+***
+
 # Exercise 5: [The Structure Of A C Program](https://web.archive.org/web/20140723032924/http://c.learncodethehardway.org:80/book/ex5.html)
 [Exercise 5: c file, Makefile](05/)
+
+***
 
 # Exercise 6: [Types Of Variables](https://web.archive.org/web/20140723032924/http://c.learncodethehardway.org:80/book/ex6.html)
 [Exercise 6: c file, Makefile](06/)
   - `char initial = 'A';` requires SINGLE quotes, double quotes results in an integer assignment
 
+***
+
 # Exercise 7: [More Variables, Some Math](https://web.archive.org/web/20140723032924/http://c.learncodethehardway.org:80/book/ex7.html)
 [Exercise 7: c file, Makefile](07/)
 
+***
+
 # Exercise 8: [Sizes and Arrays](https://web.archive.org/web/20140723032924/http://c.learncodethehardway.org:80/book/ex8.html)
 [Exercise 8: c file, Makefile](08/)
+
+***
