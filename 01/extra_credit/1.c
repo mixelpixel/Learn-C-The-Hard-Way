@@ -4,6 +4,9 @@ Extra Credit
    Try running it and see what happens.
 2. Print out 5 more lines of text or something more complex than hello world.
 3. Run man 3 puts and read about this function and many others.
+4. For each line, write out the symbols you don’t understand and see if you can
+   guess what they mean. Write a little chart on paper with your guess so you
+   can check it later to see if you got it right.
 */
 
 #include <stdio.h>
