@@ -39,3 +39,6 @@ build
 /The_Book
 /learn_c_the_hard_way
 /learn-c-the-hard-way-lectures
+
+# ignore the binary files created for the exercises
+ex[0-9][0-9]
