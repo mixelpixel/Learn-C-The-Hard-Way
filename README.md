@@ -1,15 +1,20 @@
 # "Learn C The Hard Way" by Zed A. Shaw
-Zed A. Shaw's C Programming Tutorial, an old version of "[Learn C The Hard Way](https://web.archive.org/web/20140722163343/http://c.learncodethehardway.org:80/book/)"
+Zed A. Shaw's C Programming Tutorial, "[Learn C The Hard Way](https://learncodethehardway.org/c/)"
+
+▶︎ Click ▶︎ on ▶︎ the ▶︎ triangles ▶︎ to ▶︎ display ▶︎ extra ▶︎ notes. ▶︎
+
+<details><summary>Setup:</summary><p>
+
 1. https://github.com/zedshaw/learn-c-the-hard-way-lectures
-2. I am working with Terminal.app version 2.7.2 (388.1) on macOS Sierra version 10.12.5 (16F73), Kernel Version: Darwin 16.6.0.
+2. I am working with Terminal.app version 2.7.2 (388.1) through 2.8 on macOS Sierra version 10.12.5 (16F73), Kernel Version: Darwin 16.6.0 _through_ macOS High Sierra version 10.13.2 (17C205) Kernel Version: Darwin 17.3.0.
 3. When including quotes from the tutorial I will try and append "_(ZAS)_"
-4. As of 6/8/2017 [valgrind](http://valgrind.org/) is still inoperable with macOS Sierra, so I am continuing using Ubuntu 16.04.2 LTS on either a persistent USB boot stick, or, as a guest OS in Virtual Box v5.1.22 r115126 (Qt5.6.2), GNOME Terminal 3.18.3 "A terminal emulator for the GNOME desktop. Using VTE version 0.42.5 +GNUTLS.
-  - UPDATE 6/15/2017 valgrind 3.13.0 runs on macOS Sierra!
-5. ▶︎ Click ▶︎ on ▶︎ the ▶︎ triangles ▶︎ to ▶︎ display ▶︎ extra ▶︎ notes. ▶︎
-6. add this to an appropriate section: https://www.go4expert.com/articles/solution-using-scanf-fgets-c-t27148/
-7. extra reference: https://github.com/mwilliams/lcthw-book
-8. https://web.archive.org/web/20150203160832/http://c.learncodethehardway.org/book/
-9. https://www.safaribooksonline.com/library/view/learn-c-the/9780134434452/
+4. As of 6/8/2017 [valgrind](http://valgrind.org/) is still inoperable with macOS Sierra, <strike>so I am continuing using Ubuntu 16.04.2 LTS on either a persistent USB boot stick, or, as a guest OS in Virtual Box v5.1.22 r115126 (Qt5.6.2), GNOME Terminal 3.18.3 "A terminal emulator for the GNOME desktop. Using VTE version 0.42.5 +GNUTLS.</strike>
+  - **UPDATE** 6/15/2017 valgrind 3.13.0 runs on macOS Sierra! Willl it work on macOS High Sierra?
+5. add this to an appropriate section: https://www.go4expert.com/articles/solution-using-scanf-fgets-c-t27148/
+6. extra reference: https://github.com/mwilliams/lcthw-book
+7. https://www.safaribooksonline.com/library/view/learn-c-the/9780134434452/
+
+</p></details>
 
 # Exercise 1: [Dust Off That Compiler](https://web.archive.org/web/20140714084954/http://c.learncodethehardway.org:80/book/ex1.html)
 
@@ -17,11 +22,12 @@ Zed A. Shaw's C Programming Tutorial, an old version of "[Learn C The Hard Way](
 
 - [Difference between `puts` and `printf`](http://stackoverflow.com/a/2454491/5225057)
   1. `puts` automatically appends a newline.
-  2. `printf` uses "%s" style print formatting.
+  2. `printf` uses "%s" style **print f**ormatting.
+
 - Odd, in the command line I can use `$ printf $ "ab\bcd"` to display "acd" but `puts` returns "command not found." Not sure why since `man puts` displays the manual. There's also `fputs`.
 - Why the 3 in `man 3 puts`? Answer: https://en.wikipedia.org/wiki/Man_page#Manual_sections (see also `man man` for the `-a` option to display all manual sections).
 
-</p></details>
+
 
 <details><summary>Changes since LCTHW published</summary><p>
 
@@ -102,7 +108,7 @@ int main()
 
 <details><summary>Notes re: `make`, `cc`, `-Wall` & `-WCL4`:</summary><p>
 
-- Hmm... reading `$ man make` didn't help me to understand the `-"Wall"` or `"-WCL4"`, but this helped some:  
+- Hmm... reading `$ man make` didn't help me to understand the `-"Wall"` or `"-WCL4"`, but this helped some:
   > "In this example I did `CFLAGS="-Wall" make ex1` so that it would *add the command line option `-Wall` to the `cc` command that `make` normally runs*" _(ZAS)_
 
 - So I read `$ man cc` but am still not sure about what is going on here: is `-Wall` like `-W` and `-all`? is `-WCL4` like `-W` `-C` `-L` and `-4` ("`-04`"?)? Per the extra credit, I'll do a little more research...
@@ -150,7 +156,7 @@ ex1.c:3:5: warning: implicit declaration of function 'puts' is invalid in C99 [-
 - http://valgrind.org/downloads/current.html#current
   - *md5: 6eb03c0c10ea917013a7622e483d61bb*
 
-- WTAF?  
+- WTAF?
 
 ```bash
 $  curl -O http://valgrind.org/downloads/valgrind-3.12.0.tar.bz2
@@ -219,21 +225,21 @@ Error: An unsatisfied requirement failed this build.
 
 <details><summary>Click here for some fun info on Valgrynd</summary><p>
 
-https://dot.kde.org/2006/02/21/interview-valgrind-author-julian-seward  
-http://valgrind.org/docs/download_docs.html  
+https://dot.kde.org/2006/02/21/interview-valgrind-author-julian-seward
+http://valgrind.org/docs/download_docs.html
 
-> 1.1. How do you pronounce "Valgrind"?  
-> The "Val" as in the word "value". The "grind" is pronounced with a short 'i' -- ie. "grinned" (rhymes with "tinned") rather than "grined" (rhymes with "find").  
->  
-> Don't feel bad: almost everyone gets it wrong at first.  
+> 1.1. How do you pronounce "Valgrind"?
+> The "Val" as in the word "value". The "grind" is pronounced with a short 'i' -- ie. "grinned" (rhymes with "tinned") rather than "grined" (rhymes with "find").
+>
+> Don't feel bad: almost everyone gets it wrong at first.
 > ***
->  
-> 1.2. Where does the name "Valgrind" come from?  
-> From Nordic mythology. Originally (before release) the project was named Heimdall, after the watchman of the Nordic gods. He could "see a hundred miles by day or night, hear the grass growing, see the wool growing on a sheep's back", etc. This would have been a great name, but it was already taken by a security package "Heimdal".  
->  
-> Keeping with the Nordic theme, Valgrind was chosen. Valgrind is the name  of the main entrance to Valhalla (the Hall of the Chosen Slain in Asgard). Over this entrance there resides a wolf and over it there is the head of a boar and on it perches a huge eagle, whose eyes can see to the far regions of the nine worlds. Only those judged worthy by the guardians are allowed to pass through Valgrind. All others are refused entrance.  
->  
-> It's not short for "value grinder", although that's not a bad guess.  
+>
+> 1.2. Where does the name "Valgrind" come from?
+> From Nordic mythology. Originally (before release) the project was named Heimdall, after the watchman of the Nordic gods. He could "see a hundred miles by day or night, hear the grass growing, see the wool growing on a sheep's back", etc. This would have been a great name, but it was already taken by a security package "Heimdal".
+>
+> Keeping with the Nordic theme, Valgrind was chosen. Valgrind is the name  of the main entrance to Valhalla (the Hall of the Chosen Slain in Asgard). Over this entrance there resides a wolf and over it there is the head of a boar and on it perches a huge eagle, whose eyes can see to the far regions of the nine worlds. Only those judged worthy by the guardians are allowed to pass through Valgrind. All others are refused entrance.
+>
+> It's not short for "value grinder", although that's not a bad guess.
 
 </p></details>
 
