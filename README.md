@@ -3,7 +3,8 @@ Zed A. Shaw's C Programming Tutorial, "[Learn C The Hard Way](https://learncodet
 
 ▶︎ Click ▶︎ on ▶︎ the ▶︎ triangles ▶︎ to ▶︎ display ▶︎ extra ▶︎ notes. ▶︎
 
-# Exercise 0: [The Setup](https://github.com/mwilliams/lcthw-book/blob/master/learn-c-the-hard-waych1.txt)
+# Exercise 0: [The Setup](https://github.com/zedshaw/learn-c-the-hard-way-lectures/blob/master/ex0/lecture.md)
+
 <details><summary>My Setup While Working Through the Course, Notes & To Do...</summary><p>
 
 ### I am working with:
@@ -18,18 +19,19 @@ Zed A. Shaw's C Programming Tutorial, "[Learn C The Hard Way](https://learncodet
 
 NOTE:
 1. When including quotes from the tutorial I will try and append "_(ZAS)_"
-2. Additionalreference: https://github.com/mwilliams/lcthw-book
+2. Additional reference: https://github.com/mwilliams/lcthw-book
 3. https://www.safaribooksonline.com/library/view/learn-c-the/9780134434452/
 
 TODO:
 1. add this to an appropriate section: https://www.go4expert.com/articles/solution-using-scanf-fgets-c-t27148/
 
-
 </p></details>
+
 
 ***
 
-# Exercise 1: [Dust Off That Compiler](https://web.archive.org/web/20140714084954/http://c.learncodethehardway.org:80/book/ex1.html)
+
+# Exercise 1: [Dust Off That Compiler](https://github.com/zedshaw/learn-c-the-hard-way-lectures/blob/master/ex1/lecture.md)
 
 <details><summary>Notes to myself:</summary><p>
 
@@ -117,10 +119,11 @@ int main()
 
 [Exercise 1: c files, Makefile and extra credit](01/)
 
+
 ***
 
 
-# Exercise 2: [Make Is Your Python Now](https://web.archive.org/web/20140725051533/http://c.learncodethehardway.org:80/book/ex2.html)
+# Exercise 2: [Make Is Your Python Now](https://github.com/zedshaw/learn-c-the-hard-way-lectures/blob/master/ex2/lecture.md)
 
 <details><summary>Notes re: `make`, `cc`, `-Wall` & `-WCL4`:</summary><p>
 
@@ -158,14 +161,18 @@ ex1.c:3:5: warning: implicit declaration of function 'puts' is invalid in C99 [-
 
 [Exercise 2: c files, Makefile and extra credit](02/)
 
+
 ***
 
-# Exercise 3: [Formatted Printing](https://web.archive.org/web/20140723032924/http://c.learncodethehardway.org:80/book/ex3.html)
+
+# Exercise 3: [Formatted Printing](https://github.com/zedshaw/learn-c-the-hard-way-lectures/blob/master/ex3/lecture.md)
 [Exercise 3: c files, Makefile and Extra Credit](03/)
 
+
 ***
 
-# Exercise 4: [Introducing Valgrind](https://web.archive.org/web/20140725050055/http://c.learncodethehardway.org:80/book/ex4.html)
+
+# Exercise 4: [Introducing Valgrind](https://github.com/zedshaw/learn-c-the-hard-way-lectures/blob/master/ex4/lecture.md)
 ### Installing [Valgrind](http://valgrind.org/) - CURRENT v3.12.0 NOT SUPPORTED ENOUGH FOR macOS Sierra.
 
 <details><summary>valgrind install attempt notes</summary><p>
@@ -265,25 +272,109 @@ http://valgrind.org/docs/download_docs.html
 
 [Exercise 4: c file, Makefile](04/)
 
+
 ***
 
-# Exercise 5: [The Structure Of A C Program](https://web.archive.org/web/20140723032924/http://c.learncodethehardway.org:80/book/ex5.html)
+
+# Exercise 5: [The Structure Of A C Program](https://github.com/zedshaw/learn-c-the-hard-way-lectures/blob/master/ex5/lecture.md)
 [Exercise 5: c file, Makefile](05/)
 
+
 ***
 
-# Exercise 6: [Types Of Variables](https://web.archive.org/web/20140723032924/http://c.learncodethehardway.org:80/book/ex6.html)
+
+# Exercise 6: [Types Of Variables](https://github.com/zedshaw/learn-c-the-hard-way-lectures/blob/master/ex6/lecture.md)
 [Exercise 6: c file, Makefile](06/)
   - `char initial = 'A';` requires SINGLE quotes, double quotes results in an integer assignment
 
+
 ***
 
-# Exercise 7: [More Variables, Some Math](https://web.archive.org/web/20140723032924/http://c.learncodethehardway.org:80/book/ex7.html)
+
+# Exercise 7: [More Variables, Some Math](https://github.com/zedshaw/learn-c-the-hard-way-lectures/blob/master/ex7/lecture.md)
 [Exercise 7: c file, Makefile](07/)
 
+
 ***
 
-# Exercise 8: [Sizes and Arrays](https://web.archive.org/web/20140723032924/http://c.learncodethehardway.org:80/book/ex8.html)
+
+# Exercise 8: [Sizes and Arrays](https://github.com/zedshaw/learn-c-the-hard-way-lectures/blob/master/ex8/lecture.md)
 [Exercise 8: c file, Makefile](08/)
 
+
 ***
+
+
+# Exercise 9: [Arrays And Strings](https://github.com/zedshaw/learn-c-the-hard-way-lectures/blob/master/ex9/lecture.md)
+
+
+***
+
+
+# Exercise 10: [Arrays Of Strings, Looping](https://github.com/zedshaw/learn-c-the-hard-way-lectures/blob/master/ex10/lecture.md)
+
+
+***
+
+
+# Exercise 11: [While-Loop And Boolean Expressions](https://github.com/zedshaw/learn-c-the-hard-way-lectures/blob/master/ex11/lecture.md)
+
+
+***
+
+
+# Exercise 12: [If, Else-If, Else](https://github.com/zedshaw/learn-c-the-hard-way-lectures/blob/master/ex12/lecture.md)
+
+
+***
+
+
+# Exercise 13: [Switch Statement](https://github.com/zedshaw/learn-c-the-hard-way-lectures/blob/master/ex13/lecture.md)
+
+
+***
+
+
+# Exercise 14: [Writing And Using Functions](https://github.com/zedshaw/learn-c-the-hard-way-lectures/blob/master/ex14/lecture.md)
+
+
+***
+
+
+# Exercise 15: [Pointers Dreaded Pointers](https://github.com/zedshaw/learn-c-the-hard-way-lectures/blob/master/ex15/lecture.md)
+
+
+***
+
+
+# Exercise 16: [Structs And Pointers To Them](https://github.com/zedshaw/learn-c-the-hard-way-lectures/blob/master/ex16/lecture.md)
+
+
+***
+
+
+# Exercise 17: [Heap And Stack Memory Allocation](https://github.com/zedshaw/learn-c-the-hard-way-lectures/blob/master/ex17/lecture.md)
+
+
+***
+
+
+# Exercise 18: [Pointers To Functions](https://github.com/zedshaw/learn-c-the-hard-way-lectures/blob/master/ex18/lecture.md)
+
+
+***
+
+
+# Exercise 19: [A Simple Object System](https://github.com/zedshaw/learn-c-the-hard-way-lectures/blob/master/ex19/lecture.md)
+
+
+***
+
+
+# Exercise 20: [Zed's Awesome Debug Macros](https://github.com/zedshaw/learn-c-the-hard-way-lectures/blob/master/ex20/lecture.md)
+
+
+***
+
+
+cont...
