@@ -4,19 +4,21 @@ Zed A. Shaw's C Programming Tutorial, "[Learn C The Hard Way](https://learncodet
 ▶︎ Click ▶︎ on ▶︎ the ▶︎ triangles ▶︎ to ▶︎ display ▶︎ extra ▶︎ notes. ▶︎
 
 # Exercise 0: [The Setup](https://github.com/mwilliams/lcthw-book/blob/master/learn-c-the-hard-waych1.txt)
-<details><summary>My Setup While Working Through the Course</summary><p>
+<details><summary>My Setup While Working Through the Course, Notes & To Do...</summary><p>
 
-1. I am working with:
-  - macOS Sierra version 10.12.5 (16F73), Kernel Version: Darwin 16.6.0 _through_ macOS High Sierra version 10.13.2 (17C205) Kernel Version: Darwin 17.3.0, and
-  - Terminal.app version 2.7.2 (388.1) through 2.8,
-  - Xcode Version 9.0.1 (9A1004),
-  - `$  cc --version` ---> `Apple LLVM version 9.0.0 (clang-900.0.38)`
-2. https://github.com/zedshaw/learn-c-the-hard-way-lectures
-3. When including quotes from the tutorial I will try and append "_(ZAS)_"
-4. As of 6/8/2017 [valgrind](http://valgrind.org/) is still inoperable with macOS Sierra, <strike>so I am continuing using Ubuntu 16.04.2 LTS on either a persistent USB boot stick, or, as a guest OS in Virtual Box v5.1.22 r115126 (Qt5.6.2), GNOME Terminal 3.18.3 "A terminal emulator for the GNOME desktop. Using VTE version 0.42.5 +GNUTLS.</strike>
+### I am working with:
+1. macOS Sierra version 10.12.5 (16F73), Kernel Version: Darwin 16.6.0 _through_ macOS High Sierra version 10.13.2 (17C205) Kernel Version: Darwin 17.3.0, and
+2. Terminal.app version 2.7.2 (388.1) through 2.8,
+3. Xcode Version 9.0.1 (9A1004),
+4. `$  cc --version` ---> `Apple LLVM version 9.0.0 (clang-900.0.38)`
+5. As of 6/8/2017 [valgrind](http://valgrind.org/) is still inoperable with macOS Sierra, <strike>so I am continuing using Ubuntu 16.04.2 LTS on either a persistent USB boot stick, or, as a guest OS in Virtual Box v5.1.22 r115126 (Qt5.6.2), GNOME Terminal 3.18.3 "A terminal emulator for the GNOME desktop. Using VTE version 0.42.5 +GNUTLS.</strike>
   - **UPDATE** 6/15/2017 valgrind 3.13.0 runs on macOS Sierra! Willl it work on macOS High Sierra?
-6. extra reference: https://github.com/mwilliams/lcthw-book
-7. https://www.safaribooksonline.com/library/view/learn-c-the/9780134434452/
+### [Zed Shaw's GitHub repository](https://github.com/zedshaw/learn-c-the-hard-way-lectures)
+
+NOTE:
+1. When including quotes from the tutorial I will try and append "_(ZAS)_"
+2. Additionalreference: https://github.com/mwilliams/lcthw-book
+3. https://www.safaribooksonline.com/library/view/learn-c-the/9780134434452/
 
 TODO:
 1. add this to an appropriate section: https://www.go4expert.com/articles/solution-using-scanf-fgets-c-t27148/
