@@ -27,7 +27,7 @@ Zed A. Shaw's C Programming Tutorial, "[Learn C The Hard Way](https://learncodet
 - Odd, in the command line I can use `$ printf $ "ab\bcd"` to display "acd" but `puts` returns "command not found." Not sure why since `man puts` displays the manual. There's also `fputs`.
 - Why the 3 in `man 3 puts`? Answer: https://en.wikipedia.org/wiki/Man_page#Manual_sections (see also `man man` for the `-a` option to display all manual sections).
 
-
+</p></details>
 
 <details><summary>Changes since LCTHW published</summary><p>
 
