@@ -6,13 +6,12 @@ Zed A. Shaw's C Programming Tutorial, "[Learn C The Hard Way](https://learncodet
 # Exercise 0: [The Setup](https://github.com/mwilliams/lcthw-book/blob/master/learn-c-the-hard-waych1.txt)
 <details><summary>My Setup While Working Through the Course</summary><p>
 
-1. https://github.com/zedshaw/learn-c-the-hard-way-lectures
-2. I am working with:
-  - Terminal.app version 2.7.2 (388.1) through 2.8 on
-  - macOS Sierra version 10.12.5 (16F73), Kernel Version: Darwin 16.6.0 _through_
-  macOS High Sierra version 10.13.2 (17C205) Kernel Version: Darwin 17.3.0, and
-  - Xcode Version 9.0.1 (9A1004)
+1. I am working with:
+  - macOS Sierra version 10.12.5 (16F73), Kernel Version: Darwin 16.6.0 _through_ macOS High Sierra version 10.13.2 (17C205) Kernel Version: Darwin 17.3.0, and
+  - Terminal.app version 2.7.2 (388.1) through 2.8,
+  - Xcode Version 9.0.1 (9A1004),
   - `$  cc --version` ---> `Apple LLVM version 9.0.0 (clang-900.0.38)`
+2. https://github.com/zedshaw/learn-c-the-hard-way-lectures
 3. When including quotes from the tutorial I will try and append "_(ZAS)_"
 4. As of 6/8/2017 [valgrind](http://valgrind.org/) is still inoperable with macOS Sierra, <strike>so I am continuing using Ubuntu 16.04.2 LTS on either a persistent USB boot stick, or, as a guest OS in Virtual Box v5.1.22 r115126 (Qt5.6.2), GNOME Terminal 3.18.3 "A terminal emulator for the GNOME desktop. Using VTE version 0.42.5 +GNUTLS.</strike>
   - **UPDATE** 6/15/2017 valgrind 3.13.0 runs on macOS Sierra! Willl it work on macOS High Sierra?
