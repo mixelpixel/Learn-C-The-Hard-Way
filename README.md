@@ -282,13 +282,13 @@ http://valgrind.org/docs/download_docs.html
 
 </p></details>
 
-<details><summary>GDB & LLDB</summary><p>
+<details><summary>GDB, LLDB, Address Sanitizer, Splint</summary><p>
 
-[GDB](https://www.gnu.org/software/gdb/): GNU Debugger (Linux)
-[LLDB](https://lldb.llvm.org/): Low Level DeBugger (OSX)
-[Address Sanitizer](https://clang.llvm.org/docs/AddressSanitizer.html)
-[Splint](http://lclint.cs.virginia.edu/)
-[Splint homebrew](http://brewformulas.org/Splint)
+- [GDB](https://www.gnu.org/software/gdb/): GNU Debugger (Linux)
+- [LLDB](https://lldb.llvm.org/): Low Level DeBugger (OSX)
+- [Address Sanitizer](https://clang.llvm.org/docs/AddressSanitizer.html)
+- [Splint](http://lclint.cs.virginia.edu/)
+- [Splint homebrew](http://brewformulas.org/Splint)
 
 </p></details>
 
