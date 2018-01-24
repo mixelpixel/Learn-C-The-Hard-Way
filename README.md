@@ -176,10 +176,13 @@ ex1.c:3:5: warning: implicit declaration of function 'puts' is invalid in C99 [-
 
 
 # Exercise 4: [Using a Debugger](https://github.com/zedshaw/learn-c-the-hard-way-lectures/blob/master/ex4/lecture.md)
-#### [Introducing Valgrind](https://github.com/mwilliams/lcthw-book/blob/master/learn-c-the-hard-waych5.txt)
-#### Installing [Valgrind](http://valgrind.org/) - CURRENT v3.12.0 NOT SUPPORTED ENOUGH FOR macOS Sierra.
 
 <details><summary>valgrind install attempt notes</summary><p>
+
+## [Introducing Valgrind](https://github.com/mwilliams/lcthw-book/blob/master/learn-c-the-hard-waych5.txt)
+### Installing [Valgrind](http://valgrind.org/) -  v3.12.0 NOT SUPPORTED ENOUGH FOR macOS Sierra.
+
+- **UPDATE** valgrind v.3.13.0 supported on macOS Sierra
 
 - [Valgrind on macOS Sierra?](https://stackoverflow.com/questions/40650338/valgrind-on-macos-sierra)
 - https://bugs.kde.org/show_bug.cgi?id=365327
