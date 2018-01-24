@@ -351,7 +351,7 @@ Error: An unsatisfied requirement failed this build.
 | Logical | Operators |
 |:---:| --- |
 | `&&` | Logical and |
-| `|\|` | Logical or |
+| `\|\|` | Logical or |
 | `!` | Logical not |
 | `? :` | Logical ternary |
 
