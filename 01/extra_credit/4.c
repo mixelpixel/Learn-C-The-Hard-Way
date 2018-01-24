@@ -75,3 +75,10 @@ int main (int argc, char *argv[])
 
 	return 0;
 }
+
+/*
+ 1. the equals operator is used as an assignment, an identity declaration, not as a comparison (e.g. == or ===)
+ 2. most every line ends with a semi-colon (except for logic???)
+ 3. the return statement is what is returned to stdout when the function is executed. In this case an integer with the value 0 - a convention for indicating success.
+ 4. "distance" is a variable name, I think they are limited to alphanumerics, maybe underscores, prolly not leading numbers, and as a convention are usually lower case where uppercase are reserved, I think, for macros.
+ */
