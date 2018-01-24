@@ -182,7 +182,7 @@ ex1.c:3:5: warning: implicit declaration of function 'puts' is invalid in C99 [-
 
 # Exercise 4: [Using a Debugger](https://github.com/zedshaw/learn-c-the-hard-way-lectures/blob/master/ex4/lecture.md)
 
-<details><summary>`valgrind` install attempt notes</summary><p>
+<details><summary>valgrind install attempt notes</summary><p>
 
 ## [Introducing Valgrind](https://github.com/mwilliams/lcthw-book/blob/master/learn-c-the-hard-waych5.txt)
 ### Installing [Valgrind](http://valgrind.org/) -  v3.12.0 NOT SUPPORTED ENOUGH FOR macOS Sierra.
@@ -305,6 +305,67 @@ Error: An unsatisfied requirement failed this build.
 
 - [The Structure Of A C Program](https://github.com/mwilliams/lcthw-book/blob/master/learn-c-the-hard-waych6.txt)
 - see [ex01's extra credit #4](01/extra_credit/4.c) for a breakdown of the components.
+
+### Arithmetic Operators
+- `+` Add
+- `-` Subtract
+- `*` Multiply
+- `/` Divide
+- `%` Modulus
+- `++` Increment
+- `--` Decrement
+
+### Relational Operators
+- `==` Equal
+- `!=` Not Equal
+- `>` Greater than
+- `<` Less than
+- `>=` Greater than euqal
+- `<=` Less than equal
+
+### Logical Operators
+- `&&` Logical and
+- `||` Logical or
+- `!` Logical not
+- `? :` Logical ternary
+
+### Bitwise Operators
+- `&` Bitwise and
+- `|` Bitwise or
+- `^` Bitwise xor
+- `~` Bitwise ones compliment
+- `<<` Bitwise shift left
+- `>>` Bitwise shift right
+
+### Assignment Operators
+- `=` Assign equal
+- `+=` Assign plus-equal
+- `-=` Assign minus-equal
+- `*=` Assign multiply-equal
+- `/=` Assign divide-equal
+- `&=` Assign modulus-equal
+- `<<=` Assign shift-left-equal
+- `>>=` Assign shift-right-equal
+- `&=` Assign and-equal
+- `|=` Assign or-equal
+- `^=` Assign xor-equal
+
+### Data Operators
+- `sizeof()` Get the size of
+- `[]` Array subscript
+- `&` The address of
+- `*` The value of
+- `->` Structure dereference
+- `.` Structure reference
+
+### Miscellaneous Operators
+- `,` Comma
+- `( )` Parentheses
+- `{ }` Curly Braces
+- `:` Colon
+- `//` Single line comment start
+- `/*` Multi-line comment start
+- `*/` Multi-line comment end
 
 </p></details>
 
