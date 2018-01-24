@@ -449,6 +449,47 @@ Error: An unsatisfied requirement failed this build.
 
 </p></details>
 
+<details><summary>C Syntax</summary><p>
+
+<table>
+  <tr><th colspan=2>C Syntax</th></tr>
+  <tr><td>auto</td><td>Give a local variable a local lifetime</td></tr>
+  <tr><td>break</td><td>Exit out of a compound statement</td></tr>
+  <tr><td>TERM</td><td>DESCRIPTION</td></tr>
+  <tr><td>TERM</td><td>DESCRIPTION</td></tr>
+  <tr><td>TERM</td><td>DESCRIPTION</td></tr>
+  <tr><td>TERM</td><td>DESCRIPTION</td></tr>
+  <tr><td>TERM</td><td>DESCRIPTION</td></tr>
+  <tr><td>TERM</td><td>DESCRIPTION</td></tr>
+  <tr><td>TERM</td><td>DESCRIPTION</td></tr>
+  <tr><td>TERM</td><td>DESCRIPTION</td></tr>
+  <tr><td>TERM</td><td>DESCRIPTION</td></tr>
+  <tr><td>TERM</td><td>DESCRIPTION</td></tr>
+  <tr><td>TERM</td><td>DESCRIPTION</td></tr>
+  <tr><td>TERM</td><td>DESCRIPTION</td></tr>
+  <tr><td>TERM</td><td>DESCRIPTION</td></tr>
+  <tr><td>TERM</td><td>DESCRIPTION</td></tr>
+  <tr><td>TERM</td><td>DESCRIPTION</td></tr>
+  <tr><td>TERM</td><td>DESCRIPTION</td></tr>
+  <tr><td>TERM</td><td>DESCRIPTION</td></tr>
+  <tr><td>TERM</td><td>DESCRIPTION</td></tr>
+  <tr><td>TERM</td><td>DESCRIPTION</td></tr>
+  <tr><td>TERM</td><td>DESCRIPTION</td></tr>
+  <tr><td>TERM</td><td>DESCRIPTION</td></tr>
+  <tr><td>TERM</td><td>DESCRIPTION</td></tr>
+  <tr><td>TERM</td><td>DESCRIPTION</td></tr>
+  <tr><td>TERM</td><td>DESCRIPTION</td></tr>
+  <tr><td>TERM</td><td>DESCRIPTION</td></tr>
+  <tr><td>TERM</td><td>DESCRIPTION</td></tr>
+  <tr><td>TERM</td><td>DESCRIPTION</td></tr>
+  <tr><td>TERM</td><td>DESCRIPTION</td></tr>
+  <tr><td>TERM</td><td>DESCRIPTION</td></tr>
+  <tr><td>TERM</td><td>DESCRIPTION</td></tr>
+  <tr><td>TERM</td><td>DESCRIPTION</td></tr>
+</table>
+
+</p></details>
+
 [Exercise 6](06/)
 
 
