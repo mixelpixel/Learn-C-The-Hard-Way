@@ -182,7 +182,7 @@ ex1.c:3:5: warning: implicit declaration of function 'puts' is invalid in C99 [-
 
 # Exercise 4: [Using a Debugger](https://github.com/zedshaw/learn-c-the-hard-way-lectures/blob/master/ex4/lecture.md)
 
-<details><summary>valgrind install attempt notes</summary><p>
+<details><summary>`valgrind` install attempt notes</summary><p>
 
 ## [Introducing Valgrind](https://github.com/mwilliams/lcthw-book/blob/master/learn-c-the-hard-waych5.txt)
 ### Installing [Valgrind](http://valgrind.org/) -  v3.12.0 NOT SUPPORTED ENOUGH FOR macOS Sierra.
@@ -190,6 +190,7 @@ ex1.c:3:5: warning: implicit declaration of function 'puts' is invalid in C99 [-
 - **UPDATE** valgrind v.3.13.0 supported on macOS Sierra and seems to work okay on macOS High Sierra
 
 - [Valgrind on macOS Sierra?](https://stackoverflow.com/questions/40650338/valgrind-on-macos-sierra)
+- http://valgrind.org/docs/download_docs.html
 - https://bugs.kde.org/show_bug.cgi?id=365327
 - https://stackoverflow.com/a/43431715/5225057
 - http://valgrind.org/downloads/current.html#current
@@ -265,7 +266,6 @@ Error: An unsatisfied requirement failed this build.
 <details><summary>Click here for some fun info on Valgrind</summary><p>
 
 - https://dot.kde.org/2006/02/21/interview-valgrind-author-julian-seward
-- http://valgrind.org/docs/download_docs.html
 
 > 1.1. How do you pronounce "Valgrind"?
 > The "Val" as in the word "value". The "grind" is pronounced with a short 'i' -- ie. "grinned" (rhymes with "tinned") rather than "grined" (rhymes with "find").
