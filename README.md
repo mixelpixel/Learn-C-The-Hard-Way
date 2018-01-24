@@ -339,7 +339,7 @@ Error: An unsatisfied requirement failed this build.
 | Symbol | Description |
 |:---:| --- |
 `&&` | Logical and
-`||` | Logical or
+`\|\|` | Logical or
 `!` | Logical not
 `? :` | Logical ternary
 
