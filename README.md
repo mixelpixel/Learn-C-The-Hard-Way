@@ -23,6 +23,7 @@ NOTE:
 1. When including quotes from the tutorial I will try and append "_(ZAS)_"
 2. Additional reference: https://github.com/mwilliams/lcthw-book
 3. https://www.safaribooksonline.com/library/view/learn-c-the/9780134434452/
+4. Additional C resource: https://www.cprogramming.com/
 
 TODO:
 1. add this to an appropriate section: https://www.go4expert.com/articles/solution-using-scanf-fgets-c-t27148/
