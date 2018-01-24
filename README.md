@@ -32,6 +32,9 @@ NOTE:
 
 TODO:
 1. add this to an appropriate section: https://www.go4expert.com/articles/solution-using-scanf-fgets-c-t27148/
+2. Clean up the Tables in ch.5. I like the colspan of html, but prefer the `code` formatting of markdown.
+  - see: https://stackoverflow.com/q/48418548/5225057, an
+  - https://github.com/github/markup/issues/1151
 
 </p></details>
 
