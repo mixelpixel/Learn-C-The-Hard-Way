@@ -384,12 +384,14 @@ Error: An unsatisfied requirement failed this build.
 - `^=` Assign xor-equal
 
 ### Data Operators
-- `sizeof()` Get the size of
-- `[]` Array subscript
-- `&` The address of
-- `*` The value of
-- `->` Structure dereference
-- `.` Structure reference
+| Symbol | Description |
+|:---:| --- |
+`sizeof()` | Get the size of
+`[]` | Array subscript
+`&` | The address of
+`*` | The value of
+`->` | Structure dereference
+`.` | Structure reference
 
 ### Miscellaneous Operators
 - `,` Comma
@@ -400,7 +402,7 @@ Error: An unsatisfied requirement failed this build.
 - `/*` Multi-line comment start
 - `*/` Multi-line comment end
 
-<table>
+<!-- <table>
   <tr>
     <th colspan=2>Miscellaneous Operators</th>
   </tr>
@@ -425,10 +427,10 @@ Error: An unsatisfied requirement failed this build.
   <tr>
     <td>*/</td><td>Multi-line comment end</td>
   </tr>
-</table>
+</table> -->
 
 
-| Miscellaneous | Operators |
+<!-- | Miscellaneous | Operators |
 |:---:| --- |
 | `,` | Comma |
 | `( )` | Parentheses |
@@ -436,7 +438,7 @@ Error: An unsatisfied requirement failed this build.
 | `:` | Colon |
 | `//` | Single line comment start |
 | `/*` | Multi-line comment start |
-| `*/` | Multi-line comment end |
+| `*/` | Multi-line comment end | -->
 
 #### Miscellaneous Operators
 | Symbol | Description |
