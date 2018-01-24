@@ -371,7 +371,7 @@ Error: An unsatisfied requirement failed this build.
 - `/*` Multi-line comment start
 - `*/` Multi-line comment end
 
-| Miscellaneous Operators|
+| Miscellaneous | Operators|
 | --- | --- |
 | `,` | Comma |
 | `( )` | Parentheses |
