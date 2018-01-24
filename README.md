@@ -390,7 +390,7 @@ Error: An unsatisfied requirement failed this build.
 `<<=` | Assign shift-left-equal
 `>>=` | Assign shift-right-equal
 `&=` | Assign and-equal
-`|=` | Assign or-equal
+`\|=` | Assign or-equal
 `^=` | Assign xor-equal
 
 ### Data Operators
