@@ -371,9 +371,10 @@ Error: An unsatisfied requirement failed this build.
 - `/*` Multi-line comment start
 - `*/` Multi-line comment end
 
+<table>
 <tr><th>Miscellaneous Operators</th></tr>
 <tr><td> `,` </td><td>Comma</td></tr>
-
+</table>
 
 <td colspan=2>Miscellaneous Operators
 |:---:| --- |
