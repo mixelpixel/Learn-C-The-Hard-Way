@@ -372,7 +372,7 @@ Error: An unsatisfied requirement failed this build.
 | Symbol | Description |
 |:---:| --- |
 `&` | Bitwise and
-`|` | Bitwise or
+`\|` | Bitwise or
 `^` | Bitwise xor
 `~` | Bitwise ones compliment
 `<<` | Bitwise shift left
