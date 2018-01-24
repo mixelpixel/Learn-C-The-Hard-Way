@@ -158,7 +158,7 @@ ex1.c:3:5: warning: implicit declaration of function 'puts' is invalid in C99 [-
 - For vim: ESC, `:set nolist`, RETURN will disbale the "list display"
 - For vi, I've set the .exrc file accordingly.
 - Additional resources: https://www.gnu.org/software/make/
-- What is a .dSYM directory for? When I run the command make using Makefile, I end up, for example, with the directory ex1.dSYM containing the ex1 binary within /Contents/Resources/DWARF/ including an info.plist in the /Contents/ directory.
+- What is a .dSYM directory for? When I run the command make using Makefile, I end up, for example, with the directory ex1.dSYM containing the ex1 binary within /Contents/Resources/DWARF/ including an info.plist in the /Contents/ directory. Ah-ha: [Debug SYMbols](https://stackoverflow.com/a/585298/5225057)
 
 </p></details>
 
@@ -175,8 +175,9 @@ ex1.c:3:5: warning: implicit declaration of function 'puts' is invalid in C99 [-
 ***
 
 
-# Exercise 4: [Introducing Valgrind](https://github.com/zedshaw/learn-c-the-hard-way-lectures/blob/master/ex4/lecture.md)
-### Installing [Valgrind](http://valgrind.org/) - CURRENT v3.12.0 NOT SUPPORTED ENOUGH FOR macOS Sierra.
+# Exercise 4: [Using a Debugger](https://github.com/zedshaw/learn-c-the-hard-way-lectures/blob/master/ex4/lecture.md)
+#### [Introducing Valgrind](https://github.com/mwilliams/lcthw-book/blob/master/learn-c-the-hard-waych5.txt)
+#### Installing [Valgrind](http://valgrind.org/) - CURRENT v3.12.0 NOT SUPPORTED ENOUGH FOR macOS Sierra.
 
 <details><summary>valgrind install attempt notes</summary><p>
 
