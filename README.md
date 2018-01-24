@@ -14,8 +14,13 @@ Zed A. Shaw's C Programming Tutorial, "[Learn C The Hard Way](https://learncodet
 4. `$  cc --version` ---> `Apple LLVM version 9.0.0 (clang-900.0.38)`
 5. As of 6/8/2017 [valgrind](http://valgrind.org/) is still inoperable with macOS Sierra, <strike>so I am continuing using Ubuntu 16.04.2 LTS on either a persistent USB boot stick, or, as a guest OS in Virtual Box v5.1.22 r115126 (Qt5.6.2), GNOME Terminal 3.18.3 "A terminal emulator for the GNOME desktop. Using VTE version 0.42.5 +GNUTLS.</strike>
   - **UPDATE** 6/15/2017 valgrind 3.13.0 runs on macOS Sierra! Seems to work on macOS High Sierra...
-- `$ diff -v` ---> `diff (GNU diffutils) 2.8.1`
-- `$  lldb -v` ---> `lldb-900.0.50.1, Swift-4.0`
+  ```
+  $  valgrind --version
+  valgrind-3.13.0
+  ```
+6. `$  diff -v` ---> `diff (GNU diffutils) 2.8.1`
+7. `$  lldb -v` ---> `lldb-900.0.50.1, Swift-4.0`
+8. `$  splint -help version` ---> `Splint 3.1.2 --- 21 Sep 2017`
 
 ### [Zed Shaw's GitHub repository](https://github.com/zedshaw/learn-c-the-hard-way-lectures)
 
@@ -257,7 +262,7 @@ Error: An unsatisfied requirement failed this build.
 
 </p></details>
 
-<details><summary>Click here for some fun info on Valgrynd</summary><p>
+<details><summary>Click here for some fun info on Valgrind</summary><p>
 
 https://dot.kde.org/2006/02/21/interview-valgrind-author-julian-seward
 http://valgrind.org/docs/download_docs.html
@@ -274,6 +279,16 @@ http://valgrind.org/docs/download_docs.html
 > Keeping with the Nordic theme, Valgrind was chosen. Valgrind is the name  of the main entrance to Valhalla (the Hall of the Chosen Slain in Asgard). Over this entrance there resides a wolf and over it there is the head of a boar and on it perches a huge eagle, whose eyes can see to the far regions of the nine worlds. Only those judged worthy by the guardians are allowed to pass through Valgrind. All others are refused entrance.
 >
 > It's not short for "value grinder", although that's not a bad guess.
+
+</p></details>
+
+<details><summary>GDB & LLDB</summary><p>
+
+[GDB](https://www.gnu.org/software/gdb/): GNU Debugger (Linux)
+[LLDB](https://lldb.llvm.org/): Low Level DeBugger (OSX)
+[Address Sanitizer](https://clang.llvm.org/docs/AddressSanitizer.html)
+[Splint](http://lclint.cs.virginia.edu/)
+[Splint homebrew](http://brewformulas.org/Splint)
 
 </p></details>
 
