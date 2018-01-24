@@ -18,6 +18,7 @@ Zed A. Shaw's C Programming Tutorial, "[Learn C The Hard Way](https://learncodet
   $  valgrind --version
   valgrind-3.13.0
   ```
+  - **UPDATE** 1/24/2018 Nope, I updated Homebrew and `valgrind` no longer works, unavailable for OS's newer than Sierra :(
 6. `$  diff -v` ---> `diff (GNU diffutils) 2.8.1`
 7. `$  lldb -v` ---> `lldb-900.0.50.1, Swift-4.0`
 8. `$  splint -help version` ---> `Splint 3.1.2 --- 21 Sep 2017`
@@ -190,8 +191,8 @@ ex1.c:3:5: warning: implicit declaration of function 'puts' is invalid in C99 [-
 ## [Introducing Valgrind](https://github.com/mwilliams/lcthw-book/blob/master/learn-c-the-hard-waych5.txt)
 ### Installing [Valgrind](http://valgrind.org/) -  v3.12.0 NOT SUPPORTED ENOUGH FOR macOS Sierra.
 
-- **UPDATE** valgrind v.3.13.0 supported on macOS Sierra and seems to work okay on macOS High Sierra
-
+- **UPDATE** valgrind v.3.13.0 supported on macOS Sierra
+- **UPDATE** not supported for macOS High Sierra :(
 - [Valgrind on macOS Sierra?](https://stackoverflow.com/questions/40650338/valgrind-on-macos-sierra)
 - http://valgrind.org/docs/download_docs.html
 - https://bugs.kde.org/show_bug.cgi?id=365327
@@ -436,6 +437,7 @@ Error: An unsatisfied requirement failed this build.
 - [Types Of Variables](https://github.com/mwilliams/lcthw-book/blob/master/learn-c-the-hard-waych7.txt)
 - Interesting notes re: trailing `f` on float numbers: https://stackoverflow.com/q/5026570/5225057
 - `char initial = 'A';` requires SINGLE quotes, double quotes results in an integer assignment
+- Segmentation faults are caused by a program trying to read or write an illegal memory location.
 
 <table>
   <tr><th colspan=2>Common Print Formatting Types</th></tr>
