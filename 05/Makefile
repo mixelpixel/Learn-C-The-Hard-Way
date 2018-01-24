@@ -1,5 +1,6 @@
 CFLAGS=-Wall -g
 
-clean:
-	rm -rf ex5
+all: ex05
 
+clean:
+	rm -rf ex05 *.dSYM
