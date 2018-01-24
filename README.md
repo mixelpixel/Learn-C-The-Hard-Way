@@ -315,29 +315,35 @@ Error: An unsatisfied requirement failed this build.
 <details><summary>C Operators</summary><p>
 
 ### Arithmetic Operators
-- `+` Add
-- `-` Subtract
-- `*` Multiply
-- `/` Divide
-- `%` Modulus
-- `++` Increment
-- `--` Decrement
+| Symbol | Description |
+|:---:| --- |
+`+` | Add
+`-` | Subtract
+`*` | Multiply
+`/` | Divide
+`%` | Modulus
+`++` | Increment
+`--` | Decrement
 
 ### Relational Operators
-- `==` Equal
-- `!=` Not Equal
-- `>` Greater than
-- `<` Less than
-- `>=` Greater than euqal
-- `<=` Less than equal
+| Symbol | Description |
+|:---:| --- |
+`==` | Equal
+`!=` | Not Equal
+`>` | Greater than
+`<` | Less than
+`>=` | Greater than euqal
+`<=` | Less than equal
 
 ### Logical Operators
-- `&&` Logical and
-- `||` Logical or
-- `!` Logical not
-- `? :` Logical ternary
+| Symbol | Description |
+|:---:| --- |
+`&&` | Logical and
+`||` | Logical or
+`!` | Logical not
+`? :` | Logical ternary
 
-<table>
+<!-- <table>
   <tr>
     <th colspan=2>Logical Operators</th>
   </tr>
@@ -353,35 +359,39 @@ Error: An unsatisfied requirement failed this build.
   <tr>
     <td>? :</td><td>Logical ternary</td>
   </tr>
-</table>
+</table> -->
 
-| Logical | Operators |
+<!-- | Logical | Operators |
 |:---:| --- |
 | `&&` | Logical and |
 | `\|\|` | Logical or |
 | `!` | Logical not |
-| `? :` | Logical ternary |
+| `? :` | Logical ternary | -->
 
 ### Bitwise Operators
-- `&` Bitwise and
-- `|` Bitwise or
-- `^` Bitwise xor
-- `~` Bitwise ones compliment
-- `<<` Bitwise shift left
-- `>>` Bitwise shift right
+| Symbol | Description |
+|:---:| --- |
+`&` | Bitwise and
+`|` | Bitwise or
+`^` | Bitwise xor
+`~` | Bitwise ones compliment
+`<<` | Bitwise shift left
+`>>` | Bitwise shift right
 
 ### Assignment Operators
-- `=` Assign equal
-- `+=` Assign plus-equal
-- `-=` Assign minus-equal
-- `*=` Assign multiply-equal
-- `/=` Assign divide-equal
-- `&=` Assign modulus-equal
-- `<<=` Assign shift-left-equal
-- `>>=` Assign shift-right-equal
-- `&=` Assign and-equal
-- `|=` Assign or-equal
-- `^=` Assign xor-equal
+| Symbol | Description |
+|:---:| --- |
+`=` | Assign equal
+`+=` | Assign plus-equal
+`-=` | Assign minus-equal
+`*=` | Assign multiply-equal
+`/=` | Assign divide-equal
+`&=` | Assign modulus-equal
+`<<=` | Assign shift-left-equal
+`>>=` | Assign shift-right-equal
+`&=` | Assign and-equal
+`|=` | Assign or-equal
+`^=` | Assign xor-equal
 
 ### Data Operators
 | Symbol | Description |
@@ -393,14 +403,14 @@ Error: An unsatisfied requirement failed this build.
 `->` | Structure dereference
 `.` | Structure reference
 
-### Miscellaneous Operators
+<!-- ### Miscellaneous Operators
 - `,` Comma
 - `( )` Parentheses
 - `{ }` Curly Braces
 - `:` Colon
 - `//` Single line comment start
 - `/*` Multi-line comment start
-- `*/` Multi-line comment end
+- `*/` Multi-line comment end -->
 
 <!-- <table>
   <tr>
