@@ -5,10 +5,10 @@ int main(int argc, char *argv[])
 	int distance = 100; // DECIMAL %d %i
 	// int distance = 0x64; // HEXADECIMAL Hex integer %x %X
 	// int distance = 0144; // OCTAL %o
-	float power = 2.345f;
+	float power = 2.345f; // <--- trailing f is required for floats
 	double super_power = 56789.4532;
 	// char initial = A;
-	// char initial = "A";
+	// char initial = "A"; // <--- double quotes result in an integer assignment
 	char initial = 'A';
 	char first_name[] = "Zed";
 	char last_name[] = "Shaw";
@@ -26,4 +26,3 @@ int main(int argc, char *argv[])
 
 	return 0;
 }
-
