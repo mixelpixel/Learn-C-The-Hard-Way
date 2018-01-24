@@ -15,11 +15,56 @@ In this case `include` is used to "import" or "include" additional code.
 Followed by the carrots (<, >), the `*.h` file is additional software
 which can will be available to the program invoking, or "including" the
 additional resource. In this case, the convention for C uses `*.h` to
-indicate a _header_ file. 
+indicate a _header_ file.
+per: https://www.cprogramming.com/tutorial/cpreprocessor.html
+The C preprocessr modifies the source code (the program) prior to handing it
+over to the compiler. The C Preprocesor uses MACROS, DIRECTIVES & CONSTANTS.
+In the case of the `#include` statement it is a DIRECTIVE which "directs" the
+preprocessor to grab the text of a file (e.g. "stdio.h") and include it in the
+source code which will get compiled, e.g. /usr/include/stdio.h
+"Typically, such statements are placed at the top of a program--
+hence the name "header file" for files thus included."
 */
 #include <stdio.h>
 
-/* This is a comment. */
+/*
+`int` indicates that the return value type of `main` will be an INTEGER. In this
+case, the convention is that a return of 0 indicates success, where other
+numbers would indicate types of failures.
+
+per: http://en.cppreference.com/w/c/language/main_function &
+http://c0x.coding-guidelines.com/5.1.2.2.1.html
+`main` is the convention for all programs:
+**C99 5.1.2.2.1 *Program startup***
+
+The function called at program startup is named `main`. The implementation declares no
+prototype for this function. It shall be defined with a return type of `int` and with no
+parameters:
+
+     `int main(void) { ... }`
+
+or with two parameters (referred to here as `argc` and `argv`, though any names may be
+used, as they are local to the function in which they are declared):
+
+     int main(int argc, char *argv[]) { ... }
+
+or equivalent; or in some other implementation-defined manner.
+
+`argc` ARGument Count: a non-negative INTEGER, indicating the number of arguments
+passed to the program from the environment in which the program is run.
+
+`char` indicates a type: CHARacter. Technically, char is a one byte type that
+can hold values from -128 to 127 and it is actually an integer type. C string
+library functions are designed to be used with arrays of char, not arrays of int.
+
+`argv` ARGument Vector (or Value). A "vector" is a one-dimensional array, and
+argv is a one-dimensional array of STRINGS, e.g. ['hello', ', ', 'world', '!']
+
+`{}` curly braces are used here to denote a code block.
+
+`printf` is PRINT Formatting, i.e. the %d let's a variable of type d (digit? int signed integer)
+be formatted within the string.
+*/
 int main (int argc, char *argv[])
 {
 	int distance = 100;
