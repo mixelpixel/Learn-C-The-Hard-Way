@@ -440,7 +440,7 @@ Error: An unsatisfied requirement failed this build.
 <table>
   <tr><th colspan=2>Common Print Formatting Types</th></tr>
   <tr><td>%d</td><td>Integers</td></tr>
-  <tr><td>%f<td><td>Floating Point</td></tr>
+  <tr><td>%f</td><td>Floating Point</td></tr>
   <tr><td>%c</td><td>Character</td></tr>
   <tr><td>%s</td><td>String (Array of<br>Characters)</td></tr>
 </table>
