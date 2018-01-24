@@ -13,7 +13,7 @@ Zed A. Shaw's C Programming Tutorial, "[Learn C The Hard Way](https://learncodet
 3. Xcode Version 9.0.1 (9A1004),
 4. `$  cc --version` ---> `Apple LLVM version 9.0.0 (clang-900.0.38)`
 5. As of 6/8/2017 [valgrind](http://valgrind.org/) is still inoperable with macOS Sierra, <strike>so I am continuing using Ubuntu 16.04.2 LTS on either a persistent USB boot stick, or, as a guest OS in Virtual Box v5.1.22 r115126 (Qt5.6.2), GNOME Terminal 3.18.3 "A terminal emulator for the GNOME desktop. Using VTE version 0.42.5 +GNUTLS.</strike>
-  - **UPDATE** 6/15/2017 valgrind 3.13.0 runs on macOS Sierra! Seems to work on macOS High Sierra...
+  - **UPDATE** 6/15/2017 valgrind 3.13.0 runs on macOS Sierra! I installed w/Homebrew. Seems to work on macOS High Sierra...
   ```
   $  valgrind --version
   valgrind-3.13.0
@@ -264,8 +264,8 @@ Error: An unsatisfied requirement failed this build.
 
 <details><summary>Click here for some fun info on Valgrind</summary><p>
 
-https://dot.kde.org/2006/02/21/interview-valgrind-author-julian-seward
-http://valgrind.org/docs/download_docs.html
+- https://dot.kde.org/2006/02/21/interview-valgrind-author-julian-seward
+- http://valgrind.org/docs/download_docs.html
 
 > 1.1. How do you pronounce "Valgrind"?
 > The "Val" as in the word "value". The "grind" is pronounced with a short 'i' -- ie. "grinned" (rhymes with "tinned") rather than "grined" (rhymes with "find").
@@ -303,8 +303,8 @@ http://valgrind.org/docs/download_docs.html
 
 <details><summary>The Structure Of A C Program</summary><p>
 
-- [The Structure Of A C Program]https://github.com/mwilliams/lcthw-book/blob/master/learn-c-the-hard-waych6.txt
-- see [exercise one's extra credit 4](01/extra_credit/4.c) for a breakdown of the components.
+- [The Structure Of A C Program](https://github.com/mwilliams/lcthw-book/blob/master/learn-c-the-hard-waych6.txt)
+- see [ex01's extra credit #4](01/extra_credit/4.c) for a breakdown of the components.
 
 </p></details>
 
