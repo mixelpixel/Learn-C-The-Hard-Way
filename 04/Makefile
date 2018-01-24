@@ -1,5 +1,6 @@
 CFLAGS=-Wall -g
 
-clean:
-	rm -rf 4??
+all: ex04
 
+clean:
+	rm -rf ex04 *.dSYM
