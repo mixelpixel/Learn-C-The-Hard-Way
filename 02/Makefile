@@ -1,3 +1,5 @@
+# CFLAGS are flags which get sent to the C Compiler
+# `$ man cc` & `$ man make`
 # TABS ONLY FOR MAKEFILES
 # -Wall for "all" "W"arnings (but isn't really "all" of them...)
 # -g for debugging
