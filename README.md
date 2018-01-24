@@ -301,7 +301,7 @@ Error: An unsatisfied requirement failed this build.
 
 # Exercise 5: [Memorizing C Operators](https://github.com/zedshaw/learn-c-the-hard-way-lectures/blob/master/ex5/lecture.md)
 
-<details><summary>The Structure Of A C Program</summary><p>
+<details><summary>Old ch. 5: The Structure Of A C Program</summary><p>
 
 - [The Structure Of A C Program](https://github.com/mwilliams/lcthw-book/blob/master/learn-c-the-hard-waych6.txt)
 - see [ex01's extra credit #4](01/extra_credit/4.c) for a breakdown of the components.
@@ -426,7 +426,15 @@ Error: An unsatisfied requirement failed this build.
 ***
 
 
-# Exercise 6: [Types Of Variables](https://github.com/zedshaw/learn-c-the-hard-way-lectures/blob/master/ex6/lecture.md)
+# Exercise 6: [Memorizing C Syntax](https://github.com/zedshaw/learn-c-the-hard-way-lectures/blob/master/ex6/lecture.md)
+
+<details><summary>Old ch. 6: Types Of Variables</summary><p>
+
+- [Types Of Variables](https://github.com/mwilliams/lcthw-book/blob/master/learn-c-the-hard-waych7.txt)
+- see [ex01's extra credit #4](01/extra_credit/4.c) for a breakdown of the components.
+
+</p></details>
+
 [Exercise 6](06/)
   - `char initial = 'A';` requires SINGLE quotes, double quotes results in an integer assignment
 
