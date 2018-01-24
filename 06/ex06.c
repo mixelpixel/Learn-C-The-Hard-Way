@@ -10,11 +10,13 @@ int main(int argc, char *argv[])
 	// char initial = A;
 	// char initial = "A";     // <--- double quotes result in an integer assignment
 	char initial = 'A';        // <--- single quote for a char
-	char first_name[] = "Zed"; // <--- double quote for char[] (strings)
-	char last_name[] = "Shaw"; // <--- double quote for char[] (strings)
+	char first_name[] = "Zed"; // <--- double quote for char <name>[] (strings)
+	char last_name[] = "Shaw"; // <--- double quote for char <name>[] (strings)
+	char empty_string = "";
 
 	printf("You are %d miles away.\n", distance);
 	// printf("You are %x miles away.\n", distance);
+	// printf("You are %X miles away.\n", distance);
 	// printf("You are %o miles away.\n", distance);
 	printf("You have %f levels of power.\n", power);
 	printf("You have %f awesome super powers.\n", super_power);
@@ -22,7 +24,8 @@ int main(int argc, char *argv[])
 	printf("I have a first name %s.\n", first_name);
 	printf("I have a last name %s. \n", last_name);
 	printf("My whole name is %s %c. %s.\n", first_name, initial, last_name);
-	// printf("My whole name is %s %c %s.\n", initial, first_name, last_name); // <--- segmentation fault
+	// printf("My whole name is %s %c %s.\n", initial, first_name, last_name); // <--- Segmentation fault: 11
+	printf("'Empty string' you say, eh? %s\n", empty_string); // <--- Segmentation fault: 11
 
 	return 0;
 }
