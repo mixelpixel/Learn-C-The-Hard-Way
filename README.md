@@ -125,7 +125,7 @@ int main()
 
 </p></details>
 
-[Exercise 1: c files, Makefile and extra credit](01/)
+[Exercise 1 √](01/)
 
 
 ***
@@ -167,14 +167,14 @@ ex1.c:3:5: warning: implicit declaration of function 'puts' is invalid in C99 [-
 
 </p></details>
 
-[Exercise 2: c files, Makefile and extra credit](02/)
+[Exercise 2 √](02/)
 
 
 ***
 
 
 # Exercise 3: [Formatted Printing](https://github.com/zedshaw/learn-c-the-hard-way-lectures/blob/master/ex3/lecture.md)
-[Exercise 3: c files, Makefile and Extra Credit](03/)
+[Exercise 3 √](03/)
 
 
 ***
@@ -293,7 +293,7 @@ Error: An unsatisfied requirement failed this build.
 
 </p></details>
 
-[Exercise 4: c file, Makefile](04/)
+[Exercise 4 √](04/)
 
 
 ***
@@ -373,14 +373,14 @@ Error: An unsatisfied requirement failed this build.
 
 </p></details>
 
-[Exercise 5: c file, Makefile](05/)
+[Exercise 5 √](05/)
 
 
 ***
 
 
 # Exercise 6: [Types Of Variables](https://github.com/zedshaw/learn-c-the-hard-way-lectures/blob/master/ex6/lecture.md)
-[Exercise 6: c file, Makefile](06/)
+[Exercise 6](06/)
   - `char initial = 'A';` requires SINGLE quotes, double quotes results in an integer assignment
 
 
@@ -388,86 +388,98 @@ Error: An unsatisfied requirement failed this build.
 
 
 # Exercise 7: [More Variables, Some Math](https://github.com/zedshaw/learn-c-the-hard-way-lectures/blob/master/ex7/lecture.md)
-[Exercise 7: c file, Makefile](07/)
+[Exercise 7](07/)
 
 
 ***
 
 
 # Exercise 8: [Sizes and Arrays](https://github.com/zedshaw/learn-c-the-hard-way-lectures/blob/master/ex8/lecture.md)
-[Exercise 8: c file, Makefile](08/)
+[Exercise 8](08/)
 
 
 ***
 
 
 # Exercise 9: [Arrays And Strings](https://github.com/zedshaw/learn-c-the-hard-way-lectures/blob/master/ex9/lecture.md)
+[Exercise 9](09/)
 
 
 ***
 
 
 # Exercise 10: [Arrays Of Strings, Looping](https://github.com/zedshaw/learn-c-the-hard-way-lectures/blob/master/ex10/lecture.md)
+[Exercise 10](10/)
 
 
 ***
 
 
 # Exercise 11: [While-Loop And Boolean Expressions](https://github.com/zedshaw/learn-c-the-hard-way-lectures/blob/master/ex11/lecture.md)
+[Exercise 11](11/)
 
 
 ***
 
 
 # Exercise 12: [If, Else-If, Else](https://github.com/zedshaw/learn-c-the-hard-way-lectures/blob/master/ex12/lecture.md)
+[Exercise 12](12/)
 
 
 ***
 
 
 # Exercise 13: [Switch Statement](https://github.com/zedshaw/learn-c-the-hard-way-lectures/blob/master/ex13/lecture.md)
+[Exercise 13](13/)
 
 
 ***
 
 
 # Exercise 14: [Writing And Using Functions](https://github.com/zedshaw/learn-c-the-hard-way-lectures/blob/master/ex14/lecture.md)
+[Exercise 14](14/)
 
 
 ***
 
 
 # Exercise 15: [Pointers Dreaded Pointers](https://github.com/zedshaw/learn-c-the-hard-way-lectures/blob/master/ex15/lecture.md)
+[Exercise 15](15/)
 
 
 ***
 
 
 # Exercise 16: [Structs And Pointers To Them](https://github.com/zedshaw/learn-c-the-hard-way-lectures/blob/master/ex16/lecture.md)
+[Exercise 16](16/)
 
 
 ***
 
 
 # Exercise 17: [Heap And Stack Memory Allocation](https://github.com/zedshaw/learn-c-the-hard-way-lectures/blob/master/ex17/lecture.md)
+[Exercise 17](17/)
 
 
 ***
 
 
 # Exercise 18: [Pointers To Functions](https://github.com/zedshaw/learn-c-the-hard-way-lectures/blob/master/ex18/lecture.md)
+[Exercise 18](18/)
 
 
 ***
 
 
 # Exercise 19: [A Simple Object System](https://github.com/zedshaw/learn-c-the-hard-way-lectures/blob/master/ex19/lecture.md)
+[Exercise 19](19/)
 
 
 ***
 
 
 # Exercise 20: [Zed's Awesome Debug Macros](https://github.com/zedshaw/learn-c-the-hard-way-lectures/blob/master/ex20/lecture.md)
+[Exercise 20](20/)
 
 
 ***
