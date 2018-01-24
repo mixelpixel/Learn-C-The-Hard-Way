@@ -434,12 +434,20 @@ Error: An unsatisfied requirement failed this build.
 <details><summary>Old ch. 6: Types Of Variables</summary><p>
 
 - [Types Of Variables](https://github.com/mwilliams/lcthw-book/blob/master/learn-c-the-hard-waych7.txt)
-- see [ex01's extra credit #4](01/extra_credit/4.c) for a breakdown of the components.
+- Interesting notes re: trailing `f` on float numbers: https://stackoverflow.com/q/5026570/5225057
+- `char initial = 'A';` requires SINGLE quotes, double quotes results in an integer assignment
+
+<table>
+  <tr><th colspan=2>Common Print Formatting Types</th></tr>
+  <tr><td>%d</td><td>Integers</td></tr>
+  <tr><td>%f/td><td>Floating Point</td></tr>
+  <tr><td>%c</td><td>Character</td></tr>
+  <tr><td>%s</td><td>String</td></tr>
+</table>
 
 </p></details>
 
 [Exercise 6](06/)
-  - `char initial = 'A';` requires SINGLE quotes, double quotes results in an integer assignment
 
 
 ***
