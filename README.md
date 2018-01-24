@@ -371,6 +371,16 @@ Error: An unsatisfied requirement failed this build.
 - `/*` Multi-line comment start
 - `*/` Multi-line comment end
 
+| Miscellaneous Operators|
+| --- | --- |
+| `,` | Comma |
+| `( )` | Parentheses |
+| `{ }` | Curly Braces |
+| `:` | Colon |
+| `//` | Single line comment start |
+| `/*` | Multi-line comment start |
+| `*/` | Multi-line comment end |
+
 </p></details>
 
 [Exercise 5 √](05/)
