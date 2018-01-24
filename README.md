@@ -333,6 +333,21 @@ Error: An unsatisfied requirement failed this build.
 - `!` Logical not
 - `? :` Logical ternary
 
+<table>
+<tr><th colspan=2>Logical Operators</th></tr>
+<tr><td>&&</td><td>Logical and</td></tr>
+<tr><td>||</td><td>Logical or</td></tr>
+<tr><td>!</td><td>Logical not</td></tr>
+<tr><td>? :</td><td>Logical ternary</td></tr>
+</table>
+
+| Logical | Operators |
+|:---:| --- |
+| `&&` | Logical and |
+| `||` | Logical or |
+| `!` | Logical not |
+| `? :` | Logical ternary |
+
 ### Bitwise Operators
 - `&` Bitwise and
 - `|` Bitwise or
