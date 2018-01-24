@@ -282,11 +282,12 @@ http://valgrind.org/docs/download_docs.html
 
 </p></details>
 
-<details><summary>GDB, LLDB, Address Sanitizer, Splint</summary><p>
+<details><summary>GDB, LLDB, Address Sanitizer, LLVM, Splint</summary><p>
 
 - [GDB](https://www.gnu.org/software/gdb/): GNU Debugger (Linux)
 - [LLDB](https://lldb.llvm.org/): Low Level DeBugger (OSX)
 - [Address Sanitizer](https://clang.llvm.org/docs/AddressSanitizer.html)
+- [LLVM](https://llvm.org/): no longer an acronym for Low Level Virtual Machine, it's a bunch of tools!
 - [Splint](http://lclint.cs.virginia.edu/)
 - [Splint homebrew](http://brewformulas.org/Splint)
 
@@ -298,7 +299,15 @@ http://valgrind.org/docs/download_docs.html
 ***
 
 
-# Exercise 5: [The Structure Of A C Program](https://github.com/zedshaw/learn-c-the-hard-way-lectures/blob/master/ex5/lecture.md)
+# Exercise 5: [Memorizing C Operators](https://github.com/zedshaw/learn-c-the-hard-way-lectures/blob/master/ex5/lecture.md)
+
+<details><summary>The Structure Of A C Program</summary><p>
+
+- [The Structure Of A C Program]https://github.com/mwilliams/lcthw-book/blob/master/learn-c-the-hard-waych6.txt
+- see [exercise one's extra credit 4](01/extra_credit/4.c) for a breakdown of the components.
+
+</p></details>
+
 [Exercise 5: c file, Makefile](05/)
 
 
