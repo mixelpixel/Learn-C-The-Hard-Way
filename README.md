@@ -306,6 +306,10 @@ Error: An unsatisfied requirement failed this build.
 - [The Structure Of A C Program](https://github.com/mwilliams/lcthw-book/blob/master/learn-c-the-hard-waych6.txt)
 - see [ex01's extra credit #4](01/extra_credit/4.c) for a breakdown of the components.
 
+</p></details>
+
+<details><summary>C Operators</summary><p>
+
 ### Arithmetic Operators
 - `+` Add
 - `-` Subtract
