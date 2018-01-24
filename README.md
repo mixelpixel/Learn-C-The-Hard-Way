@@ -374,9 +374,6 @@ Error: An unsatisfied requirement failed this build.
 <table>
 <tr><th colspan=2>Miscellaneous Operators</th></tr>
 <tr><td> `,` </td><td>Comma</td></tr>
-</table>
-
-<td colspan=2>Miscellaneous Operators
 |:---:| --- |
 | `,` | Comma |
 | `( )` | Parentheses |
@@ -385,6 +382,7 @@ Error: An unsatisfied requirement failed this build.
 | `//` | Single line comment start |
 | `/*` | Multi-line comment start |
 | `*/` | Multi-line comment end |
+</table>
 
 </p></details>
 
