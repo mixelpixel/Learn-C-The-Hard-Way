@@ -336,7 +336,6 @@ Error: An unsatisfied requirement failed this build.
 <table>
 <tr><th colspan=2>Logical Operators</th></tr>
 <tr><td>&&</td><td>Logical and</td></tr>
-<tr><td>||</td><td>Logical or</td></tr>
 <tr><td>!</td><td>Logical not</td></tr>
 <tr><td>? :</td><td>Logical ternary</td></tr>
 </table>
@@ -344,7 +343,6 @@ Error: An unsatisfied requirement failed this build.
 | Logical | Operators |
 |:---:| --- |
 | `&&` | Logical and |
-| `ll` | Logical or |
 | `!` | Logical not |
 | `? :` | Logical ternary |
 
