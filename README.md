@@ -372,7 +372,7 @@ Error: An unsatisfied requirement failed this build.
 - `*/` Multi-line comment end
 
 | Miscellaneous | Operators|
-| --- | --- |
+|:---:| --- |
 | `,` | Comma |
 | `( )` | Parentheses |
 | `{ }` | Curly Braces |
