@@ -373,13 +373,13 @@ Error: An unsatisfied requirement failed this build.
 
 <table>
 <tr><th colspan=2>Miscellaneous Operators</th></tr>
-<tr><td>`,`</td><td>Comma</td></tr>
-<tr><td>`( )`</td><td> Parentheses</td></tr>
-<tr><td>`{ }`</td><td> Curly Braces</td></tr>
-<tr><td>`:`</td><td> Colon</td></tr>
-<tr><td>`//`</td><td> Single line comment start</td></tr>
-<tr><td>`/*`</td><td> Multi-line comment start</td></tr>
-<tr><td>`*/`</td><td> Multi-line comment end</td></tr>
+<tr><td>,</td><td>Comma</td></tr>
+<tr><td>( )</td><td> Parentheses</td></tr>
+<tr><td>{ }</td><td> Curly Braces</td></tr>
+<tr><td>:</td><td> Colon</td></tr>
+<tr><td>//</td><td> Single line comment start</td></tr>
+<tr><td>/*</td><td> Multi-line comment start</td></tr>
+<tr><td>*/</td><td> Multi-line comment end</td></tr>
 </table>
 
 
