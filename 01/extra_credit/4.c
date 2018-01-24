@@ -68,6 +68,7 @@ be formatted within the string.
 int main (int argc, char *argv[])
 {
 	int distance = 100;
+	// int distance = 'z'; // <--- will print 122 as the lower case 'z' in ASCII is 122, d === 100 in ascii.
 
 	// this is also a comment.
 	printf("You are %d miles away.\n", distance);
