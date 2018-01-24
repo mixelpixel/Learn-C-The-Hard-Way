@@ -438,6 +438,17 @@ Error: An unsatisfied requirement failed this build.
 | `/*` | Multi-line comment start |
 | `*/` | Multi-line comment end |
 
+#### Miscellaneous Operators
+| Symbol | Description |
+|:---:| --- |
+| `,` | Comma |
+| `( )` | Parentheses |
+| `{ }` | Curly Braces |
+| `:` | Colon |
+| `//` | Single line comment start |
+| `/*` | Multi-line comment start |
+| `*/` | Multi-line comment end |
+
 </p></details>
 
 [Exercise 5 √](05/)
@@ -469,38 +480,38 @@ Error: An unsatisfied requirement failed this build.
 
 <table>
   <tr><th colspan=2>C Syntax</th></tr>
-  <tr><td>auto</td><td>Give a local variable a local lifetime</td></tr>
-  <tr><td>break</td><td>Exit out of a compound statement</td></tr>
-  <tr><td>case</td><td>A branch in a switch-statement</td></tr>
-  <tr><td>char</td><td>Character data type</td></tr>
-  <tr><td>const</td><td>Make a variable unmodifiable</td></tr>
-  <tr><td>continue</td><td>Continue to the top of a loop</td></tr>
-  <tr><td>default</td><td>Default branch in a switch-statement</td></tr>
-  <tr><td>do</td><td>Start a do-while loop</td></tr>
-  <tr><td>double</td><td>A double floating-point data type</td></tr>
-  <tr><td>else</td><td>An else branch of an if-statement</td></tr>
-  <tr><td>enum</td><td>Define a set of int constants</td></tr>
-  <tr><td>extern</td><td>Declare an identifier is defined externally</td></tr>
-  <tr><td>float</td><td>A floating-point data type</td></tr>
-  <tr><td>for</td><td>Start a for-loop</td></tr>
-  <tr><td>goto</td><td>Jump to a label</td></tr>
-  <tr><td>if</td><td>Starts an if-statement</td></tr>
-  <tr><td>int</td><td>An integer data type</td></tr>
-  <tr><td>long</td><td>A long integer data type</td></tr>
-  <tr><td>register</td><td>Declare a variable to be stored in a CPU register</td></tr>
-  <tr><td>return</td><td>Return from a function</td></tr>
-  <tr><td>short</td><td>A short integer data type</td></tr>
-  <tr><td>signed</td><td>A signed modifier for integer data types</td></tr>
-  <tr><td>sizeof</td><td>Determine the size of data</td></tr>
-  <tr><td>static</td><td>Preserve variable value after its scope exits</td></tr>
-  <tr><td>struct</td><td>Combine variables into a single record</td></tr>
-  <tr><td>switch</td><td>Start a switch-statement</td></tr>
-  <tr><td>typedef</td><td>Create a new type</td></tr>
-  <tr><td>union</td><td>Start a union-statement</td></tr>
-  <tr><td>unsigned</td><td>An unsigned modifier for integer data types</td></tr>
-  <tr><td>void</td><td>Declare a data type empty</td></tr>
-  <tr><td>volatile</td><td>Declare a variable might be modified elsewhere</td></tr>
-  <tr><td>while</td><td>Start a while-loop</td></tr>
+  <tr><td>auto</td><td>Give a local variable a local lifetime.</td></tr>
+  <tr><td>break</td><td>Exit out of a compound statement.</td></tr>
+  <tr><td>case</td><td>A branch in a switch-statement.</td></tr>
+  <tr><td>char</td><td>Character data type.</td></tr>
+  <tr><td>const</td><td>Make a variable unmodifiable.</td></tr>
+  <tr><td>continue</td><td>Continue to the top of a loop.</td></tr>
+  <tr><td>default</td><td>Default branch in a switch-statement.</td></tr>
+  <tr><td>do</td><td>Start a do-while loop.</td></tr>
+  <tr><td>double</td><td>A double floating-point data type.</td></tr>
+  <tr><td>else</td><td>An else branch of an if-statement.</td></tr>
+  <tr><td>enum</td><td>Define a set of int constants.</td></tr>
+  <tr><td>extern</td><td>Declare an identifier is defined externally.</td></tr>
+  <tr><td>float</td><td>A floating-point data type.</td></tr>
+  <tr><td>for</td><td>Start a for-loop.</td></tr>
+  <tr><td>goto</td><td>Jump to a label.</td></tr>
+  <tr><td>if</td><td>Starts an if-statement.</td></tr>
+  <tr><td>int</td><td>An integer data type.</td></tr>
+  <tr><td>long</td><td>A long integer data type.</td></tr>
+  <tr><td>register</td><td>Declare a variable to be stored in a CPU register.</td></tr>
+  <tr><td>return</td><td>Return from a function.</td></tr>
+  <tr><td>short</td><td>A short integer data type.</td></tr>
+  <tr><td>signed</td><td>A signed modifier for integer data types.</td></tr>
+  <tr><td>sizeof</td><td>Determine the size of data.</td></tr>
+  <tr><td>static</td><td>Preserve variable value after its scope exits.</td></tr>
+  <tr><td>struct</td><td>Combine variables into a single record.</td></tr>
+  <tr><td>switch</td><td>Start a switch-statement.</td></tr>
+  <tr><td>typedef</td><td>Create a new type.</td></tr>
+  <tr><td>union</td><td>Start a union-statement.</td></tr>
+  <tr><td>unsigned</td><td>An unsigned modifier for integer data types.</td></tr>
+  <tr><td>void</td><td>Declare a data type empty.</td></tr>
+  <tr><td>volatile</td><td>Declare a variable might be modified elsewhere.</td></tr>
+  <tr><td>while</td><td>Start a while-loop.</td></tr>
 </table>
 
 </p></details>
